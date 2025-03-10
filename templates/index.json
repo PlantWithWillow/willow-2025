@@ -62,6 +62,7 @@
         "column1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/How_It_Works_-_3.jpg",
             "title": "Water perfectly",
             "text": "<p>The quickest way to kill a plant? Too little or too much water. Stop guessing over when and how to water with soil moisture analysis and alerts to your phone when it’s thirst-quenching time.</p>",
             "link_label": "",
@@ -71,6 +72,7 @@
         "column2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/How_It_Works_-_3.jpg",
             "title": "Find the right light",
             "text": "<p>Plants need the right light to thrive, but figuring out the right sun exposure per plant type is tricky work. Daily ambient light measurements by Willow help you find the best place for your plant.</p>",
             "link_label": "",
@@ -80,6 +82,7 @@
         "column3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/How_It_Works_-_3.jpg",
             "title": "Create cosy conditions",
             "text": "<p>Too much heat or cold is a recipe for stressed out houseplants. Willow monitors temperature and humidity to keep your plants comfortable in the conditions they crave.</p>",
             "link_label": "",
@@ -95,8 +98,8 @@
       "settings": {
         "title": "",
         "heading_size": "hxl",
-        "image_width": "third",
-        "image_ratio": "adapt",
+        "image_width": "full",
+        "image_ratio": "square",
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
@@ -105,6 +108,54 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "how_it_works_BpkhVH": {
+      "type": "how-it-works",
+      "blocks": {
+        "column_t6cpmJ": {
+          "type": "column",
+          "settings": {
+            "title": "Install App",
+            "text": "Caption"
+          }
+        },
+        "column_HzcHyY": {
+          "type": "column",
+          "settings": {
+            "title": "Title",
+            "text": "Caption"
+          }
+        },
+        "column_9F6Jjn": {
+          "type": "column",
+          "settings": {
+            "title": "Title",
+            "text": "Caption"
+          }
+        },
+        "column_eiDHci": {
+          "type": "column",
+          "settings": {
+            "title": "Title",
+            "text": "Caption"
+          }
+        }
+      },
+      "block_order": [
+        "column_t6cpmJ",
+        "column_HzcHyY",
+        "column_9F6Jjn",
+        "column_eiDHci"
+      ],
+      "settings": {
+        "heading": "How It Works",
+        "heading_size": "h1",
+        "layout": "above",
+        "mobile_columns": "2",
+        "color_scheme": "scheme-2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -158,6 +209,7 @@
   "order": [
     "image_banner",
     "multicolumn",
+    "how_it_works_BpkhVH",
     "featured_collection_8M8dKL",
     "featured_blog_x46bzN"
   ]
