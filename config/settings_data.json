@@ -11,9 +11,9 @@
   "current": {
     "logo": "shopify://shop_images/Plant-with-Willow-logo-2024.png",
     "logo_width": 90,
-    "type_header_font": "assistant_n4",
+    "type_header_font": "omnes-pro",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "inter",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -254,9 +254,9 @@
           }
         }
       },
-      "type_header_font": "assistant_n4",
+      "type_header_font": "omnes-pro",
       "heading_scale": 100,
-      "type_body_font": "assistant_n4",
+      "type_body_font": "inter",
       "body_scale": 100,
       "page_width": 1200,
       "spacing_sections": 0,

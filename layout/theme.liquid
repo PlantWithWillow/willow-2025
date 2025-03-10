@@ -15,6 +15,8 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
+    <link rel="stylesheet" href="https://use.typekit.net/mfo2kjc.css">
+
     {% comment %} Bunnings Product Page Redirects for Instagram {% endcomment %}
     {%- if page.url contains 'bunnings-extension-moss' -%}
       <script>
@@ -181,7 +183,15 @@
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
-      {{ settings.type_header_font | font_face: font_display: 'swap' }}
+
+      @font-face {
+        font-family: 'Omnes';
+        src: url("//cdn.shopify.com/s/files/1/0561/1844/4163/t/7/assets/omnes.eot?v=161505632006109737771684280874"); /* IE9 Compat Modes */
+        src: url("//cdn.shopify.com/s/files/1/0561/1844/4163/t/7/assets/omnes.woff2?v=75237010276546455521684280874") format('woff2'), /* Super Modern Browsers */
+        url("//cdn.shopify.com/s/files/1/0561/1844/4163/t/7/assets/omnes.woff?v=4801270236860739591684280874") format('woff'), /* Pretty Modern Browsers */
+        url("//cdn.shopify.com/s/files/1/0561/1844/4163/t/7/assets/omnes.ttf?v=7720870739047371101684280874") format('truetype') /* Safari, Android, iOS */;
+        text-rendering: optimizeLegibility;
+      }
 
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
@@ -234,7 +244,7 @@
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+        --font-heading-family: 'omnes-pro';
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
