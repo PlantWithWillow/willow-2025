@@ -6,6 +6,104 @@
   --focused-base-outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   --focused-base-outline-offset: 0.3rem;
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+
+   /* Neutral */
+   --color-charcoal-black: 35, 34, 34; /*#232222*/
+   /* --color-cloud-grey: #282924;  */
+   --color-lily-white: 248, 247, 242; /*#F8F7F2*/
+   --color-black: 0, 0, 0;
+   --color-white: 255, 255, 255;
+   
+   /* Plants */
+   --color-ficus-green: #03594D;
+   --color-ficus-green: 3, 89, 77;
+   --color-pothos-green: #D1FEA4;
+   --color-pothos-green: 209, 254, 164;
+   --color-moss-green: #6F8F6C;
+   --color-moss-green: 111, 143, 108;
+   --color-sage-green: #DDE4D5;
+   --color-sage-green: 221, 228, 213;
+   
+   /* Rainbow */
+   --color-red: #F06449;
+   --color-red: 240, 100, 73;
+   --color-orange: #DE9151;
+   --color-orange: 222, 145, 81;
+   --color-yellow: #F4D35E;
+   --color-yellow: 244, 211, 94;
+   --color-blue: #508AF5;
+   --color-blue: 80, 138, 245;
+   --color-lavender: #E7CDFE;
+   --color-lavender: 231, 205, 254;
+   --color-pink: #FAB2EA;
+   --color-pink: 250, 178, 234;
+ 
+   /* Products */
+   --color-moss: #394330;
+   --color-moss: 57, 67, 48;
+   --color-charcoal: #2e2c2a;
+   --color-charcoal: 46, 44, 42;
+   
+  --font-omnes: 'omnes-pro', 'Source Sans Pro', sans-serif;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --announcement-bar-height: 42px;
+  --popup-shadow-opacity: 0.3;
+}
+
+/*******  COLOR SCHEMES *********/
+/* Basic on White Schema */
+:root,
+.color-scheme-1,
+.color-background-1,
+.banner:has(.color-background-1),
+.color-background-2,
+.banner:has(.color-background-2) {
+  --color-background: var(--color-white);
+  --gradient-background: rgb(var(--color-white));
+
+  --color-foreground: var(--color-ficus-green);
+  --color-foreground-light: var(--color-pothos-green);
+  --color-shadow: var(--color-charcoal-black);
+  --color-button: var(--color-pothos-green);
+  --color-button-text: var(--color-ficus-green);
+  --color-secondary-button: var(--color-ficus-green);
+  --color-secondary-button-text: var(--color-lily-white);
+  --color-link: var(--color-ficus-green);
+  --color-badge-foreground: var(--color-ficus-green);
+  --color-badge-background: var(--color-moss-green);
+  --color-badge-border: var(--color-ficus-green);
+  --payment-terms-background-color: var(--color-white);
+}
+
+/* Basic on Lily White Schema */
+.color-scheme-2 {
+  --color-background: var(--color-lily-white);
+  --gradient-background: rgb(var(--color-lily-white));
+
+  --color-secondary-button: var(--color-lily-white);
+  --payment-terms-background-color: var(--color-lily-white);
+}
+
+/* Dark Green Schema */
+.color-scheme-3 {
+  --color-background: var(--color-ficus-green);
+  --gradient-background: rgb(var(--color-ficus-green));
+
+  --color-foreground: var(--color-white);
+  --color-foreground-light: var(--color-white);
+  --color-shadow: var(--color-charcoal-black);
+  --color-button: var(--color-moss-green);
+  --color-button-text: var(--color-ficus-green);
+  --color-secondary-button: var(--color-ficus-green);
+  --color-secondary-button-text: var(--color-moss-green);
+  --color-link: var(--color-moss-green);
+  --color-badge-foreground: var(--color-ficus-green);
+  --color-badge-background: var(--color-moss-green);
+  --color-badge-border: var(--color-ficus-green);
+  --payment-terms-background-color: var(--color-pothos-green);
 }
 
 .product-card-wrapper .card,
@@ -263,7 +361,7 @@ h5,
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
-  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+  line-height: calc(1 + 0.01/ max(1, var(--font-heading-scale)));
   word-break: break-word;
 }
 
@@ -274,7 +372,7 @@ h5,
 
 .hxl {
   font-size: calc(var(--font-heading-scale) * 5rem);
-  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+  line-height: 1;
 }
 
 @media only screen and (min-width: 750px) {
@@ -1218,7 +1316,9 @@ button.shopify-payment-button__button--unbranded {
   padding: 0 3rem;
   cursor: pointer;
   font: inherit;
-  font-size: 1.5rem;
+  font-family: var(--font-omnes);
+  font-weight: var(--font-bold);
+  font-size: 2.6rem;
   text-decoration: none;
   color: rgb(var(--color-button-text));
   transition: box-shadow var(--duration-short) ease;
@@ -1296,14 +1396,14 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
-.button,
+/* .button,
 .button-label,
 .shopify-challenge__button,
 .customer button {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
-}
+} */
 
 .button--tertiary {
   font-size: 1.2rem;
