@@ -56,13 +56,9 @@
 /*******  COLOR SCHEMES *********/
 /* Basic on White Schema */
 :root,
-.color-scheme-1,
-.color-background-1,
-.banner:has(.color-background-1),
-.color-background-2,
-.banner:has(.color-background-2) {
-  --color-background: var(--color-white);
-  --gradient-background: rgb(var(--color-white));
+.color-scheme-1 {
+  --color-background: var(--color-lily-white);
+  --gradient-background: rgb(var(--color-lily-white));
 
   --color-foreground: var(--color-ficus-green);
   --color-foreground-light: var(--color-pothos-green);
@@ -79,21 +75,21 @@
 }
 
 /* Basic on Lily White Schema */
-.color-scheme-2 {
-  --color-background: var(--color-lily-white);
-  --gradient-background: rgb(var(--color-lily-white));
+/* .color-scheme-2 {
+  --color-background: var(--color-sage-green);
+  --gradient-background: rgb(var(--color-sage-green));
 
   --color-secondary-button: var(--color-lily-white);
   --payment-terms-background-color: var(--color-lily-white);
-}
+} */
 
 /* Dark Green Schema */
-.color-scheme-3 {
+/* .color-scheme-3 {
   --color-background: var(--color-ficus-green);
   --gradient-background: rgb(var(--color-ficus-green));
 
-  --color-foreground: var(--color-white);
-  --color-foreground-light: var(--color-white);
+  --color-foreground: var(--color-lily-white);
+  --color-foreground-light: var(--color-lily-white);
   --color-shadow: var(--color-charcoal-black);
   --color-button: var(--color-moss-green);
   --color-button-text: var(--color-ficus-green);
@@ -104,7 +100,7 @@
   --color-badge-background: var(--color-moss-green);
   --color-badge-border: var(--color-ficus-green);
   --payment-terms-background-color: var(--color-pothos-green);
-}
+} */
 
 .product-card-wrapper .card,
 .contains-card--product {
@@ -1272,13 +1268,17 @@ deferred-media {
 /* component-button */
 /* Button - default */
 
-.button--secondary,
-.button--tertiary {
+.button--secondary {
   --color-button: var(--color-secondary-button);
   --color-button-text: var(--color-secondary-button-text);
 }
-
 .button--tertiary {
+  --color-button: var(--color-secondary-button-text);
+  --color-button-text: var(--color-secondary-button);
+}
+
+.button--outline {
+  border-color: var(--color-button-text);
   --alpha-button-background: 0;
   --alpha-button-border: 0.2;
 }
@@ -1371,7 +1371,7 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
 }
 
-.button--secondary:after {
+.button--outline:after {
   --border-opacity: var(--buttons-border-opacity);
 }
 

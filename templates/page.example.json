@@ -109,69 +109,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "meet_willow_Q4xCnX": {
-      "type": "meet-willow",
-      "blocks": {
-        "column_jraMek": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_A9VD7Q": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_wEXGfe": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_jraMek",
-        "column_A9VD7Q",
-        "column_wEXGfe"
-      ],
-      "settings": {
-        "title": "Meet Willow",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "collapsible_content_y3VpwB": {
@@ -295,69 +236,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "meet_willow_3VA7ca": {
-      "type": "meet-willow",
-      "blocks": {
-        "column_3apEVp": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_CpyzVB": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_tjaNCX": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_3apEVp",
-        "column_CpyzVB",
-        "column_tjaNCX"
-      ],
-      "settings": {
-        "title": "Meet Willow",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "collapsible_content_fLBK3i": {
@@ -402,8 +284,8 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "background-2",
-        "container_color_scheme": "background-1",
+        "color_scheme": "scheme-2",
+        "container_color_scheme": "scheme-1",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
@@ -481,69 +363,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "inverse",
+        "color_scheme": "scheme-3",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "meet_willow_6ygAFn": {
-      "type": "meet-willow",
-      "blocks": {
-        "column_EyyFg8": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_cUcAJj": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_GWXpx9": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_EyyFg8",
-        "column_cUcAJj",
-        "column_GWXpx9"
-      ],
-      "settings": {
-        "title": "Meet Willow",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "inverse",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "collapsible_content_yQQaDB": {
@@ -588,7 +411,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "inverse",
+        "color_scheme": "scheme-3",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -667,69 +490,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "accent-1",
+        "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "meet_willow_PgKDAc": {
-      "type": "meet-willow",
-      "blocks": {
-        "column_dGP4tG": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_MDjBJe": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_t9VEaM": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_dGP4tG",
-        "column_MDjBJe",
-        "column_t9VEaM"
-      ],
-      "settings": {
-        "title": "Meet Willow",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "accent-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "collapsible_content_hCMVLY": {
@@ -774,7 +538,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "accent-1",
+        "color_scheme": "scheme-4",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -857,65 +621,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "meet_willow_Q9zcgF": {
-      "type": "meet-willow",
-      "blocks": {
-        "column_dTBzF7": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_EC6Ypc": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_hpP7Lz": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_dTBzF7",
-        "column_EC6Ypc",
-        "column_hpP7Lz"
-      ],
-      "settings": {
-        "title": "Meet Willow",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "accent-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "collapsible_content_3RiREh": {
@@ -1334,19 +1039,14 @@
     "main",
     "rich_text_kdFyTd",
     "rich_text_gUME8n",
-    "meet_willow_Q4xCnX",
     "collapsible_content_y3VpwB",
     "rich_text_XGKyri",
-    "meet_willow_3VA7ca",
     "collapsible_content_fLBK3i",
     "rich_text_tjgWbW",
-    "meet_willow_6ygAFn",
     "collapsible_content_yQQaDB",
     "rich_text_izFQFj",
-    "meet_willow_PgKDAc",
     "collapsible_content_hCMVLY",
     "rich_text_QhPR7e",
-    "meet_willow_Q9zcgF",
     "collapsible_content_3RiREh",
     "rich_text_AVMpkq",
     "multicolumn_BizBEJ",
