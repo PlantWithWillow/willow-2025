@@ -87,7 +87,7 @@
             "button_label_2": "Primary button",
             "button_link_2": "shopify://pages/about",
             "button_style_cta_2": false,
-            "button_outline_2": false,
+            "button_outline_2": false
           }
         },
         "caption_PCWhRb": {
@@ -598,9 +598,11 @@
             "button_label": "Button label",
             "button_link": "shopify://pages/about",
             "button_style_cta": false,
+            "button_outline": false,
             "button_label_2": "Secondary button label",
             "button_link_2": "shopify://pages/about",
-            "button_style_cta_2": true
+            "button_style_cta_2": true,
+            "button_outline_2": false
           }
         }
       },
@@ -660,7 +662,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
-        "container_color_scheme": "",
+        "container_color_scheme": "scheme-1",
         "color_scheme": "scheme-4",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -744,9 +746,11 @@
             "button_label": "Button label",
             "button_link": "shopify://pages/about",
             "button_style_cta": false,
+            "button_outline": false,
             "button_label_2": "Secondary button label",
             "button_link_2": "shopify://pages/about",
-            "button_style_secondary_2": true
+            "button_style_cta_2": false,
+            "button_outline_2": false
           }
         }
       },
