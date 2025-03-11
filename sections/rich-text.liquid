@@ -69,7 +69,7 @@
                     {% else %}
                       href="{{ block.settings.button_link }}"
                     {% endif %}
-                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}{% if block.settings.button_outline %} button--outline{% endif %}"
+                    class="button{% if block.settings.button_style_cta %} button--cta{% else %} button--primary{% endif %}{% if block.settings.button_outline %} button--outline{% endif %}"
                   >
                     {{- block.settings.button_label | escape -}}
                   </a>
@@ -81,7 +81,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_2 }}"
                     {% endif %}
-                    class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}{% if block.settings.button_outline_2 %} button--outline{% endif %}"
+                    class="button{% if block.settings.button_style_cta_2 %} button--cta{% else %} button--primary{% endif %}{% if block.settings.button_outline_2 %} button--outline{% endif %}"
                   >
                     {{- block.settings.button_label_2 | escape -}}
                   </a>
@@ -307,9 +307,9 @@
         },
         {
           "type": "checkbox",
-          "id": "button_style_secondary",
+          "id": "button_style_cta",
           "default": false,
-          "label": "Secondary Color"
+          "label": "CTA style"
         },
         {
           "type": "checkbox",
@@ -334,9 +334,9 @@
         },
         {
           "type": "checkbox",
-          "id": "button_style_secondary_2",
+          "id": "button_style_cta_2",
           "default": false,
-          "label": "Secondary Color"
+          "label": "CTA style"
         },
         {
           "type": "checkbox",

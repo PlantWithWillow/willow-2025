@@ -63,10 +63,10 @@
   --color-foreground: var(--color-ficus-green);
   --color-foreground-light: var(--color-pothos-green);
   --color-shadow: var(--color-charcoal-black);
-  --color-button: var(--color-pothos-green);
+  /* --color-button: var(--color-pothos-green);
   --color-button-text: var(--color-ficus-green);
   --color-secondary-button: var(--color-ficus-green);
-  --color-secondary-button-text: var(--color-lily-white);
+  --color-secondary-button-text: var(--color-lily-white); */
   --color-link: var(--color-ficus-green);
   --color-badge-foreground: var(--color-ficus-green);
   --color-badge-background: var(--color-moss-green);
@@ -1240,22 +1240,18 @@ deferred-media {
 /* component-button */
 /* Button - default */
 
-.button--secondary {
+.button--secondary,
+.button--outline {
   --color-button: var(--color-secondary-button);
   --color-button-text: var(--color-secondary-button-text);
-}
-.button--tertiary {
-  --color-button: var(--color-secondary-button-text);
-  --color-button-text: var(--color-secondary-button);
-}
-
-.button--outline {  
   --alpha-button-background: 0;
   --alpha-button-border: 1;
 }
-
-.button--secondary.button--outline {
-  --color-button-text: var(--color-secondary-button);
+.button--cta {
+  --color-button: var(--color-pothos-green);
+  --color-button-text: var(--color-ficus-green);
+  --alpha-button-background: 1;
+  --alpha-button-border: 0;
 }
 
 .button,
