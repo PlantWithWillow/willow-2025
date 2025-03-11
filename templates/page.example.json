@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -22,13 +22,21 @@
         "heading_8jY9Jr": {
           "type": "heading",
           "settings": {
-            "heading": "Color scheme 1 (XL)",
+            "heading": "Color scheme 1 (XXL)",
+            "heading_size": "hxxl"
+          }
+        },
+        "heading_b6DVHq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Heading XL",
             "heading_size": "hxl"
           }
         }
       },
       "block_order": [
-        "heading_8jY9Jr"
+        "heading_8jY9Jr",
+        "heading_b6DVHq"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -66,17 +74,17 @@
         "text_qeBQ8T": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p>"
+            "text": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p>"
           }
         },
         "button_8eTAcP": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/about",
+            "button_link": "shopify://pages/about",
             "button_style_secondary": false,
             "button_label_2": "Secondary button label",
-            "button_link_2": "shopify:\/\/pages\/about",
+            "button_link_2": "shopify://pages/about",
             "button_style_secondary_2": true
           }
         },
@@ -123,7 +131,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -132,7 +140,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "heart",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -141,7 +149,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         }
@@ -157,11 +165,115 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "",
         "container_color_scheme": "",
+        "color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_3pcpGH": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_XMFbLp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hpyyX7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "heart",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
+            "page": ""
+          }
+        },
+        "collapsible_row_natt3K": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_XMFbLp",
+        "collapsible_row_hpyyX7",
+        "collapsible_row_natt3K"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "container_color_scheme": "scheme-3",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_pkGPjn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BjcDKL": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cQbWrK": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rhy4kH": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BjcDKL",
+        "column_cQbWrK",
+        "column_rhy4kH"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -172,66 +284,32 @@
         "heading_UKfBDR": {
           "type": "heading",
           "settings": {
-            "heading": "Color scheme 2 - Heading L",
+            "heading": "Color scheme 2 (L)",
             "heading_size": "h0"
-          }
-        },
-        "heading_awP8xQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading M",
-            "heading_size": "h1"
-          }
-        },
-        "heading_cTExm7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading S",
-            "heading_size": "h2"
           }
         },
         "text_qeBQ8T": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p>"
+            "text": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p>"
           }
         },
         "button_8eTAcP": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/about",
+            "button_link": "shopify://pages/about",
             "button_style_secondary": false,
             "button_label_2": "Secondary button label",
-            "button_link_2": "shopify:\/\/pages\/about",
+            "button_link_2": "shopify://pages/about",
             "button_style_secondary_2": true
-          }
-        },
-        "caption_PCWhRb": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "caption_nTzgHQ": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "subtitle",
-            "text_size": "medium"
           }
         }
       },
       "block_order": [
         "heading_UKfBDR",
-        "heading_awP8xQ",
-        "heading_cTExm7",
         "text_qeBQ8T",
-        "button_8eTAcP",
-        "caption_PCWhRb",
-        "caption_nTzgHQ"
+        "button_8eTAcP"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -250,7 +328,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -259,7 +337,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "heart",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -268,7 +346,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         }
@@ -283,12 +361,65 @@
         "heading": "Collapsible content",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "scheme-2",
+        "layout": "row",
         "container_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_ye3eJw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HrctMg": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xjzpEM": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4eAiaf": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HrctMg",
+        "column_xjzpEM",
+        "column_4eAiaf"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -299,66 +430,32 @@
         "heading_UKfBDR": {
           "type": "heading",
           "settings": {
-            "heading": "Color scheme 3 - Heading L",
+            "heading": "Color scheme 3 (L)",
             "heading_size": "h0"
-          }
-        },
-        "heading_awP8xQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading M",
-            "heading_size": "h1"
-          }
-        },
-        "heading_cTExm7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading S",
-            "heading_size": "h2"
           }
         },
         "text_qeBQ8T": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p>"
+            "text": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p>"
           }
         },
         "button_8eTAcP": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/about",
+            "button_link": "shopify://pages/about",
             "button_style_secondary": false,
             "button_label_2": "Secondary button label",
-            "button_link_2": "shopify:\/\/pages\/about",
+            "button_link_2": "shopify://pages/about",
             "button_style_secondary_2": true
-          }
-        },
-        "caption_PCWhRb": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "caption_nTzgHQ": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "subtitle",
-            "text_size": "medium"
           }
         }
       },
       "block_order": [
         "heading_UKfBDR",
-        "heading_awP8xQ",
-        "heading_cTExm7",
         "text_qeBQ8T",
-        "button_8eTAcP",
-        "caption_PCWhRb",
-        "caption_nTzgHQ"
+        "button_8eTAcP"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -377,7 +474,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -386,7 +483,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "heart",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -395,7 +492,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         }
@@ -410,12 +507,65 @@
         "heading": "Collapsible content",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "row",
+        "container_color_scheme": "scheme-1",
         "color_scheme": "scheme-3",
-        "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_qj3ENT": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_y37Anm": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tp6NGm": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hWyfw6": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_y37Anm",
+        "column_tp6NGm",
+        "column_hWyfw6"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -426,66 +576,32 @@
         "heading_UKfBDR": {
           "type": "heading",
           "settings": {
-            "heading": "Color scheme 4 - Heading L",
+            "heading": "Color scheme 4 (L)",
             "heading_size": "h0"
-          }
-        },
-        "heading_awP8xQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading M",
-            "heading_size": "h1"
-          }
-        },
-        "heading_cTExm7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading S",
-            "heading_size": "h2"
           }
         },
         "text_qeBQ8T": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p>"
+            "text": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p>"
           }
         },
         "button_8eTAcP": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/about",
+            "button_link": "shopify://pages/about",
             "button_style_secondary": false,
             "button_label_2": "Secondary button label",
-            "button_link_2": "shopify:\/\/pages\/about",
+            "button_link_2": "shopify://pages/about",
             "button_style_secondary_2": true
-          }
-        },
-        "caption_PCWhRb": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "caption_nTzgHQ": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "subtitle",
-            "text_size": "medium"
           }
         }
       },
       "block_order": [
         "heading_UKfBDR",
-        "heading_awP8xQ",
-        "heading_cTExm7",
         "text_qeBQ8T",
-        "button_8eTAcP",
-        "caption_PCWhRb",
-        "caption_nTzgHQ"
+        "button_8eTAcP"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -504,7 +620,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -513,7 +629,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "heart",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -522,7 +638,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         }
@@ -537,12 +653,65 @@
         "heading": "Collapsible content",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "scheme-4",
+        "layout": "row",
         "container_color_scheme": "",
+        "color_scheme": "scheme-4",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_6bmMAR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ARHtKM": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qrnAzb": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ByjCtM": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ARHtKM",
+        "column_qrnAzb",
+        "column_ByjCtM"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -553,71 +722,37 @@
         "heading_UKfBDR": {
           "type": "heading",
           "settings": {
-            "heading": "Color scheme 5 - Heading L",
+            "heading": "Color scheme 5 (L)",
             "heading_size": "h0"
-          }
-        },
-        "heading_awP8xQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading M",
-            "heading_size": "h1"
-          }
-        },
-        "heading_cTExm7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading S",
-            "heading_size": "h2"
           }
         },
         "text_qeBQ8T": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p>"
+            "text": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p>"
           }
         },
         "button_8eTAcP": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/about",
+            "button_link": "shopify://pages/about",
             "button_style_secondary": false,
             "button_label_2": "Secondary button label",
-            "button_link_2": "shopify:\/\/pages\/about",
+            "button_link_2": "shopify://pages/about",
             "button_style_secondary_2": true
-          }
-        },
-        "caption_PCWhRb": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "caption_nTzgHQ": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "subtitle",
-            "text_size": "medium"
           }
         }
       },
       "block_order": [
         "heading_UKfBDR",
-        "heading_awP8xQ",
-        "heading_cTExm7",
         "text_qeBQ8T",
-        "button_8eTAcP",
-        "caption_PCWhRb",
-        "caption_nTzgHQ"
+        "button_8eTAcP"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "accent-2",
+        "color_scheme": "scheme-5",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -631,7 +766,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -640,7 +775,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "heart",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         },
@@ -649,7 +784,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
-            "row_content": "<p>Share information about your <strong>brand<\/strong> with your <em>customers<\/em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome<\/a> customers to your store.<\/p><ul><li>Dots<\/li><li>Dots<\/li><\/ul><ol><li>Numbers<\/li><li>Numbers<\/li><\/ol>",
+            "row_content": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p><ul><li>Dots</li><li>Dots</li></ul><ol><li>Numbers</li><li>Numbers</li></ol>",
             "page": ""
           }
         }
@@ -665,11 +800,64 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "accent-2",
         "container_color_scheme": "",
+        "color_scheme": "scheme-5",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_XqXWhX": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Djc4fQ": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xJd79C": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QhDxaP": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Djc4fQ",
+        "column_xJd79C",
+        "column_QhDxaP"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-5",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -680,13 +868,19 @@
     "rich_text_kdFyTd",
     "rich_text_gUME8n",
     "collapsible_content_y3VpwB",
+    "collapsible_content_3pcpGH",
+    "multicolumn_pkGPjn",
     "rich_text_XGKyri",
     "collapsible_content_fLBK3i",
+    "multicolumn_ye3eJw",
     "rich_text_tjgWbW",
     "collapsible_content_yQQaDB",
+    "multicolumn_qj3ENT",
     "rich_text_izFQFj",
     "collapsible_content_hCMVLY",
+    "multicolumn_6bmMAR",
     "rich_text_QhPR7e",
-    "collapsible_content_3RiREh"
+    "collapsible_content_3RiREh",
+    "multicolumn_XqXWhX"
   ]
 }
