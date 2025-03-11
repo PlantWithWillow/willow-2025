@@ -2428,12 +2428,18 @@ input[type='checkbox'] {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
 
-  max-width: 1430px;
+  width: 1430px;
+  max-width: 90vw;
   background: white;
   border-radius: 50px;
   position: absolute;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#MainContent {
+  padding-top: 140px;
 }
 
 @media screen and (max-width: 749px) {
@@ -2720,13 +2726,15 @@ menu-drawer + .header__search {
 details[open] > .search-modal {
   opacity: 1;
   animation: animateMenuOpen var(--duration-default) ease;
+  background: rgb(var(--color-white));
+  --color-background: var(--color-white);
 }
 
 details[open] .modal-overlay {
   display: block;
 }
 
-details[open] .modal-overlay::after {
+/* details[open] .modal-overlay::after {
   position: absolute;
   content: '';
   background-color: rgb(var(--color-foreground), 0.5);
@@ -2734,13 +2742,14 @@ details[open] .modal-overlay::after {
   left: 0;
   right: 0;
   height: 100vh;
-}
+} */
 
 .search-modal {
   opacity: 0;
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   min-height: calc(100% + var(--inputs-margin-offset) + (2 * var(--inputs-border-width)));
   height: 100%;
+  border-radius: 50px;
 }
 
 .search-modal__content {
@@ -3010,11 +3019,11 @@ details-disclosure > details {
   word-break: break-word;
 }
 
-.gradient {
+/* .gradient {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
   background-attachment: fixed;
-}
+} */
 
 @media screen and (forced-colors: active) {
   .icon {
