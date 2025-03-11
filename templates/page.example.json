@@ -167,7 +167,6 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "container_color_scheme": "",
         "color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -218,7 +217,6 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
-        "container_color_scheme": "scheme-3",
         "color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -366,7 +364,6 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
-        "container_color_scheme": "scheme-1",
         "color_scheme": "scheme-2",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -514,7 +511,6 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
-        "container_color_scheme": "scheme-1",
         "color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -662,7 +658,6 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
-        "container_color_scheme": "scheme-1",
         "color_scheme": "scheme-4",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -737,7 +732,7 @@
         "text_qeBQ8T": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p>"
+            "text": "<p>This scheme is used for the announcement bar.  Share information about your <strong>brand</strong> with your <em>customers</em>. Describe a product, make announcements, or <a href=\"#\" title=\"#\">welcome</a> customers to your store.</p>"
           }
         },
         "button_8eTAcP": {
@@ -810,7 +805,6 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "container_color_scheme": "",
         "color_scheme": "scheme-5",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
