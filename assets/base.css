@@ -1249,10 +1249,13 @@ deferred-media {
   --color-button-text: var(--color-secondary-button);
 }
 
-.button--outline {
-  border-color: var(--color-button-text);
+.button--outline {  
   --alpha-button-background: 0;
-  --alpha-button-border: 0.2;
+  border-color: var(--color-button-text);
+}
+
+.button--secondary.button--outline {
+  --color-button-text: var(--color-secondary-button);
 }
 
 .button,
