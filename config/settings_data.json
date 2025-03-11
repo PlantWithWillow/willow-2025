@@ -155,7 +155,7 @@
           "background": "#DDE4D5",
           "background_gradient": "",
           "text": "#03594D",
-          "color_link": "red",
+          "color_link": "#508AF5",
           "button": "#03594D",
           "button_label": "#f8f7f2",
           "secondary_button": "#f8f7f2",
@@ -180,6 +180,7 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#03594D",
+          "color_link": "#508AF5",
           "button": "#03594D",
           "button_label": "#f8f7f2",
           "secondary_button": "#f8f7f2",
@@ -193,9 +194,9 @@
           "background_gradient": "",
           "text": "#f8f7f2",
           "button": "#f8f7f2",
-          "button_label": "#03594D",
-          "secondary_button": "#03594D",
-          "secondary_button_label": "#f8f7f2",
+          "button_label": "#508AF5",
+          "secondary_button": "#E7CDFE",
+          "secondary_button_label": "#508AF5",
           "shadow": "#f8f7f2"
         }
       }
