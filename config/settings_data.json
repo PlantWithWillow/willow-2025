@@ -10,7 +10,7 @@
 {
   "current": {
     "logo": "shopify://shop_images/Plant-with-Willow-logo-2024.png",
-    "logo_width": 90,
+    "logo_width": 140,
     "type_header_font": "lato_n4",
     "heading_scale": 150,
     "type_body_font": "inter_n4",
@@ -190,13 +190,13 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#508AF5",
+          "background": "#D1FEA4",
           "background_gradient": "",
-          "text": "#f8f7f2",
-          "button": "#f8f7f2",
-          "button_label": "#508AF5",
-          "secondary_button": "#E7CDFE",
-          "secondary_button_label": "#508AF5",
+          "text": "#03594D",
+          "button": "#03594D",
+          "button_label": "#f8f7f2",
+          "secondary_button": "#f8f7f2",
+          "secondary_button_label": "#03594D",
           "shadow": "#f8f7f2"
         }
       }

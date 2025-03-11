@@ -89,6 +89,7 @@
   margin-bottom: 1.5rem;
   /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
   transform: perspective(0);
+  background: rgb(var(--color-background)) linear-gradient(rgba(var(--color-foreground), .04), rgba(var(--color-foreground), .04));
 }
 
 .collapsible-row-layout .accordion summary,
@@ -100,9 +101,9 @@
   padding-top: 0;
 }
 
-.collapsible-content summary:hover {
+/* .collapsible-content summary:hover {
   background: rgba(var(--color-foreground), 0.04);
-}
+} */
 
 .collapsible-content summary:hover .accordion__title {
   text-decoration: underline;
