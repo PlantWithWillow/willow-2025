@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Smart indoor plant care, made simple",
-            "heading_size": "h0"
+            "heading_size": "hxxl"
           }
         },
         "text": {
@@ -31,10 +31,12 @@
           "settings": {
             "button_label_1": "Shop now",
             "button_link_1": "shopify://pages/shop",
-            "button_style_secondary_1": true,
+            "button_style_cta": true,
+            "button_outline": false,
             "button_label_2": "How it works",
             "button_link_2": "shopify://pages/tech",
-            "button_style_secondary_2": false
+            "button_style_cta_2": false,
+            "button_outline_2": true
           }
         }
       },
@@ -44,9 +46,10 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
+        "split": true,
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
@@ -151,7 +154,7 @@
         "column_eiDHci"
       ],
       "settings": {
-        "heading": "How It Works",
+        "heading": "GETTING STARTED IS SO SIMPLE",
         "heading_size": "h1",
         "layout": "above",
         "mobile_columns": "2",

@@ -236,7 +236,7 @@
       {% endfor %}
 
       {{ scheme_classes | prepend: 'body' }} {
-        color: rgba(var(--color-foreground), 0.75);
+        color: rgb(var(--color-foreground));
         background-color: rgb(var(--color-background));
       }
 
@@ -248,7 +248,7 @@
 
         --font-heading-family: 'omnes-pro', 'Omnes', 'Source Sans Pro', sans-serif;
         --font-heading-style: normal;
-        --font-heading-weight: 700;
+        --font-heading-weight: 800;
 
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};

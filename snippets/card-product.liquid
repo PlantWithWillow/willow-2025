@@ -4,7 +4,6 @@
   Accepts:
   - card_product: {Object} Product Liquid object (optional)
   - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
-  - image_shape: {String} Image mask to apply to the product image card. Values are "arch", "blob", "chevronleft", "chevronright", "diamond", "parallelogram", and "round". (optional)
   - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
   - show_vendor: {Boolean} Show the product vendor. Default: false
   - show_rating: {Boolean} Show the product rating. Default: false
@@ -46,7 +45,6 @@
         card card--{{ settings.card_style }}
         {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-        {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
         {% if extend_height %} card--extend-height{% endif %}
         {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {% if horizontal_class %} card--horizontal{% endif %}
@@ -58,7 +56,7 @@
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         {%- if card_product.featured_media -%}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+          <div class="card__media color-{{ settings.card_color_scheme }}">
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
@@ -109,7 +107,7 @@
         <div class="card__content">
           <div class="card__information">
             <h3
-              class="card__heading"
+              class="card__heading h3"
               {% if card_product.featured_media == null and settings.card_style == 'standard' %}
                 id="title-{{ section_id }}-{{ card_product.id }}"
               {% endif %}
@@ -139,6 +137,8 @@
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
+            {%- elsif card_product.tags contains 'Best Seller' -%}
+              <span class="badge badge--best">Best Seller</span>
             {%- endif -%}
           </div>
         </div>
@@ -146,7 +146,7 @@
       <div class="card__content">
         <div class="card__information">
           <h3
-            class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
+            class="card__heading h3"
             {% if card_product.featured_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
@@ -303,12 +303,13 @@
                   id="{{ product_form_id }}-submit"
                   type="submit"
                   name="add"
-                  class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add animate-arrow{% endif %}"
+                  class="quick-add__submit button button--full-width button--cta{% if horizontal_quick_add %} card--horizontal__quick-add animate-arrow{% endif %}"
                   aria-haspopup="dialog"
                   aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                   data-product-url="{{ card_product.url }}"
                 >
-                  {{ 'products.product.choose_options' | t }}
+                  Add to cart
+                  {% comment %} {{ 'products.product.choose_options' | t }} {% endcomment %}
                   {%- if horizontal_quick_add -%}
                     <span class="icon-wrap">
                       {{- 'icon-arrow.svg' | inline_asset_content -}}
@@ -523,7 +524,7 @@
                     <div>
                       <div class="quick-add-modal__content-info--bulk-details small-hide medium-hide">
                         <a href="{{ card_product.url }}" class="full-unstyled-link">
-                          <h3 class="h2">
+                          <h3 class="h3">
                             {{ card_product.title | escape }}
                           </h3>
                         </a>
@@ -581,7 +582,6 @@
       class="
         card card--{{ settings.card_style }}
         {% if extend_height %} card--extend-height{% endif %}
-        {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
@@ -590,7 +590,7 @@
         class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
       >
         <div
-          class="card__media {% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}"
+          class="card__media color-{{ settings.card_color_scheme }}"
         >
           <div
             class="media media--transparent"
@@ -605,7 +605,7 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">
+          <h3 class="card__heading card__heading--placeholder h3">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.product_title' | t }}
             </a>
