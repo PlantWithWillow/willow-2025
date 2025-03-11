@@ -110,8 +110,9 @@
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "background_style": "none",
         "color_scheme": "scheme-1",
+        "card_color_scheme": "",
+        "background_style": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -181,13 +182,42 @@
         "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "center",
-        "background_style": "primary",
         "color_scheme": "scheme-2",
-        "color_scheme_2": "scheme-1",
+        "card_color_scheme": "",
+        "background_style": "primary",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_M9pWft": {
+      "type": "rich-text",
+      "blocks": {
+        "button_XYFJeR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get started",
+            "button_link": "shopify://pages/tech",
+            "button_style_cta": false,
+            "button_outline": false,
+            "button_label_2": "Explore the tech",
+            "button_link_2": "shopify://pages/tech",
+            "button_style_cta_2": false,
+            "button_outline_2": true
+          }
+        }
+      },
+      "block_order": [
+        "button_XYFJeR"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "featured_collection_8M8dKL": {
@@ -239,6 +269,7 @@
     "image_banner",
     "multicolumn",
     "multicolumn_AYpFY7",
+    "rich_text_M9pWft",
     "featured_collection_8M8dKL",
     "featured_blog_x46bzN"
   ]
