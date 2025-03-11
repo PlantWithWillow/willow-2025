@@ -124,10 +124,10 @@
         "column_VMM3pe": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/How_It_Works_-_3.jpg",
-            "pretitle": "",
-            "title": "Water perfectly",
-            "text": "<p>The quickest way to kill a plant? Too little or too much water. Stop guessing over when and how to water with soil moisture analysis and alerts to your phone when it’s thirst-quenching time.</p>",
+            "image": "shopify://shop_images/How_It_Works_-_1.jpg",
+            "pretitle": "1",
+            "title": "Install the App",
+            "text": "<p>Free to download on iOS and Android</p>",
             "link_label": "",
             "link": ""
           }
@@ -135,10 +135,10 @@
         "column_kyMM6r": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/How_It_Works_-_3.jpg",
-            "pretitle": "",
-            "title": "Find the right light",
-            "text": "<p>Plants need the right light to thrive, but figuring out the right sun exposure per plant type is tricky work. Daily ambient light measurements by Willow help you find the best place for your plant.</p>",
+            "image": "shopify://shop_images/How_It_Works_-_2.jpg",
+            "pretitle": "2",
+            "title": "SET UP SENSOR + HUB",
+            "text": "<p>Pair your Sensor and Hub to the app and connect to WiFi</p>",
             "link_label": "",
             "link": ""
           }
@@ -147,9 +147,20 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/How_It_Works_-_3.jpg",
-            "pretitle": "",
-            "title": "Create cosy conditions",
-            "text": "<p>Too much heat or cold is a recipe for stressed out houseplants. Willow monitors temperature and humidity to keep your plants comfortable in the conditions they crave.</p>",
+            "pretitle": "3",
+            "title": "PLANT YOUR SENSOR",
+            "text": "<p>Get actionable alerts and plant score updates within hours</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_fLKcGi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/How_It_Works_-_4.jpg",
+            "pretitle": "4",
+            "title": "CARE FOR YOUR PLANT",
+            "text": "<p>Learn simpler, smarter plant care with Willow</p>",
             "link_label": "",
             "link": ""
           }
@@ -158,7 +169,8 @@
       "block_order": [
         "column_VMM3pe",
         "column_kyMM6r",
-        "column_fXWxGi"
+        "column_fXWxGi",
+        "column_fLKcGi"
       ],
       "settings": {
         "title": "Getting started is so simple",
@@ -171,56 +183,9 @@
         "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "scheme-2",
+        "color_scheme_2": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "how_it_works_BpkhVH": {
-      "type": "how-it-works",
-      "blocks": {
-        "column_t6cpmJ": {
-          "type": "column",
-          "settings": {
-            "title": "Install the App",
-            "text": "Free to download on iOS and Android"
-          }
-        },
-        "column_HzcHyY": {
-          "type": "column",
-          "settings": {
-            "title": "SET UP SENSOR + HUB",
-            "text": "Pair your Sensor and Hub to the app and connect to WiFi"
-          }
-        },
-        "column_9F6Jjn": {
-          "type": "column",
-          "settings": {
-            "title": "PLANT YOUR SENSOR",
-            "text": "Get actionable alerts and plant score updates within hours"
-          }
-        },
-        "column_eiDHci": {
-          "type": "column",
-          "settings": {
-            "title": "CARE FOR YOUR PLANT",
-            "text": "Learn simpler, smarter plant care with Willow"
-          }
-        }
-      },
-      "block_order": [
-        "column_t6cpmJ",
-        "column_HzcHyY",
-        "column_9F6Jjn",
-        "column_eiDHci"
-      ],
-      "settings": {
-        "heading": "GETTING STARTED IS SO SIMPLE",
-        "heading_size": "h1",
-        "layout": "above",
-        "mobile_columns": "2",
-        "color_scheme": "scheme-2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -274,7 +239,6 @@
     "image_banner",
     "multicolumn",
     "multicolumn_AYpFY7",
-    "how_it_works_BpkhVH",
     "featured_collection_8M8dKL",
     "featured_blog_x46bzN"
   ]
