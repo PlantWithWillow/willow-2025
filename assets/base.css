@@ -1251,7 +1251,7 @@ deferred-media {
 
 .button--outline {  
   --alpha-button-background: 0;
-  border-color: var(--color-button-text);
+  --alpha-button-border: 1;
 }
 
 .button--secondary.button--outline {

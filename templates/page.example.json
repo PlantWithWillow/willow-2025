@@ -83,7 +83,7 @@
             "button_label": "Button label",
             "button_link": "shopify://pages/about",
             "button_style_secondary": false,
-            "button_outline": false,
+            "button_outline": true,
             "button_label_2": "Secondary button label",
             "button_link_2": "shopify://pages/about",
             "button_style_secondary_2": true,
