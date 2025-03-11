@@ -595,11 +595,11 @@
         "button_8eTAcP": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Primary button",
             "button_link": "shopify://pages/about",
             "button_style_cta": false,
             "button_outline": false,
-            "button_label_2": "Secondary button label",
+            "button_label_2": "CTA button",
             "button_link_2": "shopify://pages/about",
             "button_style_cta_2": true,
             "button_outline_2": false
@@ -743,11 +743,11 @@
         "button_8eTAcP": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "CTA button",
             "button_link": "shopify://pages/about",
-            "button_style_cta": false,
+            "button_style_cta": true,
             "button_outline": false,
-            "button_label_2": "Secondary button label",
+            "button_label_2": "Primary button",
             "button_link_2": "shopify://pages/about",
             "button_style_cta_2": false,
             "button_outline_2": false
