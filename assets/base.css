@@ -76,7 +76,8 @@
 }
 
 .product-card-wrapper .card,
-.contains-card--product {
+.contains-card--product,
+.how-it-works-card {
   --border-radius: var(--product-card-corner-radius);
   --border-width: var(--product-card-border-width);
   --border-opacity: var(--product-card-border-opacity);

@@ -121,29 +121,29 @@
         "column_t6cpmJ": {
           "type": "column",
           "settings": {
-            "title": "Install App",
-            "text": "Caption"
+            "title": "Install the App",
+            "text": "Free to download on iOS and Android"
           }
         },
         "column_HzcHyY": {
           "type": "column",
           "settings": {
-            "title": "Title",
-            "text": "Caption"
+            "title": "SET UP SENSOR + HUB",
+            "text": "Pair your Sensor and Hub to the app and connect to WiFi"
           }
         },
         "column_9F6Jjn": {
           "type": "column",
           "settings": {
-            "title": "Title",
-            "text": "Caption"
+            "title": "PLANT YOUR SENSOR",
+            "text": "Get actionable alerts and plant score updates within hours"
           }
         },
         "column_eiDHci": {
           "type": "column",
           "settings": {
-            "title": "Title",
-            "text": "Caption"
+            "title": "CARE FOR YOUR PLANT",
+            "text": "Learn simpler, smarter plant care with Willow"
           }
         }
       },
