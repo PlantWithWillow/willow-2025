@@ -60,7 +60,7 @@
           },
           {
             "type": "color",
-            "id": "link",
+            "id": "color_link",
             "label": "Link Color",
             "default": "#03594D"
           },
