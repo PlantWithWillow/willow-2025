@@ -117,10 +117,10 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
-    "cart_drawer_collection": "",
+    "cart_drawer_collection": "packs",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -141,36 +141,37 @@
         "settings": {
           "background": "#f8f7f2",
           "background_gradient": "",
-          "text": "#03594D",
-          "color_link": "#508AF5",
-          "button": "#03594D",
+          "text": "#03594d",
+          "color_link": "#508af5",
+          "button": "#03594d",
           "button_label": "#f8f7f2",
           "secondary_button": "#f8f7f2",
-          "secondary_button_label": "#03594D",
-          "shadow": "#03594D"
+          "secondary_button_label": "#03594d",
+          "shadow": "#03594d"
         }
       },
       "scheme-2": {
         "settings": {
-          "background": "#DDE4D5",
+          "background": "#dde4d5",
           "background_gradient": "",
-          "text": "#03594D",
-          "color_link": "#508AF5",
-          "button": "#03594D",
+          "text": "#03594d",
+          "color_link": "#508af5",
+          "button": "#03594d",
           "button_label": "#f8f7f2",
           "secondary_button": "#f8f7f2",
-          "secondary_button_label": "#03594D",
-          "shadow": "#03594D"
+          "secondary_button_label": "#03594d",
+          "shadow": "#03594d"
         }
       },
       "scheme-3": {
         "settings": {
-          "background": "#03594D",
+          "background": "#03594d",
           "background_gradient": "",
           "text": "#f8f7f2",
+          "color_link": "#03594D",
           "button": "#f8f7f2",
-          "button_label": "#03594D",
-          "secondary_button": "#03594D",
+          "button_label": "#03594d",
+          "secondary_button": "#03594d",
           "secondary_button_label": "#f8f7f2",
           "shadow": "#f8f7f2"
         }
@@ -179,24 +180,25 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#03594D",
-          "color_link": "#508AF5",
-          "button": "#03594D",
+          "text": "#03594d",
+          "color_link": "#508af5",
+          "button": "#03594d",
           "button_label": "#f8f7f2",
           "secondary_button": "#f8f7f2",
-          "secondary_button_label": "#03594D",
-          "shadow": "#03594D"
+          "secondary_button_label": "#03594d",
+          "shadow": "#03594d"
         }
       },
       "scheme-5": {
         "settings": {
-          "background": "#D1FEA4",
+          "background": "#d1fea4",
           "background_gradient": "",
-          "text": "#03594D",
-          "button": "#03594D",
+          "text": "#03594d",
+          "color_link": "#03594D",
+          "button": "#03594d",
           "button_label": "#f8f7f2",
           "secondary_button": "#f8f7f2",
-          "secondary_button_label": "#03594D",
+          "secondary_button_label": "#03594d",
           "shadow": "#f8f7f2"
         }
       }
