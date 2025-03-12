@@ -2497,7 +2497,7 @@ input[type='checkbox'] {
 }
 
 .header__heading-logo-wrapper {
-  width: 100%;
+  width: 140px;
   display: inline-block;
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
 }
@@ -2507,10 +2507,13 @@ input[type='checkbox'] {
   .header__heading-link {
     justify-self: start;
   }
+  .header__heading-logo-wrapper {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 989px) {
   .header__heading {
-    padding-left: 1rem;
+    padding: 1rem;
   }
 }
 
