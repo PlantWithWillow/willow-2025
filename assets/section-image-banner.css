@@ -586,9 +586,7 @@
     font-size: 3.6rem;
   }
   .banner.split .banner__text {
-    padding-left: 0;
-    padding-top: 70px;
-    margin-bottom: 0;
+    padding-left: 10rem;
   }
   .banner.split .banner__text:before {
     transform: scale(0.9);
@@ -603,5 +601,12 @@
   .banner__buttons .button {
     flex-grow: 0;
     min-width: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner.split .banner__text {
+    padding-left: 0;
+    padding-top: 70px;
+    margin-bottom: 0;
   }
 }
