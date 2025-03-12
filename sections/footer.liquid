@@ -21,17 +21,134 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   <div class="footer__content-top page-width">
+    <div class="newsletter center">
+      <div class="newsletter__wrapper content-container">
+        <h2
+          class="inline-richtext h1{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          {{ section.settings.newsletter_heading }}
+        </h2>
+        <div
+          class="newsletter__subheading rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          {{ section.settings.newsletter_paragraph }}
+        </div>
+        <div>
+          {% form 'customer', class: 'newsletter-form' %}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div
+              class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+              {% endif %}
+            >
+              <div class="field">
+                <input
+                  id="NewsletterForm--{{ section.id }}"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  {% if form.errors %}
+                    autofocus
+                    aria-invalid="true"
+                    aria-describedby="Newsletter-error--{{ section.id }}"
+                  {% elsif form.posted_successfully? %}
+                    aria-describedby="Newsletter-success--{{ section.id }}"
+                  {% endif %}
+                  placeholder="{{ 'newsletter.label' | t }}"
+                  required
+                >
+                <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  {{ 'newsletter.label' | t }}
+                </label>
+                <button
+                  type="submit"
+                  class="newsletter-form__button field__button"
+                  name="commit"
+                  id="Subscribe"
+                  aria-label="{{ 'newsletter.button_label' | t }}"
+                >
+                  <span class="svg-wrapper">
+                    {{- 'icon-arrow.svg' | inline_asset_content -}}
+                  </span>
+                </button>
+              </div>
+              {%- if form.errors -%}
+                <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                  <span class="svg-wrapper">
+                    {{- 'icon-error.svg' | inline_asset_content -}}
+                  </span>
+                  {{- form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email -}}
+                </small>
+              {%- endif -%}
+            </div>
+            {%- if form.posted_successfully? -%}
+              <h3
+                class="newsletter-form__message newsletter-form__message--success form__message"
+                id="Newsletter-success--{{ section.id }}"
+                tabindex="-1"
+                autofocus
+              >
+                <span class="svg-wrapper">
+                  {{- 'icon-success.svg' | inline_asset_content -}}
+                </span>
+                {{- 'newsletter.success' | t }}
+              </h3>
+            {%- endif -%}
+          {% endform %}
+        </div>
+      </div>
+    </div>
+
     <div
-      class="footer-block grid__item footer-block--menu{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-      {{ block.shopify_attributes }}
+      class="footer--menu grid grid--3-col-tablet grid--2-col-mobile{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       {% if settings.animations_reveal_on_scroll %}
         data-cascade
         style="--animation-order: {{ forloop.index }};"
       {% endif %}
     >
-      {%- if section.settings.menu != blank -%}
-        <ul class="footer-block__details-content list-unstyled">
-          {%- for link in section.settings.menu.links -%}
+      <ul class="footer-block__details-content list-unstyled grid__item tablet-up" role="list">
+        {%- if settings.social_facebook_link != blank -%}
+          <li>
+            <a href="{{ settings.social_facebook_link }}" class="list-menu__item--link link">
+              <span class="name">{{ 'general.social.links.facebook' | t }}</span>
+            </a>
+          </li>
+        {%- endif -%}
+        {%- if settings.social_instagram_link != blank -%}
+          <li>
+            <a href="{{ settings.social_instagram_link }}" class="list-menu__item--link link">
+              <span class="name">{{ 'general.social.links.instagram' | t }}</span>
+            </a>
+          </li>
+        {%- endif -%}
+        {%- if settings.social_tiktok_link != blank -%}
+          <li>
+            <a href="{{ settings.social_tiktok_link }}" class="list-menu__item--link link">
+              <span class="name">{{ 'general.social.links.tiktok' | t }}</span>
+            </a>
+          </li>
+        {%- endif -%}
+      </ul>
+
+      {%- if linklists.footer -%}
+        <ul class="footer-block__details-content list-unstyled grid__item">
+          {%- for link in linklists.footer.links -%}
             <li>
               <a
                 href="{{ link.url }}"
@@ -44,9 +161,30 @@
         </ul>
       {%- endif -%}
 
-      {%- if section.settings['menu-2'] != blank -%}
-        <ul class="footer-block__details-content list-unstyled">
-          {%- for link in section.settings['menu-2'].links -%}
+      {%- if linklists['footer-2'] != blank -%}
+        <ul class="footer-block__details-content list-unstyled grid__item">
+          {%- if settings.social_facebook_link != blank -%}
+            <li class="mobile">
+              <a href="{{ settings.social_facebook_link }}" class="list-menu__item--link link">
+                <span class="name">{{ 'general.social.links.facebook' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.social_instagram_link != blank -%}
+            <li class="mobile">
+              <a href="{{ settings.social_instagram_link }}" class="list-menu__item--link link">
+                <span class="name">{{ 'general.social.links.instagram' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.social_tiktok_link != blank -%}
+            <li class="mobile">
+              <a href="{{ settings.social_tiktok_link }}" class="list-menu__item--link link">
+                <span class="name">{{ 'general.social.links.tiktok' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- for link in linklists['footer-2'].links -%}
             <li>
               <a
                 href="{{ link.url }}"
@@ -141,6 +279,22 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Newsletter"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "newsletter_heading",
+      "default": "Emails you'll be frond of",
+      "label": "Newsletter Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "newsletter_paragraph",
+      "default": "Plant-y of deals and content you'll dig, right to your inbox",
+      "label": "Newsletter Paragraph"
     },
     {
       "type": "header",
