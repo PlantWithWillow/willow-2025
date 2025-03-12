@@ -532,7 +532,7 @@
 }
 @media screen and (max-width: 749px) {
   .banner.split .banner__box {
-    padding: 0 2.4rem 3rem;
+    padding: 1rem 3rem 3rem;
   }
   .banner.split .banner__media {
     height: 87.7vw;
@@ -586,7 +586,7 @@
     font-size: 3.6rem;
   }
   .banner.split .banner__text {
-    padding-left: 10rem;
+    padding-left: 11rem;
   }
   .banner.split .banner__text:before {
     transform: scale(0.9);
