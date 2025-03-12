@@ -54,7 +54,7 @@
 }
 
 .menu-drawer__navigation {
-  padding: 3rem;
+  padding: 3rem 3rem 2rem;
 }
 
 .menu-drawer__navigation .button {
@@ -62,7 +62,7 @@
   width: 100%;
   text-align: left;
   margin-bottom: 1rem;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 .menu-drawer__inner-submenu {
@@ -216,7 +216,6 @@
 }
 .menu-drawer .submenu a {
   padding: 1rem 0;
-  margin-bottom: 0.5rem;
   font-size: 1.6rem;
 }
 .menu-drawer .list-social {
