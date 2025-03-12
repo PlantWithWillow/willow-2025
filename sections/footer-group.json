@@ -11,21 +11,54 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "0c10f238-6c14-4ffa-a4d4-397b1f471be0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Emails you'll be frond of",
+            "heading_size": "h0"
+          }
+        },
+        "0a2944d2-0559-4709-8d4d-a0d623a55dcd": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><em>Plant-y of deals and content you'll dig, right to your inbox</em></p>"
+          }
+        },
+        "7a5ac6c8-978b-4556-ae34-67e4febc99ad": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "0c10f238-6c14-4ffa-a4d4-397b1f471be0",
+        "0a2944d2-0559-4709-8d4d-a0d623a55dcd",
+        "7a5ac6c8-978b-4556-ae34-67e4febc99ad"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "",
             "menu": "footer"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "",
+            "menu": "footer-2"
           }
         }
       },
@@ -50,6 +83,7 @@
     }
   },
   "order": [
+    "newsletter",
     "footer"
   ]
 }
