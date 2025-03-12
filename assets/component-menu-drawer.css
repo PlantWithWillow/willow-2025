@@ -62,7 +62,7 @@
   width: 100%;
   text-align: left;
   margin-bottom: 1rem;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 
 .menu-drawer__inner-submenu {
@@ -216,14 +216,14 @@
 }
 .menu-drawer .submenu a {
   padding: 1rem 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
 }
 .menu-drawer .list-social {
-  justify-content: flex-start;
+  display: block;
 }
 .menu-drawer .list-social a {
   text-decoration: none;
-  font-size: 1.8rem;
 }
 .menu-drawer .list-social span.svg-wrapper {
   visibility: hidden;
