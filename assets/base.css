@@ -76,8 +76,7 @@
 }
 
 .product-card-wrapper .card,
-.contains-card--product,
-.how-it-works-card {
+.contains-card--product {
   --border-radius: var(--product-card-corner-radius);
   --border-width: var(--product-card-border-width);
   --border-opacity: var(--product-card-border-opacity);
@@ -509,6 +508,8 @@ table:not([class]) th {
 
 .center {
   text-align: center;
+  align-self: center;
+  justify-self: center;
 }
 
 .right {
@@ -2480,6 +2481,7 @@ input[type='checkbox'] {
   display: inline-block;
   text-decoration: none;
   word-break: break-word;
+  padding-left: 1rem;
 }
 
 .header__heading-link:hover .h2 {
@@ -2513,7 +2515,7 @@ input[type='checkbox'] {
 }
 @media screen and (max-width: 989px) {
   .header__heading-link {
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 1rem;
   }
 }
 
@@ -2595,6 +2597,13 @@ input[type='checkbox'] {
     width: 3.6rem;
     padding: 0;
     position: relative;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__icon,
+  .header__icon--cart .icon {
+    height: 3rem;
+    width: 3rem;
   }
 }
 

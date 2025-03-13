@@ -149,6 +149,7 @@
       "settings": {
         "title": "",
         "heading_size": "hxl",
+        "header_alignment": "center",
         "image_width": "full",
         "image_ratio": "square",
         "button_label": "",
@@ -221,6 +222,7 @@
       "settings": {
         "title": "Getting started is so simple",
         "heading_size": "h1",
+        "header_alignment": "center",
         "image_width": "full",
         "image_ratio": "square",
         "button_label": "",

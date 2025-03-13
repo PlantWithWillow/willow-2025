@@ -87,6 +87,10 @@
   margin: 0;
 }
 
+.multicolumn-card__info > *:first-child {
+  margin-top: 0;
+}
+
 .multicolumn-card-spacing {
   padding-top: 2.5rem;
   margin-left: 2.5rem;
@@ -161,7 +165,7 @@
 }
 
 .background-none .multicolumn-card__image-wrapper + .multicolumn-card__info {
-  padding-top: 2.5rem;
+  padding-top: 1rem;
 }
 
 .background-none .slider .multicolumn-card__info {
