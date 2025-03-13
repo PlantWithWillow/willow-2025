@@ -421,8 +421,11 @@
         "heading_size": "h1",
         "paragraph": "18,000 plants saved worldwide and counting. Now that’s responsible plant parenting.",
         "heading_alignment": "center",
+        "button_label": "See all reviews",
+        "button_link": "#",
         "color_scheme": "scheme-2",
-        "full_width": true,
+        "swipe_on_mobile": true,
+        "columns_mobile": "1",
         "padding_top": 40,
         "padding_bottom": 52
       }

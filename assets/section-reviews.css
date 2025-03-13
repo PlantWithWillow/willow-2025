@@ -1,0 +1,72 @@
+.reviews-wrapper .subtitle {
+  max-width: calc(var(--page-width) * 0.4);
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews-cards.grid {
+  padding: 3rem 0;
+  gap: 2rem;
+}
+.reviews-wrapper .review-card.card--card {
+  --border-radius: 3rem;
+  color: rgb(var(--color-charcoal-black))
+}
+.review-card .card__information {
+  text-align: center;
+  justify-content: center;
+}
+.review-card.card .card__inner .review-card__image-wrapper > .media.card__media {
+  width: calc(100% - 4rem);
+  top: 2rem;
+  left: 2rem;
+  border-radius: calc(var(--border-radius) * 0.6);
+}
+.review-card .card__content .review-content {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 750px) {
+  .review-card .card__information {
+      padding-bottom: 1.3rem;
+      padding-top: 1.3rem;
+  }
+}
+.review-card .card__content .review-content .truncated {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+          line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.review-card .card__content .review-content .full {
+  height: 0;
+  overflow:hidden;
+}
+.review-card .card__content .review-content input.readmore {
+  display: none;
+}
+.review-card .card__content .review-content input.readmore:checked ~ .full {
+  height: auto;
+}
+.review-card .card__content .review-content input.readmore:not(:checked) ~ label span.less,
+.review-card .card__content .review-content input.readmore:checked ~ label span.more {
+  display: none;
+}
+
+.review-card .card__content .review-content label {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.4rem 1.6rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  background: rgb(var(--color-lavender));
+  text-transform: uppercase;
+}
+
+.review-card .verified {
+  padding-top: 2rem;
+  font-size: 1.15rem;
+}
+.review-card .verified svg {
+  margin-top: 2px;
+}
