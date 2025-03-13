@@ -287,7 +287,6 @@ function debounce(fn, wait) {
   };
 }
 
-
 function throttle(fn, delay) {
   let lastCall = 0;
   return function (...args) {
@@ -735,6 +734,8 @@ class SliderComponent extends HTMLElement {
     this.pageTotalElement = this.querySelector('.slider-counter--total');
     this.prevButton = this.querySelector('button[name="previous"]');
     this.nextButton = this.querySelector('button[name="next"]');
+    this.sliderControlWrapper = this.querySelector('.slider-buttons');
+    this.sliderFirstItemNode = this.slider.querySelector('.slider__slide');
 
     if (!this.slider || !this.nextButton) return;
 
@@ -745,6 +746,9 @@ class SliderComponent extends HTMLElement {
     this.slider.addEventListener('scroll', this.update.bind(this));
     this.prevButton.addEventListener('click', this.onButtonClick.bind(this));
     this.nextButton.addEventListener('click', this.onButtonClick.bind(this));
+
+    this.sliderControlLinksArray = Array.from(this.sliderControlWrapper.querySelectorAll('.slider-counter__link'));
+    this.sliderControlLinksArray.forEach((link) => link.addEventListener('click', this.linkToSlide.bind(this)));
   }
 
   initPages() {
@@ -800,6 +804,19 @@ class SliderComponent extends HTMLElement {
     } else {
       this.nextButton.removeAttribute('disabled');
     }
+
+    /* Dots */
+    this.sliderControlButtons = this.querySelectorAll('.slider-counter__link');
+    this.prevButton.removeAttribute('disabled');
+
+    if (!this.sliderControlButtons.length) return;
+
+    this.sliderControlButtons.forEach((link) => {
+      link.classList.remove('slider-counter__link--active');
+      link.removeAttribute('aria-current');
+    });
+    this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
+    this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
   }
 
   isSlideVisible(element, offset = 0) {
@@ -822,6 +839,12 @@ class SliderComponent extends HTMLElement {
       left: position,
     });
   }
+
+  linkToSlide(event) {
+    event.preventDefault();
+    this.slideScrollPosition = (event.currentTarget.dataset.target - 1) * this.sliderItemOffset;
+    this.setSlidePosition(this.slideScrollPosition);
+  }
 }
 
 customElements.define('slider-component', SliderComponent);
@@ -829,6 +852,7 @@ customElements.define('slider-component', SliderComponent);
 class SlideshowComponent extends SliderComponent {
   constructor() {
     super();
+
     this.sliderControlWrapper = this.querySelector('.slider-buttons');
     this.enableSliderLooping = true;
 
@@ -1282,51 +1306,39 @@ if (!customElements.get('bulk-add')) {
 }
 
 class CartPerformance {
-  static #metric_prefix = "cart-performance"
+  static #metric_prefix = 'cart-performance';
 
   static createStartingMarker(benchmarkName) {
-    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
+    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`;
     return performance.mark(`${metricName}:start`);
   }
 
   static measureFromEvent(benchmarkName, event) {
-    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
+    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`;
     const startMarker = performance.mark(`${metricName}:start`, {
-      startTime: event.timeStamp
+      startTime: event.timeStamp,
     });
 
     const endMarker = performance.mark(`${metricName}:end`);
 
-    performance.measure(
-      benchmarkName,
-      `${metricName}:start`,
-      `${metricName}:end`
-    );
+    performance.measure(benchmarkName, `${metricName}:start`, `${metricName}:end`);
   }
 
   static measureFromMarker(benchmarkName, startMarker) {
-    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
+    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`;
     const endMarker = performance.mark(`${metricName}:end`);
 
-    performance.measure(
-      benchmarkName,
-      startMarker.name,
-      `${metricName}:end`
-    );
+    performance.measure(benchmarkName, startMarker.name, `${metricName}:end`);
   }
 
   static measure(benchmarkName, callback) {
-    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`
+    const metricName = `${CartPerformance.#metric_prefix}:${benchmarkName}`;
     const startMarker = performance.mark(`${metricName}:start`);
 
     callback();
 
     const endMarker = performance.mark(`${metricName}:end`);
 
-    performance.measure(
-      benchmarkName,
-      `${metricName}:start`,
-      `${metricName}:end`
-    );
+    performance.measure(benchmarkName, `${metricName}:start`, `${metricName}:end`);
   }
 }

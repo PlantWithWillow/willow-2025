@@ -140,3 +140,25 @@
     }
   }
 }
+
+
+.article-card .tag--pill {
+  display: inline-block;
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+}
+.article-card .tag--pill.Plant.Care {
+  background: rgb(var(--color-pothos-green));
+  color: rgb(var(--color-charcoal-black));
+}
+.article-card .tag--pill.Soil {
+  background: rgb(var(--color-orange));
+  color: rgb(var(--color-charcoal-block));
+}
+.article-card .tag--pill.Support {
+  background: rgb(var(--color-lavender));
+  color: rgb(var(--color-charcoal-block));
+}

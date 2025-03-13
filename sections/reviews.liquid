@@ -41,7 +41,7 @@
 
     <slider-component class="slider-mobile-gutter">
       <ul
-        class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--4-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %}"
+        class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--4-col-desktop{% if show_mobile_slider %} slider slider--tablet{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -137,16 +137,19 @@
           >
             <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
           </button>
+          <div class="slider-counter slider-counter--dots">
             <div class="slideshow__control-wrapper">
               {%- for review in shop.metaobjects.review.values limit: 4 -%}
                 <button
-                  class="slider-counter__link slider-counter__link--dots link {% if forloop.index == 1 %} slider-counter__link--active{%  endif %}"
+                  class="slider-counter__link slider-counter__link--dots link"
                   aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                   aria-controls="Slider-{{ section.id }}"
+                  data-target="{{ forloop.index }}"
                 >
                   <span class="dot"></span>
                 </button>
               {%- endfor -%}
+            </div>
           </div>
           <button
             type="button"
@@ -159,21 +162,20 @@
         </div>
       {%- endif -%}
     </slider-component>
-    </div>
-    <div class="center">
-      {%- if section.settings.button_label != blank -%}
-        <a
-          class="button button--primary"
-          {% if section.settings.button_link == blank %}
-            role="link" aria-disabled="true"
-          {% else %}
-            href="{{ section.settings.button_link }}"
-          {% endif %}
-        >
-          {{ section.settings.button_label | escape }}
-        </a>
-      {%- endif -%}
-    </div>
+  </div>
+  <div class="center">
+    {%- if section.settings.button_label != blank -%}
+      <a
+        class="button button--primary"
+        {% if section.settings.button_link == blank %}
+          role="link" aria-disabled="true"
+        {% else %}
+          href="{{ section.settings.button_link }}"
+        {% endif %}
+      >
+        {{ section.settings.button_label | escape }}
+      </a>
+    {%- endif -%}
   </div>
 </div>
 
