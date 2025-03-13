@@ -57,16 +57,13 @@
             endif
           endfor
         -%}
-        {%- for block in section.blocks -%}
-          {%- assign empty_column = '' -%}
-          {%- if block.settings.image == blank
-            and block.settings.title == blank
-            and block.settings.text == blank
-            and block.settings.link_label == blank
+        {% for review in shop.metaobjects.review.values limit: 4 %}
+          {%- liquid
+            assign rating = review.rating.value
+            assign id = review.system.handle
+            assign image = review.image.value
+            assign ratio = 1.2
           -%}
-            {%- assign empty_column = ' multicolumn-list__item--empty' -%}
-          {%- endif -%}
-
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -76,75 +73,70 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container{% if section.settings.card_color_scheme %} color-{{ section.settings.card_color_scheme }}{%- endif -%}">
-              {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div
-                    class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}
-                  >
-                    {%- liquid
-                      assign number_of_columns = section.settings.columns_desktop
-                      assign number_of_columns_mobile = section.settings.columns_mobile
-                      assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                      assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                      assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
-                      if section.settings.image_width == 'half'
-                        assign image_width = 0.5
-                      elsif section.settings.image_width == 'third'
-                        assign image_width = 0.33
-                      else
-                        assign image_width = 1
-                      endif
-                    -%}
-                    {% capture sizes %}
-                      (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
-                      (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
-                      (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
-                      calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
-                    {% endcapture %}
-                    {{
-                      block.settings.image
-                      | image_url: width: 3200
-                      | image_tag:
-                        widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                        sizes: sizes,
-                        class: 'multicolumn-card__image'
-                    }}
+            <div class="card-wrapper">
+              <div class="card review-card card--card card--media color-scheme-4">
+                <div
+                  class="card__inner gradient ratio"
+                  style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+                >
+                  <div class="review-card__image-wrapper">
+                    <div
+                      class="review-card__image media card__media"
+                      {% if section.settings.media_height == 'adapt' %}
+                        style="padding-bottom: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;"
+                      {% endif %}
+                    >
+                      {{
+                        image
+                        | image_url: width: 1080
+                        | image_tag:
+                          loading: loadType,
+                          sizes: '(min-width: 990px) calc(55vw - 40px / 2), (min-width: 750px) calc(50vw - 40px / 2)',
+                          widths: '246, 493, 600, 713, 823, 990, 1080'
+                      }}
+                    </div>
                   </div>
                 </div>
-              {%- endif -%}
-              <div class="multicolumn-card__info">
-                {%- if block.settings.pretitle != blank -%}
-                  <div class="rte pretitle">{{ block.settings.pretitle }}</div>
-                {%- endif -%}
-                {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext h2">{{ block.settings.title }}</h3>
-                {%- endif -%}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
-                {%- endif -%}
-                {%- if block.settings.link_label != blank -%}
-                  <a
-                    class="button button--primary"
-                    {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.link }}"
-                    {% endif %}
-                  >
-                    {{- block.settings.link_label | escape -}}
-                  </a>
-                {%- endif -%}
+                <div class="card__content">
+                  <div class="card__information">
+                    <div class="review-rating">
+                      {% assign star_array = '1,2,3,4,5' | split: ',' %}
+                      {% for star in star_array limit: rating %}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                          <path width="20" height="20" fill="#d6bd52" d="M11.1488 2.23197C10.7159 1.22183 9.28382 1.22183 8.85091 2.23197L6.95034 6.66662H2.67243C1.5588 6.66662 1.00109 8.01305 1.78854 8.8005L4.91029 11.9222L3.59487 17.1839C3.32787 18.2519 4.47191 19.1186 5.42772 18.5724L9.99984 15.9597L14.572 18.5724C15.5278 19.1186 16.6718 18.2519 16.4048 17.1839L15.0894 11.9222L18.2111 8.8005C18.9986 8.01304 18.4409 6.66662 17.3272 6.66662H13.0493L11.1488 2.23197Z"></path>
+                        </svg>
+                      {% endfor %}
+                      {% for star in star_array offset: rating %}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                          <path width="20" height="20" fill="#f9efc5" d="M11.1488 2.23197C10.7159 1.22183 9.28382 1.22183 8.85091 2.23197L6.95034 6.66662H2.67243C1.5588 6.66662 1.00109 8.01305 1.78854 8.8005L4.91029 11.9222L3.59487 17.1839C3.32787 18.2519 4.47191 19.1186 5.42772 18.5724L9.99984 15.9597L14.572 18.5724C15.5278 19.1186 16.6718 18.2519 16.4048 17.1839L15.0894 11.9222L18.2111 8.8005C18.9986 8.01304 18.4409 6.66662 17.3272 6.66662H13.0493L11.1488 2.23197Z"></path>
+                        </svg>
+                      {% endfor %}
+                    </div>
+                    <div class="review-content">
+                      <input type="checkbox" class="readmore" id="{{ id }}">
+                      <div class="truncated">
+                        {{ review.content.value }}
+                        <span class="ellipsis">...</span>
+                      </div>
+                      <div class="full">
+                        {{ review.content.value }}
+                      </div>
+                      <label for="{{ id }}" class="readmore-trigger">
+                        Read <span class="more"> more</span><span class="less"> less</span>
+                      </label>
+                      <div class="verified">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.20001 6.97266L6.40001 8.17267L9.10001 5.47266M4.20027 2.06388C4.68256 2.02539 5.14043 1.83573 5.50869 1.52191C6.36803 0.789572 7.63199 0.789572 8.49131 1.52191C8.85959 1.83573 9.31745 2.02539 9.79973 2.06388C10.9253 2.15369 11.819 3.04742 11.9088 4.17292C11.9473 4.65522 12.1369 5.11309 12.4508 5.48134C13.1831 6.34068 13.1831 7.60464 12.4508 8.46397C12.1369 8.83225 11.9473 9.29011 11.9088 9.77239C11.819 10.8979 10.9253 11.7916 9.79973 11.8814C9.31745 11.92 8.85959 12.1096 8.49131 12.4234C7.63199 13.1557 6.36803 13.1557 5.50869 12.4234C5.14043 12.1096 4.68256 11.92 4.20027 11.8814C3.07477 11.7916 2.18104 10.8979 2.09122 9.77239C2.05273 9.29011 1.86308 8.83225 1.54925 8.46397C0.816916 7.60464 0.816916 6.34068 1.54925 5.48134C1.86308 5.11309 2.05273 4.65522 2.09122 4.17292C2.18104 3.04742 3.07477 2.15369 4.20027 2.06388Z" stroke="#232222" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Verified customer
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </li>
-        {%- endfor -%}
+        {% endfor %}
       </ul>
 
       {%- if show_mobile_slider -%}
@@ -205,6 +197,11 @@
       "id": "title",
       "default": "t:sections.multicolumn.settings.title.default",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "paragraph",
+      "label": "Subheading"
     },
     {
       "type": "select",
@@ -422,61 +419,9 @@
       "default": 36
     }
   ],
-  "blocks": [
-    {
-      "type": "column",
-      "name": "t:sections.multicolumn.blocks.column.name",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
-        },
-        {
-          "type": "inline_richtext",
-          "id": "pretitle",
-          "label": "Pretitle"
-        },
-        {
-          "type": "inline_richtext",
-          "id": "title",
-          "default": "t:sections.multicolumn.blocks.column.settings.title.default",
-          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "default": "t:sections.multicolumn.blocks.column.settings.text.default",
-          "label": "t:sections.multicolumn.blocks.column.settings.text.label"
-        },
-        {
-          "type": "text",
-          "id": "link_label",
-          "label": "t:sections.multicolumn.blocks.column.settings.link_label.label",
-          "info": "t:sections.multicolumn.blocks.column.settings.link_label.info"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "t:sections.multicolumn.blocks.column.settings.link.label"
-        }
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "M R",
-      "blocks": [
-        {
-          "type": "column"
-        },
-        {
-          "type": "column"
-        },
-        {
-          "type": "column"
-        }
-      ]
+      "name": "M R"
     }
   ]
 }
