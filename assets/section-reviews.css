@@ -3,8 +3,11 @@
   margin-left: auto;
   margin-right: auto;
 }
-.reviews-cards.grid {
-  padding: 3rem 0;
+.reviews-wrapper slider-component {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.reviews-wrapper .grid {
   gap: 2rem;
 }
 .reviews-wrapper .review-card.card--card {

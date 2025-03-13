@@ -19,7 +19,7 @@
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
-  if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
+  if section.settings.swipe_on_mobile and shop.metaobjects.review.values_count > columns_mobile_int
     assign show_mobile_slider = true
   endif
 -%}
@@ -123,7 +123,7 @@
                 </div>
               </div>
             </div>
-        </li>
+          </li>
         {% endfor %}
       </ul>
 
@@ -137,11 +137,16 @@
           >
             <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
           </button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-            <span class="slider-counter--total">{{ section.blocks.size }}</span>
+            <div class="slideshow__control-wrapper">
+              {%- for review in shop.metaobjects.review.values limit: 4 -%}
+                <button
+                  class="slider-counter__link slider-counter__link--dots link {% if forloop.index == 1 %} slider-counter__link--active{%  endif %}"
+                  aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                  aria-controls="Slider-{{ section.id }}"
+                >
+                  <span class="dot"></span>
+                </button>
+              {%- endfor -%}
           </div>
           <button
             type="button"

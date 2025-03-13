@@ -430,6 +430,22 @@
         "padding_bottom": 52
       }
     },
+    "reviews_2": {
+      "type": "multicolumn-reviews",
+      "settings": {
+        "title": "Hear from our houseplant heros",
+        "heading_size": "h1",
+        "paragraph": "18,000 plants saved worldwide and counting. Now that’s responsible plant parenting.",
+        "heading_alignment": "center",
+        "button_label": "See all reviews",
+        "button_link": "#",
+        "color_scheme": "scheme-2",
+        "swipe_on_mobile": true,
+        "columns_mobile": "1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_blog_x46bzN": {
       "type": "featured-blog",
       "settings": {
@@ -458,6 +474,7 @@
     "multicolumn_76XhtC",
     "logos",
     "reviews_FdTHhi",
+    "reviews_2",
     "featured_blog_x46bzN"
   ]
 }
