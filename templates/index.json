@@ -46,7 +46,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2025-03-12_100708.png",
+        "image": "shopify://shop_images/hero-image-home-wide.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
@@ -66,7 +66,7 @@
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/How_It_Works_-_3.jpg",
+            "image": "shopify://shop_images/pain_point-image-1.png",
             "pretitle": "",
             "title": "Water perfectly",
             "text": "<p>The quickest way to kill a plant? Too little or too much water. Stop guessing over when and how to water with soil moisture analysis and alerts to your phone when it’s thirst-quenching time.</p>",
@@ -77,7 +77,7 @@
         "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/How_It_Works_-_3.jpg",
+            "image": "shopify://shop_images/pain_point-image-2.png",
             "pretitle": "",
             "title": "Find the right light",
             "text": "<p>Plants need the right light to thrive, but figuring out the right sun exposure per plant type is tricky work. Daily ambient light measurements by Willow help you find the best place for your plant.</p>",
@@ -88,7 +88,7 @@
         "column3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/How_It_Works_-_3.jpg",
+            "image": "shopify://shop_images/pain_point-image-3.png",
             "pretitle": "",
             "title": "Create cosy conditions",
             "text": "<p>Too much heat or cold is a recipe for stressed out houseplants. Willow monitors temperature and humidity to keep your plants comfortable in the conditions they crave.</p>",
