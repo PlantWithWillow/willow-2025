@@ -325,6 +325,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "header_alignment": "left",
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "",
@@ -413,6 +414,15 @@
         "padding_bottom": 80
       }
     },
+    "reviews_FdTHhi": {
+      "type": "reviews",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_blog_x46bzN": {
       "type": "featured-blog",
       "settings": {
@@ -440,6 +450,7 @@
     "featured_collection_8M8dKL",
     "multicolumn_76XhtC",
     "logos",
+    "reviews_FdTHhi",
     "featured_blog_x46bzN"
   ]
 }
