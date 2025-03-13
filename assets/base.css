@@ -104,7 +104,8 @@
 }
 
 .article-card-wrapper .card,
-.contains-card--article {
+.contains-card--article,
+.reviews-cards .card {
   --border-radius: var(--blog-card-corner-radius);
   --border-width: var(--blog-card-border-width);
   --border-opacity: var(--blog-card-border-opacity);

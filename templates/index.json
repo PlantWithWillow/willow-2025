@@ -149,7 +149,7 @@
       "settings": {
         "title": "",
         "heading_size": "hxl",
-        "header_alignment": "center",
+        "heading_alignment": "center",
         "image_width": "full",
         "image_ratio": "square",
         "button_label": "",
@@ -222,7 +222,7 @@
       "settings": {
         "title": "Getting started is so simple",
         "heading_size": "h1",
-        "header_alignment": "center",
+        "heading_alignment": "center",
         "image_width": "full",
         "image_ratio": "square",
         "button_label": "",
@@ -325,7 +325,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "header_alignment": "left",
+        "heading_alignment": "left",
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "",
@@ -417,6 +417,10 @@
     "reviews_FdTHhi": {
       "type": "reviews",
       "settings": {
+        "title": "Hear from our houseplant heros",
+        "heading_size": "h1",
+        "paragraph": "18,000 plants saved worldwide and counting. Now that’s responsible plant parenting.",
+        "heading_alignment": "center",
         "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
