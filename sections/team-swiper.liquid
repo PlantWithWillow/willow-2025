@@ -12,6 +12,28 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .team li.slider__slide .team-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  @media screen and (max-width: 989px) {
+    .team li.slider__slide .team-slide {
+      padding: 1rem 2rem;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .team li.slider__slide:nth-child(even) .team-slide {
+      flex-direction: column-reverse;
+    }
+  }
+  .team__image-wrapper img {
+    max-width: 100%;
+    height: auto;
+  }
+  .team__text-wrapper p {
+    font-size: 1.4rem;
+  }
 {%- endstyle -%}
 
 {% assign show_mobile_slider = true %}
@@ -22,29 +44,22 @@
 >
   <div
     class="team section-{{ section.id }}-padding"
-    id="collection-{{ section.id }}"
+    id="team-{{ section.id }}"
     data-id="{{ section.id }}"
   >
-    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+    <div class="title-wrapper center page-width">
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
-      {%- if section.settings.description != blank
-        or section.settings.show_description
-        and section.settings.collection.description != empty
-      -%}
-        <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          {%- if section.settings.show_description -%}
-            {{ section.settings.collection.description }}
-          {%- else -%}
-            {{ section.settings.description -}}
-          {%- endif %}
+      {%- if section.settings.description != blank -%}
+        <div class="description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.description -}}
         </div>
       {%- endif -%}
     </div>
-    New
+
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} slider-component-desktop{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
@@ -53,48 +68,42 @@
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
-        {%- if section.blocks > 0 -%}
-          {% paginate section.blocks by section.settings.columns_desktop %}
-            {%- for block in section.blocks -%}
-              <li
-                id="Slide-{{ section.id }}-{{ forloop.index }}"
-                class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}
-              >
-                Teammember
-              </li>
-            {%- endfor -%}
-          {% endpaginate %}
-        {%- else -%}
-          {%- for i in (1..section.settings.columns_desktop) -%}
-            <li
-              class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-              {% if settings.animations_reveal_on_scroll %}
-                data-cascade
-                style="--animation-order: {{ forloop.index }};"
-              {% endif %}
-            >
-              {% liquid
-                assign ridx = forloop.rindex
-                case ridx
-                  when 5
-                    assign ridx = 1
-                  when 6
-                    assign ridx = 2
-                endcase
-              %}
-              {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
-              {% render 'card-product',
-                show_vendor: section.settings.show_vendor,
-                media_aspect_ratio: section.settings.image_ratio,
-                placeholder_image: placeholder_image
-              %}
-            </li>
-          {%- endfor -%}
-        {%- endif -%}
+        {%- for block in section.blocks -%}
+          <li
+            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            <div class="team-slide center">
+              {%- if block.settings.image != blank -%}
+                <div class="team__image-wrapper ">
+                  {{
+                    block.settings.image
+                    | image_url: width: 750
+                    | image_tag:
+                      loading: 'lazy',
+                      sizes: '(min-width: 300px) 500px, (min-width: 501px) 750px, (min-width: 990px) 350px, 80vw',
+                      widths: '350, 500, 750'
+                  }}
+                </div>
+              {%- endif -%}
+              <div class="team__text-wrapper">
+                {%- if block.settings.title != blank -%}
+                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="rte">{{ block.settings.text }}</div>
+                {%- endif -%}
+                {%- if block.settings.plant != blank -%}
+                  <div class="rte">{{ block.settings.plant }}</div>
+                {%- endif -%}
+              </div>
+            </div>
+          </li>
+        {%- endfor -%}
       </ul>
 
       <div class="slider-buttons">
@@ -109,11 +118,28 @@
             {{- 'icon-caret.svg' | inline_asset_content -}}
           </span>
         </button>
-        <div class="slider-counter caption">
-          <span class="slider-counter--current">1</span>
-          <span aria-hidden="true"> / </span>
-          <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-          <span class="slider-counter--total">{{ products_to_display }}</span>
+        {% if section.blocks.size > 6 %}
+          <div class="slider-counter caption medium-hide large-up-hide">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+            <span class="slider-counter--total">{{ section.blocks.size }}</span>
+          </div>
+        {% endif %}
+
+        <div class="slider-counter slider-counter--dots{% if section.blocks.size > 6 %} small-hide{% endif %}">
+          <div class="slideshow__control-wrapper">
+            {%- for block in section.blocks -%}
+              <button
+                class="slider-counter__link slider-counter__link--dots link"
+                aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                aria-controls="Slider-{{ section.id }}"
+                data-target="{{ forloop.index }}"
+              >
+                <span class="dot"></span>
+              </button>
+            {%- endfor -%}
+          </div>
         </div>
         <button
           type="button"
@@ -182,12 +208,6 @@
       "type": "richtext",
       "id": "description",
       "label": "t:sections.featured-collection.settings.description.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_description",
-      "label": "t:sections.featured-collection.settings.show_description.label",
-      "default": false
     },
     {
       "type": "select",

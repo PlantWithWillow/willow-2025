@@ -245,15 +245,3 @@
   }
 }
 
-.slider-counter__link--dots .dot {
-  width: 1.6rem;
-  height: 1.6rem;
-  border-radius: 50%;
-  /* border: .1rem solid rgba(var(--color-foreground), .5); */
-  padding: 0;
-  display: block;
-  background-color: rgb(var(--color-button-text));
-}
-.slider-counter__link--active.slider-counter__link--dots .dot {
-  background-color: rgb(var(--color-moss-green));
-}
