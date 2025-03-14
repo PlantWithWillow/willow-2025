@@ -137,7 +137,8 @@
       "custom_css": [
         ".multicolumn-list {max-width: 800px; margin-right: auto !important; margin-left: auto !important;}",
         ".multicolumn-card a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin-top: 0; text-indent: -240%; overflow: hidden; background: none;}",
-        ".multicolumn-card a:after {display: none;}"
+        ".multicolumn-card a:after {display: none;}",
+        "h3 {font-size: 2.4rem}"
       ],
       "settings": {
         "title": "Come follow along, wherever you are",
