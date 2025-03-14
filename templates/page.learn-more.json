@@ -80,16 +80,6 @@
         "padding_bottom": 40
       }
     },
-    "leaf-0": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "right",
-        "flip": false,
-        "hide": true,
-        "custom": "philodendron"
-      }
-    },
     "multirow_tHEznz": {
       "type": "multirow",
       "blocks": {
@@ -128,16 +118,6 @@
         "padding_bottom": 52
       }
     },
-    "leaf-1": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "right",
-        "flip": true,
-        "hide": false,
-        "custom": "monstera-2"
-      }
-    },
     "multirow_tHEznz2": {
       "type": "multirow",
       "blocks": {
@@ -174,16 +154,6 @@
         "mobile_content_alignment": "center",
         "padding_top": 32,
         "padding_bottom": 80
-      }
-    },
-    "leaf-12": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "left",
-        "flip": true,
-        "hide": false,
-        "custom": "monstera"
       }
     },
     "multirow_R7tEYD": {
@@ -303,16 +273,6 @@
         "padding_bottom": 80
       }
     },
-    "leaf-2": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "right",
-        "flip": true,
-        "hide": false,
-        "custom": "palm-2"
-      }
-    },
     "circle_image_and_text_6Ld9YV": {
       "type": "circle-image-and-text",
       "blocks": {
@@ -379,16 +339,6 @@
         "padding_bottom": 80
       }
     },
-    "leaf-3": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "left",
-        "flip": false,
-        "hide": false,
-        "custom": "monstera-2"
-      }
-    },
     "video_TEfUFq": {
       "type": "video",
       "settings": {
@@ -444,16 +394,6 @@
         "padding_bottom": 80
       }
     },
-    "leaf-4": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "right",
-        "flip": true,
-        "hide": false,
-        "custom": "palm-2"
-      }
-    },
     "rich_text_QLeGyD": {
       "type": "rich-text",
       "blocks": {
@@ -501,19 +441,13 @@
     "main",
     "image_banner_NBkQkG",
     "rich_text_L7Ad6V",
-    "leaf-0",
     "multirow_tHEznz",
-    "leaf-1",
     "multirow_tHEznz2",
-    "leaf-12",
     "multirow_R7tEYD",
     "circle_image_and_text_QMR79k",
-    "leaf-2",
     "circle_image_and_text_6Ld9YV",
-    "leaf-3",
     "video_TEfUFq",
     "multirow_6VwBE8",
-    "leaf-4",
     "rich_text_QLeGyD"
   ]
 }
