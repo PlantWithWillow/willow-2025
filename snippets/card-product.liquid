@@ -286,6 +286,21 @@
                 </quantity-popover>
               {% endif %}
             {%- endif -%}
+
+            {% assign text = '' %}
+            {%- if card_product.handle contains 'starter' -%}
+              {% assign text = 'For 1 plant: 1 Sensor + 1 Hub' %}
+            {%- elsif card_product.handle contains 'parent' -%}
+              {% assign text = 'For 3 plant: 3 Sensors + 1 Hub' %}
+            {%- elsif card_product.handle contains 'urban' -%}
+              {% assign text = 'For 5 plant: 5 Sensors + 1 Hub' %}
+            {%- endif -%}
+
+            {%- if text != blank -%}
+              <p class="perfect" style="line-height:1.2;margin: 10px 0 0 0">
+                {{ text }}
+              </p>
+            {%- endif -%}
           </div>
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
