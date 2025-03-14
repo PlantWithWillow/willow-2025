@@ -126,6 +126,7 @@
 }
 
 .image-with-text .image-with-text__text-item > * {
+  border-radius: 0;
   overflow: hidden;
   box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
     var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));

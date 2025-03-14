@@ -1,0 +1,419 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "edb3b2bd-5ccf-43b5-ba87-b1b1ef4347c1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20696651464991__edb3b2bd-5ccf-43b5-ba87-b1b1ef4347c1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Setup Guide",
+            "heading_size": "h1"
+          }
+        },
+        "template--20696651464991__edb3b2bd-5ccf-43b5-ba87-b1b1ef4347c1-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You've got some hardware! To make the most of your Willow devices, have a read of the following tips and guides. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20696651464991__edb3b2bd-5ccf-43b5-ba87-b1b1ef4347c1-heading-1",
+        "template--20696651464991__edb3b2bd-5ccf-43b5-ba87-b1b1ef4347c1-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_rmRBQ6": {
+      "type": "rich-text",
+      "blocks": {
+        "text_wHebqk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You need the app to connect your Hub and Sensor, so don't skip this step!  <a href=\"https://onelink.to/mrywgh\" target=\"_blank\" title=\"https://onelink.to/mrywgh\">Install the free Plant with Willow app</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_wHebqk"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_9pMqkc": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Bmj8Ry": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Google-Play-badge-white.png",
+            "title": "",
+            "text": "",
+            "link_label": "Get App on Google Play",
+            "link": "https://play.google.com/store/apps/details?id=com.willow.app"
+          }
+        },
+        "column_bEYJqb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/App-Store-badge-white.png",
+            "title": "",
+            "text": "",
+            "link_label": "Get App on App Store",
+            "link": "https://apps.apple.com/us/app/plant-with-willow/id1642293839"
+          }
+        }
+      },
+      "block_order": [
+        "column_Bmj8Ry",
+        "column_bEYJqb"
+      ],
+      "custom_css": [
+        "ul {gap: 1rem; max-width: 483px; margin: 0 auto; padding-top: 2rem; justify-content: center; align-items: center; flex-wrap: nowrap;}",
+        ".multicolumn-card__info {padding-top: 0;}",
+        ".multicolumn-card__info a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; margin-top: 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ee6dd536-7d3e-4f03-97a5-842074aeeb7a": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/xjQmYBRI7lA",
+        "cover_image": "shopify://shop_images/Artboard_1.png",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d197911e-757e-4887-9762-4cd4dc6ade2b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16335671623811__d197911e-757e-4887-9762-4cd4dc6ade2b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you are encountering any issues setting up your Sensors and Hub, check out our <a href=\"/pages/support\" title=\"Support\">Support Page</a> or reach out to us at <a href=\"mailto:support@plantwithwillow.com.au\" title=\"mailto:support@plantwithwillow.com.au\">support@plantwithwillow.com.au</a> and we'll be happy to help get you up and running!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16335671623811__d197911e-757e-4887-9762-4cd4dc6ade2b-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "7ec7b0be-4c74-4773-bf96-ef5df003ac8f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20696651464991__7ec7b0be-4c74-4773-bf96-ef5df003ac8f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quick Tips",
+            "heading_size": "h1"
+          }
+        },
+        "template--20696651464991__7ec7b0be-4c74-4773-bf96-ef5df003ac8f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With fun infographics</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20696651464991__7ec7b0be-4c74-4773-bf96-ef5df003ac8f-heading-1",
+        "template--20696651464991__7ec7b0be-4c74-4773-bf96-ef5df003ac8f-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "29a045cf-eed8-4d0e-93eb-d1d09403e3bb": {
+      "type": "multirow",
+      "blocks": {
+        "template--16334815297667__29a045cf-eed8-4d0e-93eb-d1d09403e3bb-row-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/remove-cap.svg",
+            "caption": "",
+            "heading": "Remove the protective cap from the bottom of your Sensor.",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "2a60f43c-35db-4b95-b216-9985855230fd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/surface-hardness.svg",
+            "caption": "",
+            "heading": "Take care if soil surface is overly hard or compacted. Aerate soil first.",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "fc876ee9-434e-4bc1-afa3-9eb0449d5e6e": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Setup-4.jpg",
+            "caption": "",
+            "heading": "Don't submerge in liquid and don't go past 'Max Soil Level' when planting in soil.",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "fbc1df89-7537-4d47-8811-bdb62353f99c": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Setup-7.jpg",
+            "caption": "",
+            "heading": "Place Sensor with light pipe facing closest light source (i.e. window).",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "940b5692-e666-4a23-aa1b-19c4fbb56147": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/remove-obstructions_439a2fbe-986b-4ec9-a6ac-b76ae1ef812a.svg",
+            "caption": "",
+            "heading": "Ensure view is unobstructed. A Large Pot Extension may be required for added height.",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "29e25b0a-f686-404e-b9c2-6f1cf748fab0": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Setup-8.jpg",
+            "caption": "",
+            "heading": "Consider your Sensors' Bluetooth works within a 20m radius of your Hub without obstacles.",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "27402727-fbf8-488d-89e3-8a3235adf09d": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Setup-5.jpg",
+            "caption": "",
+            "heading": "Take care not to damage your device.",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "44b97615-420d-4126-aa42-1dc4833d25c9": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Setup-6.jpg",
+            "caption": "",
+            "heading": "Take care not to drop from heights above 75cm.",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16334815297667__29a045cf-eed8-4d0e-93eb-d1d09403e3bb-row-1",
+        "2a60f43c-35db-4b95-b216-9985855230fd",
+        "fc876ee9-434e-4bc1-afa3-9eb0449d5e6e",
+        "fbc1df89-7537-4d47-8811-bdb62353f99c",
+        "940b5692-e666-4a23-aa1b-19c4fbb56147",
+        "29e25b0a-f686-404e-b9c2-6f1cf748fab0",
+        "27402727-fbf8-488d-89e3-8a3235adf09d",
+        "44b97615-420d-4126-aa42-1dc4833d25c9"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.image-with-text__content {padding-top: 2rem; }}",
+        ".image-with-text__heading {font-family: var(--font-omnes);}"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_type": "h3",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4ab0c8c0-6db5-4146-bf9a-bc2f9e552e96": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20656136061215__4ab0c8c0-6db5-4146-bf9a-bc2f9e552e96-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get to know the Willow Sensor",
+            "heading_size": "h1"
+          }
+        },
+        "template--20656136061215__4ab0c8c0-6db5-4146-bf9a-bc2f9e552e96-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Familiarise yourself with my design and function.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20656136061215__4ab0c8c0-6db5-4146-bf9a-bc2f9e552e96-heading-1",
+        "template--20656136061215__4ab0c8c0-6db5-4146-bf9a-bc2f9e552e96-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "ac4d350d-15cb-43f2-8741-f4148b3f8125": {
+      "type": "multirow",
+      "blocks": {
+        "template--16335671623811__ac4d350d-15cb-43f2-8741-f4148b3f8125-row-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/seperated-sensor.svg",
+            "caption": "",
+            "heading": "",
+            "text": "<p>The waterproof top housing contains my electronics. </p><p>The bottom half contains my soil moisture probe. </p><p>Protecting me in transit is also a removable safety cap.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16335671623811__ac4d350d-15cb-43f2-8741-f4148b3f8125-row-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/labelled-top-of-sensor.png",
+            "caption": "",
+            "heading": "",
+            "text": "<p>Light Pipe:<strong> </strong>I funnel ambient light to my onboard light sensor<br/><br/>LED Pipe:<strong> </strong>I flash to indicate when poweed, pairing, or my battery is low.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16335671623811__ac4d350d-15cb-43f2-8741-f4148b3f8125-row-3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/labelled-bottom-of-sensor.png",
+            "caption": "",
+            "heading": "",
+            "text": "<p>Screw: Only remove if you need to replace my battery.<br/><br/>Button: I'm used when pairing with the Willow App & If I need to be reset.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16335671623811__ac4d350d-15cb-43f2-8741-f4148b3f8125-row-1",
+        "template--16335671623811__ac4d350d-15cb-43f2-8741-f4148b3f8125-row-2",
+        "template--16335671623811__ac4d350d-15cb-43f2-8741-f4148b3f8125-row-3"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.image-with-text__content {padding-top: 2rem; }}",
+        ".image-with-text__heading {font-family: var(--font-omnes);}"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_type": "h3",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "edb3b2bd-5ccf-43b5-ba87-b1b1ef4347c1",
+    "rich_text_rmRBQ6",
+    "multicolumn_9pMqkc",
+    "ee6dd536-7d3e-4f03-97a5-842074aeeb7a",
+    "d197911e-757e-4887-9762-4cd4dc6ade2b",
+    "7ec7b0be-4c74-4773-bf96-ef5df003ac8f",
+    "29a045cf-eed8-4d0e-93eb-d1d09403e3bb",
+    "4ab0c8c0-6db5-4146-bf9a-bc2f9e552e96",
+    "ac4d350d-15cb-43f2-8741-f4148b3f8125"
+  ]
+}
