@@ -1,0 +1,720 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15": {
+      "type": "image-banner",
+      "blocks": {
+        "0372f30f-4191-47be-bf25-4102367a438e": {
+          "type": "text",
+          "settings": {
+            "text": "FAQ",
+            "text_style": "body"
+          }
+        },
+        "template--16214407708803__f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15-16680638777c4ec292-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "You're not alone – others had the same thing on their mind",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "0372f30f-4191-47be-bf25-4102367a438e",
+        "template--16214407708803__f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15-16680638777c4ec292-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/faq.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "793888aa-8810-453b-8d5a-0f2cb62ae1e5": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16214407708803__793888aa-8810-453b-8d5a-0f2cb62ae1e5-1668469704ac4a1fd3-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sensor.png",
+            "title": "Sensor",
+            "text": "<p>Download our sensor user guide.<\/p>",
+            "link_label": "Download",
+            "link": ""
+          }
+        },
+        "template--16214407708803__793888aa-8810-453b-8d5a-0f2cb62ae1e5-1668469704ac4a1fd3-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hub.png",
+            "title": "Hub",
+            "text": "<p>Download the Willow hub user guide.<\/p>",
+            "link_label": "Download",
+            "link": ""
+          }
+        },
+        "template--16214407708803__793888aa-8810-453b-8d5a-0f2cb62ae1e5-1668469704ac4a1fd3-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobile.png",
+            "title": "Mobile app",
+            "text": "<p>Download the Willow app user guide.<\/p>",
+            "link_label": "Download",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16214407708803__793888aa-8810-453b-8d5a-0f2cb62ae1e5-1668469704ac4a1fd3-0",
+        "template--16214407708803__793888aa-8810-453b-8d5a-0f2cb62ae1e5-1668469704ac4a1fd3-1",
+        "template--16214407708803__793888aa-8810-453b-8d5a-0f2cb62ae1e5-1668469704ac4a1fd3-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "11ce2962-c873-4891-804c-ef90888e46c7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16214407708803__11ce2962-c873-4891-804c-ef90888e46c7-1674271049df599dae-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently asked questions",
+            "heading_size": "h1"
+          }
+        },
+        "template--16214407708803__11ce2962-c873-4891-804c-ef90888e46c7-1674271049df599dae-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Here you can find solutions to all your questions about Willow Sensors and Hubs, the app and website, shipping, and payment<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16214407708803__11ce2962-c873-4891-804c-ef90888e46c7-1674271049df599dae-0",
+        "template--16214407708803__11ce2962-c873-4891-804c-ef90888e46c7-1674271049df599dae-1"
+      ],
+      "custom_css": [
+        ".rich-text__text {margin-top: 1rem !important;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "accent-3",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e7e1dbb9-c172-4f76-97a6-a9e116fa05c1": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--21271823810847__e7e1dbb9-c172-4f76-97a6-a9e116fa05c1-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where to place my plant?",
+            "icon": "none",
+            "row_content": "<p>The biggest factor in plant care is your plant's access to a light source. All things need energy to grow, and plants get their kick from light! Ensure your plant is living in optimal conditions with light intensity, ambient temperature, and humidity readings from a Sensor and Hub.<\/p>",
+            "page": ""
+          }
+        },
+        "template--21271823810847__e7e1dbb9-c172-4f76-97a6-a9e116fa05c1-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When to water my plant?",
+            "icon": "none",
+            "row_content": "<p>The next big thing, and often the biggest struggle for plant parents, is how much and when to water your green beauty. Never under or over water again with soil moisture monitoring and care instructions.<\/p>",
+            "page": ""
+          }
+        },
+        "template--21271823810847__e7e1dbb9-c172-4f76-97a6-a9e116fa05c1-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What plant do I have?",
+            "icon": "none",
+            "row_content": "<p>It’s hard to provide good care if you don’t know what you're looking after. Plants look similar and can have long unpronounceable botanical names or the same common name! Simply take a photo of your plant and our smart app will identify it.<\/p>",
+            "page": ""
+          }
+        },
+        "template--21271823810847__e7e1dbb9-c172-4f76-97a6-a9e116fa05c1-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I...?",
+            "icon": "none",
+            "row_content": "<p>Our app is full of easy to digest care instructions for hundreds of houseplants and is always growing. Review articles and tutorials on plant care, find new plants suited to your conditions, and learn to propagate your faves!<\/p>",
+            "page": ""
+          }
+        },
+        "892621b9-effe-4c03-9ffa-4e7c72f2314d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Am I providing the right care?",
+            "icon": "none",
+            "row_content": "<p>Discover how your houseplants are truly feeling. Once your plant is set up with a Hub & Sensor, you can check out the Willow app to see your plant happiness score – a number out of 100 that reflects your plants' overall conditions. If your score needs work, we have blog posts, videos and tutorials to help!<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21271823810847__e7e1dbb9-c172-4f76-97a6-a9e116fa05c1-collapsible_row-1",
+        "template--21271823810847__e7e1dbb9-c172-4f76-97a6-a9e116fa05c1-collapsible_row-2",
+        "template--21271823810847__e7e1dbb9-c172-4f76-97a6-a9e116fa05c1-collapsible_row-3",
+        "template--21271823810847__e7e1dbb9-c172-4f76-97a6-a9e116fa05c1-collapsible_row-4",
+        "892621b9-effe-4c03-9ffa-4e7c72f2314d"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Willow knows your plants and their every need",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "accent-3",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "945deff7-ffeb-4de1-bdc5-d5b12cf57288": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does the Willow Sensor measure?",
+            "icon": "none",
+            "row_content": "<p>Our Sensor measures soil moisture, ambient light, temperature and humidity. These four factors are the most critical to your plant’s wellbeing and growth. The Willow App provides further care instructions regarding recommended soil types, fertilising, pest maintenance and more.<\/p>",
+            "page": ""
+          }
+        },
+        "2dea1135-ff89-4b0a-ac34-f709a3ea8a50": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How accurate are the readings?",
+            "icon": "none",
+            "row_content": "<p>Our measurements are taken to within 2% accuracy. Please see our <a href=\"\/pages\/tech\" title=\"Tech\">Tech page<\/a> for the full list of measurements and specifications. <\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need the Hub to use the Sensor?",
+            "icon": "none",
+            "row_content": "<p>Yes. Our Hub allows you to connect up-to 40 Sensors all at once to your home Wi-Fi network. Your plant data is securely uploaded to the cloud so you can access it anytime, anywhere via our App.<\/p>",
+            "page": ""
+          }
+        },
+        "f7696111-40f0-47ca-a889-62d309747f66": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I set up the Willow Sensor?",
+            "icon": "none",
+            "row_content": "<p>At its simplest, a user first pairs their Willow Hub with their phone and connects the Hub to their home <a href=\"https:\/\/www.wired.com\/story\/how-to-set-up-smart-home-on-wi-fi-band\/\" target=\"_blank\" title=\"https:\/\/www.wired.com\/story\/how-to-set-up-smart-home-on-wi-fi-band\/\">2.4GHz WiFi<\/a>. Next, a user pairs their Sensor to the Hub and adds the Sensor to their houseplant.<br\/><br\/>For a step by step guide, check out the <a href=\"\/pages\/setup\" title=\"Setup\">Setup page<\/a>.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can one Hub connect to multiple phones? (e.g. family, roommates)",
+            "icon": "none",
+            "row_content": "<p>The current version of our App is only for single users. However, we have begun to conceptualise how we might offer this as an option in the future. As you are notified with your plant care instructions, you can easily forward or share these plant care guides with your friends and family.<\/p>",
+            "page": ""
+          }
+        },
+        "cb2e5b07-a076-4213-83a3-8dd6d455d092": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the Hub need to remain plugged in at all times?",
+            "icon": "none",
+            "row_content": "<p>Yes, the Hub does need to remain plugged in to power and turned so that it can gather data from the Sensors, and send the collected data to your device to update the app.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use the Sensor outside?",
+            "icon": "none",
+            "row_content": "<p>We have designed the Sensors for indoor use. They will not withstand heavy rains, prolonged harsh sunlight, or extreme temperature differences. However, the Sensor is splash resistant so using it in a potted plant on your balcony or porch, if well protected, may not be a problem.<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use the Sensor in more than one plant?",
+            "icon": "none",
+            "row_content": "<p>The Sensors can only be used in one plant at any given time. If you wish to move the Sensor to a new plant, you are free to do so but you must first unpair the existing plant and re-pair with your new plant within the App.  <\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "63de252a-d1b7-4297-8f42-828a177d2e8b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use the Sensor and Hub with my smart home system?",
+            "icon": "none",
+            "row_content": "<p>Not currently. Potential future feature, but for now the Willow Sensor and Hub are a closed system. <\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does the Sensor battery last?",
+            "icon": "none",
+            "row_content": "<p>Willow was designed with longevity in mind. Our Sensors make use of ultra-low-power electronics which means your battery will typically last two years. Should you need to replace the battery, remove the top half of the unit, unscrew the housing and replace the CR2477 coin-cell battery.<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "44345c9d-71cd-4606-8374-58ceb9c3b6ad": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the range of the Sensor?",
+            "icon": "none",
+            "row_content": "<p>The range of the Sensors' Bluetooth is 20m line of sight.<\/p>",
+            "page": ""
+          }
+        },
+        "6cad1e51-e9c6-4bd4-af45-4847d54f1f6e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I clean the Sensor?",
+            "icon": "none",
+            "row_content": "<p>Use a clean, soft, damp cloth or wipe to clean the device. Do not use any chemical detergents, powders or other agents such as alcohol. <\/p>",
+            "page": ""
+          }
+        },
+        "6b8e77ab-f7cb-4e77-983d-7909e1dad04d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the Sensor work in different types of soil?",
+            "icon": "none",
+            "row_content": "<p>The Willow Sensor works best across your traditional indoor potting mixes. Using mixes that are particularly compact (i.e. sand) or loose (i.e. leca, clay pebbles) will interfere with the moisture reading.<\/p><p>Do not attempt to measure liquids. Our Sensor is designed to measure soil moisture. Placing our Sensor in water, or any other liquids, may damage the unit which will not be covered by the guarantee.<\/p>",
+            "page": ""
+          }
+        },
+        "9fc41d71-7abe-4454-af09-5a44e0c6bdf7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What plants can the Willow system be used with? ",
+            "icon": "none",
+            "row_content": "<p>Our database includes all your household favourites including Monsteras, Philodendrons, Alocasias, Ficus, Aloes and Cacti. The database includes hundreds of houseplants and is growing all the time. Users can even suggest plants for Willow to add via the App.<br\/><br\/>Please note, we currently do not include herbs, fruits or vegetables.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the warranty?",
+            "icon": "none",
+            "row_content": "<p>All Willow products have a standard one year warranty from the date of purchase. For any warranty claim, please refer to the <a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">warranty and returns<\/a> page<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "352c52f2-2f4e-4db7-b7a3-dd7a567b6da3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why should I use the Willow Sensor?",
+            "icon": "none",
+            "row_content": "<p>We strive to do a better job. Don’t get us wrong, existing solutions are potentially great at providing readings. Where they fall short, and where Willow exceeds, is the application of this data.<\/p><p>You may purchase a moisture probe, stick it in your plant pot and get a reading of 4 or perhaps 40%. Great, what next? Water your plant because that seems dry? This simple reading doesn’t consider if your plant prefers evenly moist soil or partially dry, it doesn’t consider the time of year (seasonality) nor the time of day or how long your plant has been sitting at 40%. All these considerations are important in your plant care, and Willow factors it all in!<\/p><p>We know your plants’ conditions AND we know plants.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-0",
+        "2dea1135-ff89-4b0a-ac34-f709a3ea8a50",
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-1",
+        "f7696111-40f0-47ca-a889-62d309747f66",
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-2",
+        "cb2e5b07-a076-4213-83a3-8dd6d455d092",
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-3",
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-4",
+        "63de252a-d1b7-4297-8f42-828a177d2e8b",
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-5",
+        "44345c9d-71cd-4606-8374-58ceb9c3b6ad",
+        "6cad1e51-e9c6-4bd4-af45-4847d54f1f6e",
+        "6b8e77ab-f7cb-4e77-983d-7909e1dad04d",
+        "9fc41d71-7abe-4454-af09-5a44e0c6bdf7",
+        "template--16214407708803__945deff7-ffeb-4de1-bdc5-d5b12cf57288-16680638769ece17b8-6",
+        "352c52f2-2f4e-4db7-b7a3-dd7a567b6da3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Sensor & Hub",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "accent-3",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "d2195b06-2644-4b8c-8bc7-e0ab7496f773": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16214407708803__d2195b06-2644-4b8c-8bc7-e0ab7496f773-16680638769ece17b8-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can you identify all of my plants?",
+            "icon": "none",
+            "row_content": "<p>We use the latest image recognition technology and can accurately identify over 95% of plants. If your plant is identified but not in our database, you can suggest we add it to our database with a click of a button. <\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__d2195b06-2644-4b8c-8bc7-e0ab7496f773-16680638769ece17b8-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the Willow App free to use?",
+            "icon": "none",
+            "row_content": "<p>Yes, the Plant with Willow app is free to download and use. This includes pairing your Sensor and Hub to the app. <br\/><br\/>You will however, be able to unlock even more amazing features with our Willow Grow subscription! Coming soon.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__d2195b06-2644-4b8c-8bc7-e0ab7496f773-16680638769ece17b8-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will the App work on my phone?",
+            "icon": "none",
+            "row_content": "<p>The Willow App is available in both the <a href=\"https:\/\/apps.apple.com\/us\/app\/plant-with-willow\/id1642293839\" target=\"_blank\" title=\"Willow App on the App Store\">App Store<\/a> and in <a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.willow.app\" target=\"_blank\" title=\"Willow App on Google Play\">Google Play<\/a>, and is compatible with devices operating Android 5+ and iOS13+ <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16214407708803__d2195b06-2644-4b8c-8bc7-e0ab7496f773-16680638769ece17b8-0",
+        "template--16214407708803__d2195b06-2644-4b8c-8bc7-e0ab7496f773-16680638769ece17b8-1",
+        "template--16214407708803__d2195b06-2644-4b8c-8bc7-e0ab7496f773-16680638769ece17b8-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Mobile App",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "accent-3",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible_content_QRawa8": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ye9YfD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is Willow Grow?",
+            "icon": "none",
+            "row_content": "<p>Willow Grow is an optional in-app paid subscription that gives you access to<\/p><ul><li><strong>Plant Data:<\/strong> Get to know your plant better with daily, monthly and historical charting of Sensor data <br\/><\/li><li><strong>Plant Doctor:<\/strong> Got plant dramas? Our resident horticulturist Brocc can help! Submit your plant questions to Brocc via the app and get help with diagnosing and treating your plant back to good health<br\/><\/li><li><strong>Disease ID (Beta):<\/strong> Like our Plant Scanner you know and love, but make it diseases! Disease ID scans and identifies what’s harming your plant, and offers treatment advice<br\/><\/li><li><strong>Plant Matcher: <\/strong>This feature matches you with your next leafy friend through the Matchmaker Quiz and Best For You. Take the Matchmaker Quiz to find your next best plant match, and get automated plant recs that suit your space based on your Sensor data through Best For You<\/li><\/ul><p>For more info, check out <a href=\"https:\/\/plantwithwillow.com.au\/blogs\/news\/say-hello-to-willow-grow\" target=\"_blank\">https:\/\/plantwithwillow.com.au\/blogs\/news\/say-hello-to-willow-grow<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UUNmqA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How much is Willow Grow?",
+            "icon": "none",
+            "row_content": "<p>Cheaper than our weekly hot chips addiction at the pub. Willow Grow is available for 3 periods. The longer you opt in for, the more you save.<\/p><p>1 month -  $4.99 AUD<\/p><p>3 months - $12.99 AUD<\/p><p>1 year - $39.99 AUD<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KYK8yn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often do I get charged?",
+            "icon": "none",
+            "row_content": "<p>The subscription total will be charged at purchase, providing you access to all Grow features for the chosen time period. The monthly cost is displayed to show the savings when purchasing a longer subscription. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EK78Fa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is this a one-time payment or will it renew automatically?",
+            "icon": "none",
+            "row_content": "<p>Your subscription will automatically renew at the end of the subscription period, unless cancelled via Google Play Store or Apple App Store. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_E6DhU6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I cancel?",
+            "icon": "none",
+            "row_content": "<p>All subscription payments are handled by Google Play Store or Apple App store. To cancel, just head to your device’s subscription settings for your account. Once cancelled, Grow features will expire at the next payment date.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_cbkCdw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many Plant Doctor consults do I get?",
+            "icon": "none",
+            "row_content": "<p>Willow Grow members get 1 consult every month with our resident horticulturist Brocc. The Plant Doctor will be available to chat with you until your case is resolved and closed. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_K9xKGR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the Plant Doctor AI?",
+            "icon": "none",
+            "row_content": "<p>Big nope! Our Plant Doc Brocc is very much alive, well, and dressed in head to toe Carhartt. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8WtiT9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does Best For You work?",
+            "icon": "none",
+            "row_content": "<p>We know loads of you are wondering which plant works best in your home and office spaces. Best For You does the work of figuring out which. Every month, Willow analyses the environment – temperature, light, humidity – from your Sensor’s readings. You get an automatic plant recommendation each month based on the conditions from your Sensor data. Magic!<\/p><p>Please note that while many Willow Grow features don’t need a Sensor, alas, this one does.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ye9YfD",
+        "collapsible_row_UUNmqA",
+        "collapsible_row_KYK8yn",
+        "collapsible_row_EK78Fa",
+        "collapsible_row_E6DhU6",
+        "collapsible_row_cbkCdw",
+        "collapsible_row_K9xKGR",
+        "collapsible_row_8WtiT9"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Willow Grow",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "accent-3",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "67b2c3c6-7e72-470a-830b-dfc0d00f5b83": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16214407708803__67b2c3c6-7e72-470a-830b-dfc0d00f5b83-1668469451e53be9c3-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "<p>No backsies.<br\/><br\/>Just kidding, we offer returns and exchanges.  To find out more please visit our <a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">Warranty & Returns<\/a> page.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__67b2c3c6-7e72-470a-830b-dfc0d00f5b83-1668469451e53be9c3-1": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Which countries do you ship to?",
+            "icon": "none",
+            "row_content": "<p>Currently, we only ship within Australia.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16214407708803__67b2c3c6-7e72-470a-830b-dfc0d00f5b83-1668469451e53be9c3-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer express shipping?",
+            "icon": "none",
+            "row_content": "<p>We sure do! If you're in a hurry to get your hands on your Willow goods, select the Express Shipping option and it will calculate at checkout.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16214407708803__67b2c3c6-7e72-470a-830b-dfc0d00f5b83-1668469451e53be9c3-0",
+        "template--16214407708803__67b2c3c6-7e72-470a-830b-dfc0d00f5b83-1668469451e53be9c3-1",
+        "template--16214407708803__67b2c3c6-7e72-470a-830b-dfc0d00f5b83-1668469451e53be9c3-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Shipping and Returns",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "accent-3",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "e3e1bfd4-4dbf-4747-ae76-4f1d16dde86b": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16304683286659__e3e1bfd4-4dbf-4747-ae76-4f1d16dde86b-168681971097f166f9-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Where do I enter my coupon or discount code?",
+            "icon": "none",
+            "row_content": "<p>On the first page of the checkout, there is an order summary section which includes a field where you can input your discount or coupon code.  On a desktop, this is to the right of the contact details form.  On a mobile device, this is above the contact details form and you will need to expand the \"Show order summary\" section first before you can input your discount code. Sorry! Shopify made us.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16304683286659__e3e1bfd4-4dbf-4747-ae76-4f1d16dde86b-168681971097f166f9-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Which payment methods do you accept?",
+            "icon": "none",
+            "row_content": "<p>If it's got 'pay' in the name, chances are we take it. We accept payment from PayPal, AfterPay, Apple Pay, Google Pay, Shop Pay, or simply pop your credit card info securely at checkout.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16304683286659__e3e1bfd4-4dbf-4747-ae76-4f1d16dde86b-168681971097f166f9-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I'm having trouble checking out, help!",
+            "icon": "none",
+            "row_content": "<p>If you have any dramas checking out, please let us know via the chat feature or by emailing <a href=\"mailto:hello@plantwithwillow.com.au\" title=\"mailto:hello@plantwithwillow.com.au\">hello@plantwithwillow.com.au<\/a><\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16304683286659__e3e1bfd4-4dbf-4747-ae76-4f1d16dde86b-168681971097f166f9-0",
+        "template--16304683286659__e3e1bfd4-4dbf-4747-ae76-4f1d16dde86b-168681971097f166f9-2",
+        "template--16304683286659__e3e1bfd4-4dbf-4747-ae76-4f1d16dde86b-168681971097f166f9-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Website",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "accent-3",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_TrWGxA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TBa7qi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Got all your questions answered?",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TBa7qi"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_qfJMjM": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "accent-3",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15",
+    "793888aa-8810-453b-8d5a-0f2cb62ae1e5",
+    "11ce2962-c873-4891-804c-ef90888e46c7",
+    "e7e1dbb9-c172-4f76-97a6-a9e116fa05c1",
+    "945deff7-ffeb-4de1-bdc5-d5b12cf57288",
+    "d2195b06-2644-4b8c-8bc7-e0ab7496f773",
+    "collapsible_content_QRawa8",
+    "67b2c3c6-7e72-470a-830b-dfc0d00f5b83",
+    "e3e1bfd4-4dbf-4747-ae76-4f1d16dde86b",
+    "rich_text_TrWGxA",
+    "featured_collection_qfJMjM"
+  ]
+}

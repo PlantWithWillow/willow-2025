@@ -1,0 +1,807 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_kdFyTd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8jY9Jr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Icon & SVG Modules",
+            "heading_size": "h0"
+          }
+        },
+        "text_CTE7B4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Available in each colour scheme as shown in <a href=\"/pages/example\" title=\"Example\">Example</a></p><p></p><p>Intersectional leaf SVGs can be placed left or right and flipped horizontally</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8jY9Jr",
+        "text_CTE7B4"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "features_DwUNJM": {
+      "type": "features",
+      "blocks": {
+        "column_gkH3Kd": {
+          "type": "column",
+          "settings": {
+            "icon": "alert",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_C84cAq": {
+          "type": "column",
+          "settings": {
+            "icon": "banana",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_GfPRD3": {
+          "type": "column",
+          "settings": {
+            "icon": "bluetooth",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_Keqpfn": {
+          "type": "column",
+          "settings": {
+            "icon": "bottle",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_GnYYdE": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_THtzNh": {
+          "type": "column",
+          "settings": {
+            "icon": "chat_bubble",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_d4KRyA": {
+          "type": "column",
+          "settings": {
+            "icon": "check",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_7qTtE8": {
+          "type": "column",
+          "settings": {
+            "icon": "check_mark",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_aecKPb": {
+          "type": "column",
+          "settings": {
+            "icon": "clipboard",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_pyLa63": {
+          "type": "column",
+          "settings": {
+            "icon": "circle_square",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_9rLngF": {
+          "type": "column",
+          "settings": {
+            "icon": "control",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_CEUzfm": {
+          "type": "column",
+          "settings": {
+            "icon": "document",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_Ejhy9r": {
+          "type": "column",
+          "settings": {
+            "icon": "eye",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_XftfJG": {
+          "type": "column",
+          "settings": {
+            "icon": "fire",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_gXQX9a": {
+          "type": "column",
+          "settings": {
+            "icon": "flag",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_Qt6NUy": {
+          "type": "column",
+          "settings": {
+            "icon": "heart",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_tGM6Vp": {
+          "type": "column",
+          "settings": {
+            "icon": "heart_full",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_EktkCD": {
+          "type": "column",
+          "settings": {
+            "icon": "idea",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_UdE7CY": {
+          "type": "column",
+          "settings": {
+            "icon": "leaf",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_hpnJDq": {
+          "type": "column",
+          "settings": {
+            "icon": "leather",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_EQAdJA": {
+          "type": "column",
+          "settings": {
+            "icon": "lightning_bolt",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_f6YqNg": {
+          "type": "column",
+          "settings": {
+            "icon": "lightning",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_YtUbg9": {
+          "type": "column",
+          "settings": {
+            "icon": "lock",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_HRAm9h": {
+          "type": "column",
+          "settings": {
+            "icon": "map_pin",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_aBw7Gx": {
+          "type": "column",
+          "settings": {
+            "icon": "mobile",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_QRFCJ3": {
+          "type": "column",
+          "settings": {
+            "icon": "modular",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_BA6C9M": {
+          "type": "column",
+          "settings": {
+            "icon": "mortarboard",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_dpek7b": {
+          "type": "column",
+          "settings": {
+            "icon": "paw_print",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_J8xWMj": {
+          "type": "column",
+          "settings": {
+            "icon": "paw",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_GB4Qfy": {
+          "type": "column",
+          "settings": {
+            "icon": "pepper",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_3HWdDQ": {
+          "type": "column",
+          "settings": {
+            "icon": "plane",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_MTzepa": {
+          "type": "column",
+          "settings": {
+            "icon": "plant",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_qBJDHE": {
+          "type": "column",
+          "settings": {
+            "icon": "price_tag",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_tqH9kz": {
+          "type": "column",
+          "settings": {
+            "icon": "question_mark",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_nckcye": {
+          "type": "column",
+          "settings": {
+            "icon": "recycle",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_zegEgk": {
+          "type": "column",
+          "settings": {
+            "icon": "return",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_jRJYwE": {
+          "type": "column",
+          "settings": {
+            "icon": "ruler",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_MgBEhW": {
+          "type": "column",
+          "settings": {
+            "icon": "search",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_4dUQkc": {
+          "type": "column",
+          "settings": {
+            "icon": "sensor_pot",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_EtU8rb": {
+          "type": "column",
+          "settings": {
+            "icon": "serving_dish",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_wiQBDW": {
+          "type": "column",
+          "settings": {
+            "icon": "shirt",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_pAACPK": {
+          "type": "column",
+          "settings": {
+            "icon": "shoe",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_hqjzaE": {
+          "type": "column",
+          "settings": {
+            "icon": "silhouette",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_RmYFM4": {
+          "type": "column",
+          "settings": {
+            "icon": "snowflake",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_brdiCD": {
+          "type": "column",
+          "settings": {
+            "icon": "sprout",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_xQ84fb": {
+          "type": "column",
+          "settings": {
+            "icon": "star",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_93Fb8t": {
+          "type": "column",
+          "settings": {
+            "icon": "stars",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_Xibcez": {
+          "type": "column",
+          "settings": {
+            "icon": "stopwatch",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_tc3hG3": {
+          "type": "column",
+          "settings": {
+            "icon": "truck",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        },
+        "column_cacqQm": {
+          "type": "column",
+          "settings": {
+            "icon": "wifi",
+            "icon_fill": "",
+            "icon_background": "",
+            "title": "Column",
+            "text": "<p>Pair text with an icon to focus on a topic</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_gkH3Kd",
+        "column_C84cAq",
+        "column_GfPRD3",
+        "column_Keqpfn",
+        "column_GnYYdE",
+        "column_THtzNh",
+        "column_d4KRyA",
+        "column_7qTtE8",
+        "column_aecKPb",
+        "column_pyLa63",
+        "column_9rLngF",
+        "column_CEUzfm",
+        "column_Ejhy9r",
+        "column_XftfJG",
+        "column_gXQX9a",
+        "column_Qt6NUy",
+        "column_tGM6Vp",
+        "column_EktkCD",
+        "column_UdE7CY",
+        "column_hpnJDq",
+        "column_EQAdJA",
+        "column_f6YqNg",
+        "column_YtUbg9",
+        "column_HRAm9h",
+        "column_aBw7Gx",
+        "column_QRFCJ3",
+        "column_BA6C9M",
+        "column_dpek7b",
+        "column_J8xWMj",
+        "column_GB4Qfy",
+        "column_3HWdDQ",
+        "column_MTzepa",
+        "column_qBJDHE",
+        "column_tqH9kz",
+        "column_nckcye",
+        "column_zegEgk",
+        "column_jRJYwE",
+        "column_MgBEhW",
+        "column_4dUQkc",
+        "column_EtU8rb",
+        "column_wiQBDW",
+        "column_pAACPK",
+        "column_hqjzaE",
+        "column_RmYFM4",
+        "column_brdiCD",
+        "column_xQ84fb",
+        "column_93Fb8t",
+        "column_Xibcez",
+        "column_tc3hG3",
+        "column_cacqQm"
+      ],
+      "settings": {
+        "title": "Features",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "collapsible_content_Rh86ih": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_xEawbk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "pepper",
+            "row_content": "<p>Row content</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zeLnpn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "gluten_free",
+            "row_content": "<p>Row content</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_xkgwLp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "shoe",
+            "row_content": "<p>Row content</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_E9VByN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "truck",
+            "row_content": "<p>Row content</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_xEawbk",
+        "collapsible_row_zeLnpn",
+        "collapsible_row_xkgwLp",
+        "collapsible_row_E9VByN"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "timeline_jBgT3Y": {
+      "type": "timeline",
+      "blocks": {
+        "heading_nmQrBG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Timeline",
+            "heading_size": "h1"
+          }
+        },
+        "caption_LP9piV": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-uppercase",
+            "text_size": "medium"
+          }
+        },
+        "text_k8Cxpn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_XWfVef": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "event_MpeBEJ": {
+          "type": "event",
+          "settings": {
+            "date": "Date",
+            "description": "Description",
+            "icon_color": "green",
+            "icon": "leaf"
+          }
+        },
+        "event_iMm6kh": {
+          "type": "event",
+          "settings": {
+            "date": "Date",
+            "description": "Description",
+            "icon_color": "green-dark",
+            "icon": "box"
+          }
+        },
+        "event_XQJGpe": {
+          "type": "event",
+          "settings": {
+            "date": "Date",
+            "description": "Description",
+            "icon_color": "blue",
+            "icon": "chat_bubble"
+          }
+        },
+        "event_eJddxw": {
+          "type": "event",
+          "settings": {
+            "date": "Date",
+            "description": "Description",
+            "icon_color": "blue-dark",
+            "icon": "check_mark"
+          }
+        },
+        "event_XNgCeC": {
+          "type": "event",
+          "settings": {
+            "date": "Date",
+            "description": "Description",
+            "icon_color": "grey",
+            "icon": "willow"
+          }
+        },
+        "event_6xEg9m": {
+          "type": "event",
+          "settings": {
+            "date": "Date",
+            "description": "Description",
+            "icon_color": "yellow",
+            "icon": "eye"
+          }
+        },
+        "event_daWRH9": {
+          "type": "event",
+          "settings": {
+            "date": "Date",
+            "description": "Description",
+            "icon_color": "red",
+            "icon": "apple"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nmQrBG",
+        "caption_LP9piV",
+        "text_k8Cxpn",
+        "button_XWfVef",
+        "event_MpeBEJ",
+        "event_iMm6kh",
+        "event_XQJGpe",
+        "event_eJddxw",
+        "event_XNgCeC",
+        "event_6xEg9m",
+        "event_daWRH9"
+      ],
+      "settings": {
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }    
+  },
+  "order": [
+    "main",
+    "rich_text_kdFyTd",
+    "features_DwUNJM",
+    "collapsible_content_Rh86ih",
+    "timeline_jBgT3Y"
+  ]
+}

@@ -1,0 +1,209 @@
+.timeline__text--caption:first-child {
+  margin: 0 auto;
+  font-family: 'Source Sans Pro Regular', var(--font-heading-family);
+  font-size: 1.4rem;
+  color: var(--color-ficus-green);
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.timeline__heading {
+  margin-top: 1rem;
+}
+.timeline__grid {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.timeline__grid .grid__item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: auto;
+  max-width: 100%;
+}
+.timeline__grid .timeline__timeline-item {
+  flex-grow: 0;
+  padding-top: 4rem;
+}
+@media screen and (min-width: 750px) {
+  .timeline__text--caption:first-child:first-child {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .timeline__grid {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .timeline__grid--reverse {
+    flex-direction: row-reverse;
+  }
+  .timeline__grid .grid__item {
+    flex-shrink: 1;
+  }
+  div.timeline__text.rte {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 949px) {
+  .timeline__text-item img {
+    margin-top: 2rem;
+  }
+  .timeline__content--mobile-center>* {
+    align-self: center;
+    text-align: center;
+  }
+}
+.timeline .event {
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.timeline .event > * {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.timeline .event .date {
+  flex-basis: 94px;
+  min-width: 94px;
+  justify-content: flex-end;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.timeline .event .dot:before {
+  content: "";
+  width: 2px;
+  height: calc(100% + 20px);
+  display: block;
+  position: absolute;
+  left: calc(50% - 1px);
+  top: calc(50% + 6px);
+  z-index: 0;
+  background-image: linear-gradient(var(--color-golden-hour) 33%, rgba(255,255,255,0) 0%);
+  background-position: right;
+  background-size: 2px 10px;
+  background-repeat: repeat-y;
+}
+.timeline .event:last-child .dot:before {
+  height: 400%;
+}
+.timeline .event .dot span {
+  content: '';
+  position: relative;
+  background: var(--color-yellow);
+  border-radius: 50%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-golden-hour);
+}
+.timeline .event .detail {
+  background: var(--color-base-background-1);
+  border: 1px solid var(--color-base-solid-button-labels);
+  border-radius: 20px;
+  padding: 3px 17px;
+  white-space: nowrap;
+}
+.timeline .event .detail span.icon {
+  background: var(--color-base-background-1);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-base-solid-button-labels);
+  margin: 0 7px 0 -11px;
+}
+.timeline .event .detail span.icon svg {
+  width: 15px;
+  height: auto;
+}
+.timeline .event .detail span.icon.green {
+  background: var(--color-mint-green);
+  border-color: var(--color-succulent-green);
+}
+.timeline .event .detail span.icon.green path {
+  fill: var(--color-ficus-green);
+}
+.timeline .event .detail span.icon.green-dark {
+  background: var(--color-ficus-green);
+  border-color: var(--color-mint-green);
+}
+.timeline .event .detail span.icon.green-dark path {
+  fill: var(--color-mint-green);
+}
+.timeline .event .detail span.icon.blue {
+  background: var(--color-pastel-blue);
+  border-color:var(--color-show-blue);
+}
+.timeline .event .detail span.icon.blue path {
+  fill: var(--color-shade-blue);
+}
+.timeline .event .detail span.icon.blue-dark {
+  background: var(--color-shade-blue);
+  border-color:var(--color-pastel-blue);
+}
+.timeline .event .detail span.icon.blue-dark path {
+  fill: var(--color-pastel-blue);
+}
+.timeline .event .detail span.icon.grey {
+  background: #E7E7E0;
+  border-color: #A8A89D;
+}
+.timeline .event .detail span.icon.grey path {
+  fill: #6F6F61;
+}
+.timeline .event .detail span.icon.grey-dark {
+  background: #6F6F61;
+  border-color: #A8A89D;
+}
+.timeline .event .detail span.icon.grey-dark path {
+  fill: #E7E7E0;
+}
+.timeline .event .detail span.icon.yellow {
+  background: var(--color-golden-hour);
+  border-color: var(--color-yellow);
+}
+.timeline .event .detail span.icon.yellow path {
+  fill: var(--color-white);
+}
+.timeline .event .detail span.icon.red {
+  background: #E3CEC5;
+  border-color: #D98F6E;
+}
+.timeline .event .detail span.icon.red path {
+  fill: #D98F6E;
+}
+.timeline .event .detail span.icon.logo {
+  background: var(--color-succulent-green);
+  border-color: var(--color-succulent-green);
+}
+.timeline .event .detail span.icon.logo path {
+  fill: var(--color-white);
+}
+.timeline .event .detail span.icon.logo svg {
+  width: auto;
+  height: 17px;
+}
+@media screen and (max-width: 500px) {
+  .timeline__grid .timeline {
+    font-size: 1.2rem;
+  }
+  .timeline .event {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .timeline .event .date {
+    flex-basis: 34px;
+    min-width: 34px;
+    text-align: right;
+    white-space: normal;
+    font-size: 0.9em;
+    line-height: 1.1;
+  }
+  .timeline .event .detail {
+    padding: 3px 10px 3px 14px;
+  }
+}

@@ -1,25 +1,146 @@
 {
   "sections": {
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "c0e9b2b8-b567-45bd-b888-54e642c96140": {
+          "type": "heading",
+          "settings": {
+            "heading": "Come say hello",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "c0e9b2b8-b567-45bd-b888-54e642c96140"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/0W8A3740.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "7081efd8-0237-4a88-9aa6-f5c5f0c62af5": {
+          "type": "heading",
+          "settings": {
+            "heading": "Questions? Concerns? Rave reviews?",
+            "heading_size": "h1"
+          }
+        },
+        "1356fb18-cd1b-480e-851a-0b29b14b3452": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It gets lonely in the most isolated city in the world. Our team is based in Perth, Australia but thanks to the internet we can connect with the Willow community everywhere. Flick us a message.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7081efd8-0237-4a88-9aa6-f5c5f0c62af5",
+        "1356fb18-cd1b-480e-851a-0b29b14b3452"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "custom_css": [
+        ".field__label,.customer .field label {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "heading": "CONTACT US",
+        "heading_size": "h1",
+        "color_scheme": "background-2",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "form": {
-      "type": "contact-form",
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "multicolumn-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/facebook.png",
+            "title": "Facebook",
+            "text": "<p>plantwithwillowau<\/p>",
+            "link_label": "Facebook",
+            "link": "https:\/\/www.facebook.com\/plantwithwillowau"
+          }
+        },
+        "multicolumn-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instagram.png",
+            "title": "Instagram",
+            "text": "<p>@plantwithwillowau<\/p>",
+            "link_label": "Instagram",
+            "link": "https:\/\/www.instagram.com\/plantwithwillowau"
+          }
+        },
+        "multicolumn-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tiktok.png",
+            "title": "TikTok",
+            "text": "<p>@plantwithwillowau<\/p>",
+            "link_label": "TikTok",
+            "link": "https:\/\/www.tiktok.com\/@plantwithwillowau"
+          }
+        }
+      },
+      "block_order": [
+        "multicolumn-1",
+        "multicolumn-2",
+        "multicolumn-3"
+      ],
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "Come follow along, wherever you are",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "3",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
+    "image-banner",
+    "rich-text",
+    "form",
     "main",
-    "form"
+    "multicolumn"
   ]
 }
