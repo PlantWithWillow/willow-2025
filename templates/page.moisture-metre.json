@@ -33,20 +33,20 @@
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {.banner--small:not(.banner--adapt) {min-height: 22rem; } .banner__content {padding: 4rem; }}",
-        "@media screen and (max-width: 749px) {.banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {min-height: 18rem; }}",
-        ".banner:not(.slideshow):has(.color-background-1):after,.banner:not(.slideshow):has(.color-background-2):after {background: #fff !important;}"
+        "@media screen and (max-width: 749px) {.banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {min-height: 18rem; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/282_Willow_plant_with_willow_2023_Valentine_girardot_Perth_commercial_photographer_future_proof_agency.jpg",
         "image_overlay_opacity": 80,
         "image_height": "small",
-        "desktop_content_position": "middle",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-2",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "split": false,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "background-2",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
@@ -142,18 +142,16 @@
         "padding_bottom": 80
       }
     },
-    "custom_liquid_VBxw6y": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"rich-text__wrapper\">\n<div class=\"rich-text__blocks center\">\n<h3 style=\"font-size: 2.4rem;\">How our plant moisture sensor works</h3>\n</div>\n</div>",
-        "color_scheme": "background-2",
-        "padding_top": 80,
-        "padding_bottom": 0
-      }
-    },
     "how_it_works": {
       "type": "rich-text",
       "blocks": {
+        "heading_nc6FEE": {
+          "type": "heading",
+          "settings": {
+            "heading": "How our plant moisture sensor works",
+            "heading_size": "h2"
+          }
+        },
         "text": {
           "type": "text",
           "settings": {
@@ -162,6 +160,7 @@
         }
       },
       "block_order": [
+        "heading_nc6FEE",
         "text"
       ],
       "custom_css": [
@@ -183,6 +182,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/willow-moisture-metre-probe.jpg",
+            "pretitle": "",
             "title": "",
             "text": "<p><strong>Soil moisture probe </strong></p><p>The Sensor is equipped with a highly sensitive soil moisture probe that gets planted right into your indoor plant’s soil. The probes monitor soil condition round-the-clock and send real-time data on the moisture content of your soil to the app. When a plant is thirsty or has been watered before it needed it, you’ll get an alert. This helps you make informed decisions to keep your houseplant hydrated. </p>",
             "link_label": "",
@@ -193,6 +193,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/willow-humidity-metre-app.jpg",
+            "pretitle": "",
             "title": "",
             "text": "<p><strong>Soil type setting</strong> </p><p>When adding your plant to the Willow app and pairing it with a Sensor, various soil types are available to choose from: finer, coarse, sandy, or standard potting mix. This insight gives your Sensor additional context for enhanced reading capabilities.</p>",
             "link_label": "",
@@ -210,14 +211,16 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "heading_alignment": "left",
         "image_width": "full",
         "image_ratio": "square",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
         "button_label": "",
         "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
         "color_scheme": "background-2",
+        "card_color_scheme": "",
+        "background_style": "primary",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,
@@ -261,7 +264,6 @@
     "intro",
     "image_with_text_4khYin",
     "image_with_text_4hnPay",
-    "custom_liquid_VBxw6y",
     "how_it_works",
     "multicolumn_V3r4PL",
     "rich_text_dyFjMt"

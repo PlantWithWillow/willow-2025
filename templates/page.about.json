@@ -49,7 +49,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/about-willow.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 20,
         "image_height": "medium",
         "image_behavior": "none",
         "split": false,

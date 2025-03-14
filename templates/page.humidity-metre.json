@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -33,20 +33,20 @@
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {.banner--small:not(.banner--adapt) {min-height: 22rem; } .banner__content {padding: 4rem; }}",
-        "@media screen and (max-width: 749px) {.banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {min-height: 18rem; }}",
-        ".banner:not(.slideshow):has(.color-background-1):after,.banner:not(.slideshow):has(.color-background-2):after {background: #fff !important;}"
+        "@media screen and (max-width: 749px) {.banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {min-height: 18rem; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/588_Willow_plant_with_willow_2023_Valentine_girardot_Perth_commercial_photographer_future_proof_agency.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/588_Willow_plant_with_willow_2023_Valentine_girardot_Perth_commercial_photographer_future_proof_agency.jpg",
+        "image_overlay_opacity": 60,
         "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-1",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "split": false,
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-1",
         "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
@@ -56,7 +56,7 @@
         "text_R7AD3p": {
           "type": "text",
           "settings": {
-            "text": "<p>Are your houseplants not healthy and thriving as they should be? Are you struggling to maintain the best environment for your leafy mates? Look, plant care is not easy. Every type of plant needs different care and has their own preference for soil moisture levels, light exposure, temperature, and humidity.  \u2028<\/p><p>That’s where Willow comes in to revolutionise your plant care and get you closer to happy, healthy houseplants. Our Sensor is programmed per plant type and tracks your plant’s soil moisture, light, temperature, and humidity – all the hard-to-gauge bits that are critical to plant care and growing healthy plants.  <\/p><p><\/p><p>As any seasoned plant parent knows, maintaining the right humidity levels is crucial for the health and vitality of indoor plants. Willow’s got a cutting-edge plant humidity sensor that makes for an effortless solution to monitor and regulate humidity levels in your plant’s environment with precision. <\/p><p>Gone are the days of guesswork and uncertainty. With our Sensor, you can accurately gauge the moisture content in your plant's environment in real-time. This handy device acts as your personal humidity gauge for plants, providing valuable insights into your plant's needs. <\/p><p>But why is monitoring humidity so essential for plant care? Let's delve into the importance of this often-overlooked aspect of indoor gardening.<\/p>"
+            "text": "<p>Are your houseplants not healthy and thriving as they should be? Are you struggling to maintain the best environment for your leafy mates? Look, plant care is not easy. Every type of plant needs different care and has their own preference for soil moisture levels, light exposure, temperature, and humidity.   </p><p>That’s where Willow comes in to revolutionise your plant care and get you closer to happy, healthy houseplants. Our Sensor is programmed per plant type and tracks your plant’s soil moisture, light, temperature, and humidity – all the hard-to-gauge bits that are critical to plant care and growing healthy plants.  </p><p></p><p>As any seasoned plant parent knows, maintaining the right humidity levels is crucial for the health and vitality of indoor plants. Willow’s got a cutting-edge plant humidity sensor that makes for an effortless solution to monitor and regulate humidity levels in your plant’s environment with precision. </p><p>Gone are the days of guesswork and uncertainty. With our Sensor, you can accurately gauge the moisture content in your plant's environment in real-time. This handy device acts as your personal humidity gauge for plants, providing valuable insights into your plant's needs. </p><p>But why is monitoring humidity so essential for plant care? Let's delve into the importance of this often-overlooked aspect of indoor gardening.</p>"
           }
         }
       },
@@ -85,7 +85,7 @@
         "text_m9bbiy": {
           "type": "text",
           "settings": {
-            "text": "<p>Healthy plants thrive in environments where humidity levels are optimal. Too much or too little moisture can spell disaster for your leafy mate. Tolerance levels for humidity differ per plant type, but here’s a general guideline on how the wrong level of humidity can affect your plant’s health. \u2028<\/p><p>Excess humidity can lead to mould growth and root rot, while insufficient humidity can cause wilting and dehydration. By using a humidity meter for plants like our Sensor, you can ensure that your plants are always right in their comfy zone. <br\/><br\/><\/p>",
+            "text": "<p>Healthy plants thrive in environments where humidity levels are optimal. Too much or too little moisture can spell disaster for your leafy mate. Tolerance levels for humidity differ per plant type, but here’s a general guideline on how the wrong level of humidity can affect your plant’s health.  </p><p>Excess humidity can lead to mould growth and root rot, while insufficient humidity can cause wilting and dehydration. By using a humidity meter for plants like our Sensor, you can ensure that your plants are always right in their comfy zone. <br/><br/></p>",
             "text_style": "body"
           }
         }
@@ -95,7 +95,7 @@
         "text_m9bbiy"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/willow-humidity-metre-enviro.jpg",
+        "image": "shopify://shop_images/willow-humidity-metre-enviro.jpg",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
@@ -120,7 +120,7 @@
         "text_m9bbiy": {
           "type": "text",
           "settings": {
-            "text": "<p>With our Sensor and app, you’ll be able to check on how your plant is doing whether you’re near or far! Our Sensor sends alerts right to your phone when your plant needs care to keep it healthy. Your plant score gets updated throughout the day in our app, so you can see how your plant is doing even when you’re out of the house. <\/p>",
+            "text": "<p>With our Sensor and app, you’ll be able to check on how your plant is doing whether you’re near or far! Our Sensor sends alerts right to your phone when your plant needs care to keep it healthy. Your plant score gets updated throughout the day in our app, so you can see how your plant is doing even when you’re out of the house. </p>",
             "text_style": "body"
           }
         }
@@ -130,7 +130,7 @@
         "text_m9bbiy"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/willow-humidity-metre-app.jpg",
+        "image": "shopify://shop_images/willow-humidity-metre-app.jpg",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
@@ -155,7 +155,7 @@
         "text_8qBd4B": {
           "type": "text",
           "settings": {
-            "text": "<p>The Willow Sensor doesn't stop at monitoring humidity levels – it also offers insights into soil moisture, another critical factor in plant health. By keeping tabs on soil moisture levels, you can prevent overwatering or underwatering, both of which can have detrimental effects on plant growth. <\/p><p>One of the standout features of the Willow Sensor is its user-friendly design. With its intuitive interface and seamless connectivity, you can effortlessly monitor your plants' health from anywhere, at any time. Whether you're a novice gardener or a seasoned pro, the Willow Sensor makes plant care a breeze. <\/p><p>Our Sensor is more than just a tool – think of it as your closest companion on your journey to zero guesswork over plant care and owning healthy, happy houseplants. By providing valuable data and insights, you’ll be equipped to make informed decisions about your plant's care regimen, ensuring they thrive for years to come. No more unintentional plant killing, and no more plant funerals! <\/p><p>We know we’re biased, but Willow’s Sensor is a game-changer. With its ability to measure humidity, soil moisture and more, it's the ultimate hack for creating a healthy and thriving indoor garden. Say goodbye to guesswork and hello to happier, healthier plants with the Willow Sensor by your side. <\/p>"
+            "text": "<p>The Willow Sensor doesn't stop at monitoring humidity levels – it also offers insights into soil moisture, another critical factor in plant health. By keeping tabs on soil moisture levels, you can prevent overwatering or underwatering, both of which can have detrimental effects on plant growth. </p><p>One of the standout features of the Willow Sensor is its user-friendly design. With its intuitive interface and seamless connectivity, you can effortlessly monitor your plants' health from anywhere, at any time. Whether you're a novice gardener or a seasoned pro, the Willow Sensor makes plant care a breeze. </p><p>Our Sensor is more than just a tool – think of it as your closest companion on your journey to zero guesswork over plant care and owning healthy, happy houseplants. By providing valuable data and insights, you’ll be equipped to make informed decisions about your plant's care regimen, ensuring they thrive for years to come. No more unintentional plant killing, and no more plant funerals! </p><p>We know we’re biased, but Willow’s Sensor is a game-changer. With its ability to measure humidity, soil moisture and more, it's the ultimate hack for creating a healthy and thriving indoor garden. Say goodbye to guesswork and hello to happier, healthier plants with the Willow Sensor by your side. </p>"
           }
         }
       },

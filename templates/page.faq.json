@@ -39,12 +39,10 @@
         "0372f30f-4191-47be-bf25-4102367a438e",
         "template--16214407708803__f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15-16680638777c4ec292-0"
       ],
-      "custom_css": [
-        ".banner:after {background: #fff !important; opacity: 0.4 !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/faq.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 40,
         "image_height": "medium",
         "image_behavior": "none",
         "split": false,
