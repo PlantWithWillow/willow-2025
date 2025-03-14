@@ -428,9 +428,9 @@
         "saphal"
       ],
       "settings": {
-        "title": "Featured collection",
+        "title": "Meet Team Willow",
         "heading_size": "h1",
-        "description": "<p>Desc</p>",
+        "description": "<p>Willow is a collaborative team channelling our love of houseplants, problem-solving skills, and years of product development experience into plant-saving solutions powered by smart tech and slick design.</p><p>We represent plant parents of all types: horticulturalists, houseplant hobbyists, and some serious plant serial killers. One of us even managed to kill a cactus (we’re not naming names...for now).</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 4,
