@@ -49,15 +49,16 @@
       ],
       "settings": {
         "image": "shopify://shop_images/about-willow.jpg",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 0,
         "image_height": "medium",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
         "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "split": false,
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "background-1",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "left",
         "show_text_below": false
       }
     },
@@ -264,10 +265,12 @@
           "settings": {
             "button_label": "Button label",
             "button_link": "",
-            "button_style_secondary": false,
+            "button_style_cta": false,
+            "button_outline": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_cta_2": false,
+            "button_outline_2": false
           }
         }
       },
@@ -348,7 +351,6 @@
         "column_Mf36Nh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/reece-blob.png",
             "title": "REECE",
             "text": "<p>Creative Lead<br/>Plant pick: Schefflera<br/><a href=\"https://emojipedia.org/umbrella\" target=\"_blank\">☂️</a></p>"
           }
@@ -356,7 +358,6 @@
         "column_LKkHBN": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/sam-blob.png",
             "title": "SAM",
             "text": "<p>Marketing Specialist<br/>Plant pick: Cactus<br/>🌵</p>"
           }
@@ -380,7 +381,6 @@
         "saphal": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/kumar-blob.png",
             "title": "KUMAR",
             "text": "<p>Quality Assurance<br/>Plant pick: Common Rose<br/>🌹</p>"
           }
