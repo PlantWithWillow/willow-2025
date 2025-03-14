@@ -23,12 +23,9 @@
       "block_order": [
         "c0e9b2b8-b567-45bd-b888-54e642c96140"
       ],
-      "custom_css": [
-        ".banner:after {background: #fff !important; opacity: 0.4 !important;}"
-      ],
       "settings": {
         "image": "shopify://shop_images/0W8A3740.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 40,
         "image_height": "small",
         "image_behavior": "none",
         "split": false,

@@ -1,0 +1,519 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_NBkQkG": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_WzYyer": {
+          "type": "heading",
+          "settings": {
+            "heading": "Take the guesswork out of plant care",
+            "heading_size": "h1"
+          }
+        },
+        "text_b3aQBt": {
+          "type": "text",
+          "settings": {
+            "text": "Willow watches your plant and alerts you when it needs action",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WzYyer",
+        "text_b3aQBt"
+      ],
+      "custom_css": [
+        ".banner__box {padding-right: 3rem;}",
+        ".banner:after {background: linear-gradient(to right, #fff, #fff0 85%) !important;}",
+        "@media screen and (max-width: 749px) {.banner__box {padding-right: 4rem; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/willow-learn-more-banner-bubble.jpg",
+        "image_overlay_opacity": 100,
+        "image_height": "small",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_L7Ad6V": {
+      "type": "rich-text",
+      "blocks": {
+        "text_FhD4xY": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Never kill a houseplant again!<br/>Our smart Plant Sensor and Hub helps you care for your plant, before it's too late.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_FhD4xY"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "leaf-0": {
+      "type": "leaf",
+      "settings": {
+        "color": "#03594d",
+        "side": "right",
+        "flip": false,
+        "hide": true,
+        "custom": "philodendron"
+      }
+    },
+    "multirow_tHEznz": {
+      "type": "multirow",
+      "blocks": {
+        "row_rLWYhT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/willow-learn-more-sensor-measurements.jpg",
+            "caption": "",
+            "heading": "Willow knows your plant and its unique needs",
+            "text": "<p>Our Sensor monitors your plant's soil moisture, light, temperature and humidity conditions based on your plant type's preferences.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_rLWYhT"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.image-with-text__content {padding: 2rem 0; }}"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_type": "h3",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 80,
+        "padding_bottom": 52
+      }
+    },
+    "leaf-1": {
+      "type": "leaf",
+      "settings": {
+        "color": "#03594d",
+        "side": "right",
+        "flip": true,
+        "hide": false,
+        "custom": "monstera-2"
+      }
+    },
+    "multirow_tHEznz2": {
+      "type": "multirow",
+      "blocks": {
+        "row_MyC96i": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/willow-learn-more-app-alert2_1.jpg",
+            "caption": "",
+            "heading": "Get timely alerts when your plant needs care",
+            "text": "<p>Give your plants a voice! When your plant needs water or a change of conditions, you'll be notified via your phone.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_MyC96i"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.image-with-text__content {padding: 2rem 0; }}"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_type": "h3",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 32,
+        "padding_bottom": 80
+      }
+    },
+    "leaf-12": {
+      "type": "leaf",
+      "settings": {
+        "color": "#03594d",
+        "side": "left",
+        "flip": true,
+        "hide": false,
+        "custom": "monstera"
+      }
+    },
+    "multirow_R7tEYD": {
+      "type": "multirow",
+      "blocks": {
+        "row_zUJThM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/241015_WILLOW_LEARN-MORE-PAGE-IMAGE.jpg",
+            "caption": "",
+            "heading": "Go from zero to houseplant hero",
+            "text": "<p>Grow your dream indoor jungle, effortlessly! Our smart solution atkes care of your plant's needs, so you don't have to.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_zUJThM"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.image-with-text__content {padding: 2rem 0; }}"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_type": "h2",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "accent-1",
+        "row_color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 80,
+        "padding_bottom": 4
+      }
+    },
+    "circle_image_and_text_QMR79k": {
+      "type": "circle-image-and-text",
+      "blocks": {
+        "column_FH7G3L": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/learn-water.png",
+            "title": "No more over or under watering",
+            "text": "<p>Perfectly quench your plant's thirst with timely watering alerts and post-pour feedback</p>",
+            "link_label": "",
+            "link": "",
+            "link_label_2": "",
+            "link_2": ""
+          }
+        },
+        "column_VtEewP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/learn-light.png",
+            "title": "Get better growth with the right light",
+            "text": "<p>Track your plant's light exposure and pick the best spot for growing</p>",
+            "link_label": "",
+            "link": "",
+            "link_label_2": "",
+            "link_2": ""
+          }
+        },
+        "column_6hYUAB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/learn-temp.png",
+            "title": "Find the perfect temps for thriving",
+            "text": "<p>Keep your plant comfy with the right mix of temperature and humidity</p>",
+            "link_label": "",
+            "link": "",
+            "link_label_2": "",
+            "link_2": ""
+          }
+        },
+        "column_rgKX4f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/learn-happiness.png",
+            "title": "Track your plant's happiness",
+            "text": "<p>Check your plant's happiness score, updated in the app throughout the day</p>",
+            "link_label": "",
+            "link": "",
+            "link_label_2": "",
+            "link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_FH7G3L",
+        "column_VtEewP",
+        "column_6hYUAB",
+        "column_rgKX4f"
+      ],
+      "custom_css": [
+        "h4 {font-size: 1.8rem; margin: 1.5rem 0px;}",
+        ".image-wrapper--full-width {max-width: 167px; max-height: 167px; margin: 0px auto;}",
+        "@media screen and (max-width: 749px) {.grid__item {padding: 2rem 0; }}"
+      ],
+      "settings": {
+        "caption": "",
+        "title": "",
+        "image_width": "full",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 80
+      }
+    },
+    "leaf-2": {
+      "type": "leaf",
+      "settings": {
+        "color": "#03594d",
+        "side": "right",
+        "flip": true,
+        "hide": false,
+        "custom": "palm-2"
+      }
+    },
+    "circle_image_and_text_6Ld9YV": {
+      "type": "circle-image-and-text",
+      "blocks": {
+        "column_Azqz39": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/willow-learn-more-sensor.jpg",
+            "title": "Sensor",
+            "text": "<p>Lives in your houseplant</p><p>Watches your plant for you</p><p>  </p>",
+            "link_label": "",
+            "link": "",
+            "link_label_2": "",
+            "link_2": ""
+          }
+        },
+        "column_JAtYHa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/willow-learn-more-hub.jpg",
+            "title": "Hub",
+            "text": "<p>Lives in your home</p><p>Stores VIP (very important plant) updates</p><p> </p>",
+            "link_label": "",
+            "link": "",
+            "link_label_2": "",
+            "link_2": ""
+          }
+        },
+        "column_j3pJ9j": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/willow-learn-more-app.jpg",
+            "title": "App",
+            "text": "<p>Lives in your back pocket</p><p>Check in on your plants anytime, anywhere</p><p> </p>",
+            "link_label": "",
+            "link": "",
+            "link_label_2": "",
+            "link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Azqz39",
+        "column_JAtYHa",
+        "column_j3pJ9j"
+      ],
+      "custom_css": [
+        ".info .h2 {margin: 1.5rem auto 0.5rem;}",
+        ".info p {margin: 1rem auto; line-height: 1.2;}",
+        "@media screen and (max-width: 749px) {.grid__item {padding: 2rem 0; }}"
+      ],
+      "settings": {
+        "caption": "",
+        "title": "How Willow Works",
+        "image_width": "half",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    },
+    "leaf-3": {
+      "type": "leaf",
+      "settings": {
+        "color": "#03594d",
+        "side": "left",
+        "flip": false,
+        "hide": false,
+        "custom": "monstera-2"
+      }
+    },
+    "video_TEfUFq": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/How Willow Works_Final.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/willow-learn-more-video-thumbnail2.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multirow_6VwBE8": {
+      "type": "multirow",
+      "blocks": {
+        "row_Dgjk9d": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/willow-learn-more-green-thumb.jpg",
+            "caption": "",
+            "heading": "Get your (green) thumb ready",
+            "text": "<p>Take a peek inside the world of Willow with our app!  It's free to download and packed with plant-y of features to level up your plant care game.</p><p></p><p>Start your black thumb's makeover today.</p>",
+            "button_label": "Download our free app",
+            "button_link": "https://onelink.to/mrywgh"
+          }
+        }
+      },
+      "block_order": [
+        "row_Dgjk9d"
+      ],
+      "custom_css": [
+        ".image-with-text {padding: 1rem 0;}",
+        "@media screen and (max-width: 749px) {.image-with-text__content {padding: 2rem 0; }}"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_type": "h3",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "accent-2",
+        "row_color_scheme": "accent-2",
+        "mobile_content_alignment": "center",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "leaf-4": {
+      "type": "leaf",
+      "settings": {
+        "color": "#03594d",
+        "side": "right",
+        "flip": true,
+        "hide": false,
+        "custom": "palm-2"
+      }
+    },
+    "rich_text_QLeGyD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aRFGje": {
+          "type": "heading",
+          "settings": {
+            "heading": "Still mulling it over?",
+            "heading_size": "h1"
+          }
+        },
+        "text_FYpnCL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Keep your fact finding mission going with our Frequently Asked Questions</p>"
+          }
+        },
+        "button_FLgRLE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Browse our FAQ",
+            "button_link": "shopify://pages/faq",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aRFGje",
+        "text_FYpnCL",
+        "button_FLgRLE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_NBkQkG",
+    "rich_text_L7Ad6V",
+    "leaf-0",
+    "multirow_tHEznz",
+    "leaf-1",
+    "multirow_tHEznz2",
+    "leaf-12",
+    "multirow_R7tEYD",
+    "circle_image_and_text_QMR79k",
+    "leaf-2",
+    "circle_image_and_text_6Ld9YV",
+    "leaf-3",
+    "video_TEfUFq",
+    "multirow_6VwBE8",
+    "leaf-4",
+    "rich_text_QLeGyD"
+  ]
+}

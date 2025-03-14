@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "instructions": {
+      "type": "instructions",
+      "blocks": {},
+      "settings": {}
+    }
+  },  
+  "order": [
+    "instructions"
+  ]
+}

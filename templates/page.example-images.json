@@ -46,109 +46,7 @@
         "padding_top": 40,
         "padding_bottom": 32
       }
-    },
-    "leaf_9YTA4f": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "left",
-        "flip": true,
-        "hide": false,
-        "custom": "ficus"
-      }
-    },
-    "leaf_F6iYXc": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "right",
-        "flip": false,
-        "hide": false,
-        "custom": "ficus-2"
-      }
-    },
-    "circle_image_and_text_9VxiRC": {
-      "type": "circle-image-and-text",
-      "blocks": {
-        "column_Gw6EJ3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/willow-learn-more-video-thumbnail2.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.</p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_Cqe9eK": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/willow-learn-more-video-thumbnail2.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.</p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        },
-        "column_Ta6RcW": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/willow-learn-more-video-thumbnail2.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.</p>",
-            "link_label": "",
-            "link": "",
-            "link_label_2": "",
-            "link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_Gw6EJ3",
-        "column_Cqe9eK",
-        "column_Ta6RcW"
-      ],
-      "settings": {
-        "caption": "",
-        "title": "Circle Image and Text",
-        "image_width": "half",
-        "image_ratio": "circle",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 80
-      }
-    },
-    "leaf_wC4iRM": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "left",
-        "flip": true,
-        "hide": false,
-        "custom": "monstera"
-      }
-    },
-    "leaf_KJ3TzC": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "right",
-        "flip": true,
-        "hide": false,
-        "custom": "monstera-2"
-      }
-    },
+    },    
     "featured_collection_LzQqwk": {
       "type": "featured-collection",
       "settings": {
@@ -175,26 +73,6 @@
         "swipe_on_mobile": true,
         "padding_top": 80,
         "padding_bottom": 36
-      }
-    },
-    "leaf_gBFm3X": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "left",
-        "flip": false,
-        "hide": false,
-        "custom": "palm"
-      }
-    },
-    "leaf_6EdPe8": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "right",
-        "flip": true,
-        "hide": false,
-        "custom": "palm-2"
       }
     },
     "image_with_text_7JLUby": {
@@ -240,26 +118,6 @@
         "mobile_content_alignment": "left",
         "padding_top": 60,
         "padding_bottom": 80
-      }
-    },
-    "leaf_HCggq9": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "left",
-        "flip": false,
-        "hide": false,
-        "custom": "philodendron"
-      }
-    },
-    "leaf_8VBQPL": {
-      "type": "leaf",
-      "settings": {
-        "color": "#03594d",
-        "side": "right",
-        "flip": true,
-        "hide": false,
-        "custom": "philodendron-2"
       }
     },
     "collage_hhND9N": {
@@ -454,106 +312,16 @@
         "padding_bottom": 60
       }
     },
-    "rich_text_Lbjc8g": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_yHYPwk": {
-          "type": "heading",
-          "settings": {
-            "heading": "Waves",
-            "heading_size": "h1"
-          }
-        },
-        "text_eXV8c7": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Can be any color and can also be inverted</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_yHYPwk",
-        "text_eXV8c7"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "waves_LCTBKn": {
-      "type": "waves",
-      "settings": {
-        "color": "#8ba78d",
-        "background": "#ffffff",
-        "direction": "up",
-        "custom": "crescent"
-      }
-    },
-    "waves_fPTFNG": {
-      "type": "waves",
-      "settings": {
-        "color": "#8ba78d",
-        "background": "#ffffff",
-        "direction": "up",
-        "custom": "splash-1"
-      }
-    },
-    "waves_4B3iYf": {
-      "type": "waves",
-      "settings": {
-        "color": "#8ba78d",
-        "background": "#ffffff",
-        "direction": "up",
-        "custom": "splash-2"
-      }
-    },
-    "waves_6PamwM": {
-      "type": "waves",
-      "settings": {
-        "color": "#8ba78d",
-        "background": "#ffffff",
-        "direction": "up",
-        "custom": "splash-3"
-      }
-    },
-    "waves_UjbGrF": {
-      "type": "waves",
-      "settings": {
-        "color": "#8ba78d",
-        "background": "#ffffff",
-        "direction": "up",
-        "custom": "splash-4"
-      }
-    }
   },
   "order": [
     "main",
     "rich_text_kdFyTd",
-    "leaf_9YTA4f",
-    "leaf_F6iYXc",
-    "circle_image_and_text_9VxiRC",
-    "leaf_wC4iRM",
-    "leaf_KJ3TzC",
     "featured_collection_LzQqwk",
-    "leaf_gBFm3X",
-    "leaf_6EdPe8",
     "image_with_text_7JLUby",
-    "leaf_HCggq9",
-    "leaf_8VBQPL",
     "collage_hhND9N",
     "rich_text_AQL7fE",
     "multirow_VYkCAq",
     "image_banner_TXhKzc",
-    "video_NE3NYk",
-    "rich_text_Lbjc8g",
-    "waves_LCTBKn",
-    "waves_fPTFNG",
-    "waves_4B3iYf",
-    "waves_6PamwM",
-    "waves_UjbGrF"
+    "video_NE3NYk"
   ]
 }

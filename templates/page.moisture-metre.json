@@ -1,0 +1,269 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Willow's soil moisture meter",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.banner--small:not(.banner--adapt) {min-height: 22rem; } .banner__content {padding: 4rem; }}",
+        "@media screen and (max-width: 749px) {.banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {min-height: 18rem; }}",
+        ".banner:not(.slideshow):has(.color-background-1):after,.banner:not(.slideshow):has(.color-background-2):after {background: #fff !important;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/282_Willow_plant_with_willow_2023_Valentine_girardot_Perth_commercial_photographer_future_proof_agency.jpg",
+        "image_overlay_opacity": 80,
+        "image_height": "small",
+        "desktop_content_position": "middle",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "intro": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Houseplant beginners and experts alike understand the importance of maintaining optimal soil conditions for healthy plant growth. Willow’s Sensor helps you do this by constantly monitoring soil moisture conditions based on the plant type’s preference, plus ambient light, temperature and humidity. Receive alerts directly to your smartphone when your plant needs care. You’ll never need to guess about plant care again!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_4khYin": {
+      "type": "image-with-text-simple",
+      "blocks": {
+        "heading_7kGyfU": {
+          "type": "heading",
+          "settings": {
+            "heading": "More than a moisture meter",
+            "heading_size": "h1"
+          }
+        },
+        "text_m9bbiy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What sets Willow’s Sensor apart? It’s a cutting-edge solution that does more than those other moisture meters on the market by giving you context to its readings. Let’s say you purchase a moisture meter, stick it in your indoor plant’s pot, and get a reading of 4 or 40%. Great, now what? Does your plant like its soil at this level? Do you need to water it, or hold off for fear of overwatering? Is it the right soil temperature? A simple reading doesn’t consider seasonality, time of day, or how long your plant’s been sitting at 40%. All these considerations and more are critical to happy, healthy houseplants, and Willow factors it all in.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7kGyfU",
+        "text_m9bbiy"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/willow-moisture-metre-sensor.jpg",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_4hnPay": {
+      "type": "image-with-text-simple",
+      "blocks": {
+        "heading_7kGyfU": {
+          "type": "heading",
+          "settings": {
+            "heading": "How soil moisture affects your houseplant’s health",
+            "heading_size": "h1"
+          }
+        },
+        "text_m9bbiy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Here’s a trivia fact for you: most houseplants are killed because of over and underwatering. It’s not an understatement to say soil moisture is crucial for your indoor plant’s health. Too much water can lead to root rot, while too little can cause wilting and poor growth. Too much  over or under watering leads to another sad plant funeral. </p><p>A professional soil moisture metre like Willow’s Sensor helps you maintain the perfect balance. You can prevent overwatering or underwatering your plants, ensuring they receive just the right amount of water.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7kGyfU",
+        "text_m9bbiy"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/willow-moisture-metre-watering.jpg",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "custom_liquid_VBxw6y": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"rich-text__wrapper\">\n<div class=\"rich-text__blocks center\">\n<h3 style=\"font-size: 2.4rem;\">How our plant moisture sensor works</h3>\n</div>\n</div>",
+        "color_scheme": "background-2",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "how_it_works": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Sensor’s features make soil moisture readings foolproof for better plant care:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "custom_css": [
+        ".h3 {font-size: 2.4rem;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_V3r4PL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_8LG48W": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/willow-moisture-metre-probe.jpg",
+            "title": "",
+            "text": "<p><strong>Soil moisture probe </strong></p><p>The Sensor is equipped with a highly sensitive soil moisture probe that gets planted right into your indoor plant’s soil. The probes monitor soil condition round-the-clock and send real-time data on the moisture content of your soil to the app. When a plant is thirsty or has been watered before it needed it, you’ll get an alert. This helps you make informed decisions to keep your houseplant hydrated. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xpbpwx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/willow-humidity-metre-app.jpg",
+            "title": "",
+            "text": "<p><strong>Soil type setting</strong> </p><p>When adding your plant to the Willow app and pairing it with a Sensor, various soil types are available to choose from: finer, coarse, sandy, or standard potting mix. This insight gives your Sensor additional context for enhanced reading capabilities.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_8LG48W",
+        "column_xpbpwx"
+      ],
+      "custom_css": [
+        ".media--square {padding-bottom: 50%;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "rich_text_dyFjMt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ijTdip": {
+          "type": "heading",
+          "settings": {
+            "heading": "Benefits of switching to the Sensor",
+            "heading_size": "h1"
+          }
+        },
+        "text_8qBd4B": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You and your houseplants have plenty to benefit from by levelling up your plant care game with Willow.  You’ll avoid giving your houseplant unnecessary health complications (or an untimely death) by knowing exactly when your plant needs water, leading to healthier root systems and robust growth. Helpful alerts straight to your phone means you’ll never have to guess what your plant needs again – your plant will tell you!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ijTdip",
+        "text_8qBd4B"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "banner",
+    "intro",
+    "image_with_text_4khYin",
+    "image_with_text_4hnPay",
+    "custom_liquid_VBxw6y",
+    "how_it_works",
+    "multicolumn_V3r4PL",
+    "rich_text_dyFjMt"
+  ]
+}
