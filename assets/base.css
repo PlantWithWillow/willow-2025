@@ -2571,7 +2571,8 @@ input[type='checkbox'] {
   transform: scale(1.07);
 }
 
-.header__icon .icon {
+.header__icon .icon,
+#cart-icon-bubble .icon-close {
   height: 2rem;
   width: 2rem;
   fill: none;
