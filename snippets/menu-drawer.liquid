@@ -5,8 +5,7 @@
   {% render 'menu-drawer' %}
 {% endcomment %}
 
-{% comment %} <menu-drawer id="mainMenu" class="drawer{% if menu == empty %} is-empty{% endif %}"> {% endcomment %}
-<div id="MenuDrawer" class="menu-drawer">
+<menu-drawer id="MenuDrawer" class="menu-drawer">
   <div
     class="color-scheme-3"
     role="dialog"
@@ -157,7 +156,10 @@
                           tabindex="-1"
                         >
                           <div class="menu-drawer__inner-submenu">
-                            <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                            <button
+                              class="menu-drawer__close-button link link--text focus-inset"
+                              aria-expanded="true"
+                            >
                               <span class="svg-wrapper">
                                 {{- 'icon-arrow.svg' | inline_asset_content -}}
                               </span>
@@ -377,5 +379,4 @@
       </div>
     </div>
   </div>
-</div>
-{% comment %} </menu-drawer> {% endcomment %}
+</menu-drawer>

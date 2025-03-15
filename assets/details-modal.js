@@ -34,6 +34,18 @@ class DetailsModal extends HTMLElement {
       this.detailsContainer.querySelector('[tabindex="-1"]'),
       this.detailsContainer.querySelector('input:not([type="hidden"])')
     );
+
+    /* Header search */
+    if (this.classList.contains('header__search')) {
+      document.querySelector('header').classList.add('search-active');
+    }
+
+    /* Close Drawers */
+    document.querySelector('#cart-icon-bubble').classList.remove('active');
+    document.querySelector('cart-drawer').classList.remove('active');
+    document.body.classList.remove('menu-open');
+    document.querySelector('#menu-icon-bubble').classList.remove('active');
+    document.querySelector('menu-drawer').classList.remove('active');
   }
 
   close(focusToggle = true) {
@@ -41,6 +53,11 @@ class DetailsModal extends HTMLElement {
     this.detailsContainer.removeAttribute('open');
     document.body.removeEventListener('click', this.onBodyClickEvent);
     document.body.classList.remove('overflow-hidden');
+
+    /* Header search */
+    if (this.classList.contains('header__search')) {
+      document.querySelector('header').classList.remove('search-active');
+    }
   }
 }
 

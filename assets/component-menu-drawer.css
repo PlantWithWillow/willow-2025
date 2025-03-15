@@ -22,8 +22,8 @@
   padding-top: calc(var(--announcement-bar-height) + var(--body-padding-mobile));
 }
 
-.menu-drawer.open,
-.open .menu-drawer__submenu {
+.menu-drawer.active,
+.active .menu-drawer__submenu {
   transform: translateY(0);
   visibility: visible;
 }

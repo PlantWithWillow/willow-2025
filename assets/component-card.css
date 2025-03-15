@@ -324,6 +324,31 @@
   font-size: calc(var(--font-heading-scale) * 1.2rem);
 }
 
+.product-card-wrapper .price {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  font-size: calc(var(--font-heading-scale)* 1.8rem);
+}
+
+.product-card-wrapper span[class*="savings"] {
+  font-size: 0.9rem;
+  background: rgb(var(--color-sage-green));
+  padding: 4px 10px;
+  margin-top: 7px !important;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 1300px), screen and (min-width: 390px) and (max-width: 988px) {
+  .product-card-wrapper .card-information {
+    position: relative;
+  }
+  .product-card-wrapper span[class*="savings"] {
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+}
+
 .card--horizontal
   .card-information
   > *:not(.visually-hidden:first-child)

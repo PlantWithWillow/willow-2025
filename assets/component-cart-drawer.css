@@ -109,6 +109,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  display: none;
 }
 cart-drawer.is-empty .drawer-close {
   top: calc(var(--announcement-bar-height) + var(--body-padding-mobile) + 10px);

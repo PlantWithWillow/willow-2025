@@ -27,6 +27,32 @@
   {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
   {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
+
+{%- liquid
+  assign text = ''
+  assign savings_au = ''
+  assign savings_uk = ''
+  if card_product.handle contains 'starter'
+    assign text = 'For 1 plant: 1 Sensor + 1 Hub'
+    assign savings_au = 'Save $9.95'
+    assign savings_uk = 'Save £11.99'
+  elsif card_product.handle contains 'parent'
+    assign text = 'For 3 plant: 3 Sensors + 1 Hub'
+    assign savings_au = 'Save $19.85'
+    assign savings_uk = 'Save £29.97'
+  elsif card_product.handle contains 'urban'
+    assign text = 'For 5 plant: 5 Sensors + 1 Hub'
+    assign savings_au = 'Save $29.75'
+    assign savings_uk = 'Save £48.95'
+  elsif card_product.handle contains 'extension'
+    assign text = 'Add on to your Sensor for deep pots'
+  elsif card_product.handle contains 'sensor'
+    assign text = 'Add a Sensor as you grow'
+  elsif card_product.handle contains 'hub'
+    assign text = 'Add more range for spacious, split-level spaces'
+  endif
+-%}
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -204,7 +230,15 @@
               </p>
             {%- endif -%}
 
+            {%- if savings_au != blank and localization.market.handle == 'au' -%}
+              <span class="badge badge--savings" style="float: right">{{ savings_au }}</span>
+            {%- endif -%}
+            {%- if savings_uk != blank and localization.market.handle == 'uk' -%}
+              <span class="badge badge--savings" style="float: right">{{ savings_uk }}</span>
+            {%- endif -%}
+
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
                 {% liquid
@@ -285,15 +319,6 @@
                 </div>
                 </quantity-popover>
               {% endif %}
-            {%- endif -%}
-
-            {% assign text = '' %}
-            {%- if card_product.handle contains 'starter' -%}
-              {% assign text = 'For 1 plant: 1 Sensor + 1 Hub' %}
-            {%- elsif card_product.handle contains 'parent' -%}
-              {% assign text = 'For 3 plant: 3 Sensors + 1 Hub' %}
-            {%- elsif card_product.handle contains 'urban' -%}
-              {% assign text = 'For 5 plant: 5 Sensors + 1 Hub' %}
             {%- endif -%}
 
             {%- if text != blank -%}

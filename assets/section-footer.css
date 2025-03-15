@@ -379,3 +379,7 @@
     flex-direction: row;
   }
 }
+
+.footer__content-bottom-wrapper--center {
+  justify-content: space-between;
+}

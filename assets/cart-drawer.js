@@ -1,6 +1,7 @@
 class CartDrawer extends HTMLElement {
   constructor() {
     super();
+    this.cartLink = document.querySelector('#cart-icon-bubble');
 
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
@@ -8,25 +9,33 @@ class CartDrawer extends HTMLElement {
   }
 
   setHeaderCartIconAccessibility() {
-    const cartLink = document.querySelector('#cart-icon-bubble');
-    if (!cartLink) return;
+    if (!this.cartLink) return;
 
-    cartLink.setAttribute('role', 'button');
-    cartLink.setAttribute('aria-haspopup', 'dialog');
-    cartLink.addEventListener('click', (event) => {
+    this.cartLink.setAttribute('role', 'button');
+    this.cartLink.setAttribute('aria-haspopup', 'dialog');
+    this.cartLink.addEventListener('click', (event) => {
       event.preventDefault();
-      this.open(cartLink);
+      if (this.cartLink.classList.contains('active')) {
+        this.close(this.cartLink);
+      } else {
+        this.open(this.cartLink);
+      }
     });
-    cartLink.addEventListener('keydown', (event) => {
+    this.cartLink.addEventListener('keydown', (event) => {
       if (event.code.toUpperCase() === 'SPACE') {
         event.preventDefault();
-        this.open(cartLink);
+        if (this.cartLink.classList.contains('active')) {
+          this.close(this.cartLink);
+        } else {
+          this.open(this.cartLink);
+        }
       }
     });
   }
 
   open(triggeredBy) {
     if (triggeredBy) this.setActiveElement(triggeredBy);
+    this.cartLink.classList.add('active');
     const cartDrawerNote = this.querySelector('[id^="Details-"] summary');
     if (cartDrawerNote && !cartDrawerNote.hasAttribute('role')) this.setSummaryAccessibility(cartDrawerNote);
     // here the animation doesn't seem to always get triggered. A timeout seem to help
@@ -47,10 +56,14 @@ class CartDrawer extends HTMLElement {
     );
 
     document.body.classList.add('overflow-hidden');
+    document.body.classList.remove('menu-open');
+    document.querySelector('#menu-icon-bubble').classList.remove('active');
+    document.querySelector('#MenuDrawer').classList.remove('active');
   }
 
   close() {
     this.classList.remove('active');
+    this.cartLink.classList.remove('active');
     removeTrapFocus(this.activeElement);
     document.body.classList.remove('overflow-hidden');
   }
