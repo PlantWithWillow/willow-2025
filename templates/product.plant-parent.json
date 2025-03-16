@@ -248,7 +248,7 @@
           "settings": {
             "image": "shopify://shop_images/watering-can.svg",
             "pretitle": "",
-            "title": "<strong>No more over or under watering (the #1 plant killer!)</strong>",
+            "title": "No more over or under watering (the #1 plant killer!)",
             "text": "<p>Timely alerts and post-pour feedback from your plant to water perfectly</p>",
             "link_label": "",
             "link": ""
@@ -259,7 +259,7 @@
           "settings": {
             "image": "shopify://shop_images/plant-window.svg",
             "pretitle": "",
-            "title": "<strong>Find the right conditions for thriving</strong>",
+            "title": "Find the right conditions for thriving",
             "text": "<p>Willow tracks your plant's light exposure, temperature and humidity and helps you get the right mix for a happy plant</p>",
             "link_label": "",
             "link": ""
@@ -352,7 +352,7 @@
           "settings": {
             "image": "shopify://shop_images/CIRCLE_2.png",
             "pretitle": "",
-            "title": "Accurate advice from our horticulturists",
+            "title": "Accurate advice",
             "text": "<p>Follow the personalised care guides developed by our expert team in our plant library, featuring over 600 plant species!</p>",
             "link_label": "",
             "link": ""
