@@ -23,6 +23,10 @@
       "block_order": [
         "c0e9b2b8-b567-45bd-b888-54e642c96140"
       ],
+      "custom_css": [
+        ".banner {padding-top: 0 !important}",
+        ".banner h2 {text-align: center}"
+      ],
       "settings": {
         "image": "shopify://shop_images/0W8A3740.jpg",
         "image_overlay_opacity": 40,
@@ -32,7 +36,7 @@
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-1",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": false
