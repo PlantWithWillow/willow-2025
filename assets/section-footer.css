@@ -5,19 +5,6 @@
   padding-right: calc(4rem / var(--font-body-scale));
 }
 
-.mobile {
-  display: none;
-}
-
-@media screen and (max-width: 1079px) {
-  .tablet-up {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-}
-
 @media screen and (min-width: 750px) {
   .footer__content-top .grid {
     row-gap: 6rem;
@@ -26,7 +13,7 @@
 }
 
 .footer__content-bottom {
-  padding-top: 1rem;
+  padding: 0 0 2rem;
 }
 
 .footer__content-bottom:only-child {
@@ -284,10 +271,6 @@
 
 .footer-block__details-content .placeholder-svg {
   max-width: 20rem;
-}
-
-.copyright__content {
-  font-size: 1.1rem;
 }
 
 .copyright__content a {
