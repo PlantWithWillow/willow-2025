@@ -2,65 +2,65 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-.features {
-  margin-top: 3rem;
-	display: flex; 
-	flex-wrap: wrap; 
-	align-items: flex-start; 
-	gap: 3rem;
-  color: var(--color-foreground);
-}
-.features .feature-card {
-	display: flex; 
-	align-items: flex-start; 
-	gap: 12px;
-	flex-basis: calc(50% - 12px);
-}
+  .features {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 3rem;
+    color: var(--color-foreground);
+  }
+  .features .feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex-basis: calc(50% - 12px);
+  }
 
-.features .feature-card .feature-card--icon {
-	background: var(--color-badge-background);
-	fill: var(--color-badge-foreground);
-	width: 36px;
-	height: 36px;
-  min-width: 36px;
-	border-radius: 8px;
-	display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.features .feature-card p {
-	margin-top: 0;
-	margin-bottom: 10px;
-}
-.features .feature-card .feature-card--header {
-	font-weight: bold;
-	font-size: 2rem;
-	margin-top: 0;
-}
-.features-columns img {
-  max-width: 60%;
-  height: auto;
-  margin: 2rem auto 1rem;
-  display: block;
-}
-@media screen and (min-width: 989px) and (max-width: 1350px) {
-  .features .feature-card {
-	flex-basis: 100%;
+  .features .feature-card .feature-card--icon {
+    background: var(--color-badge-background);
+    fill: var(--color-badge-foreground);
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
-@media screen and (max-width: 600px) {
-  .features .feature-card {
-	flex-basis: 100%;
+  .features .feature-card p {
+    margin-top: 0;
+    margin-bottom: 10px;
   }
-}
-@media screen and (max-width: 988px) {
   .features .feature-card .feature-card--header {
-	  font-size: 1.8rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0;
   }
   .features-columns img {
-    max-width: 80%;
+    max-width: 60%;
+    height: auto;
+    margin: 2rem auto 1rem;
+    display: block;
   }
-}
+  @media screen and (min-width: 989px) and (max-width: 1350px) {
+    .features .feature-card {
+      flex-basis: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .features .feature-card {
+      flex-basis: 100%;
+    }
+  }
+  @media screen and (max-width: 988px) {
+    .features .feature-card .feature-card--header {
+      font-size: 1.8rem;
+    }
+    .features-columns img {
+      max-width: 80%;
+    }
+  }
 {%- endstyle -%}
 
 {%- style -%}
@@ -116,16 +116,13 @@
             {% endif %}
           >
             <div class="feature-card content-container">
-              <div class=" feature-card--icon"
-                {% if block.settings.icon_background contains "#" %}
+              <div
+                class=" feature-card--icon"
+                {% if block.settings.icon_background contains '#' %}
                   style="background: {{ block.settings.icon_background }}"
-                {% endif %}              
+                {% endif %}
               >
-                {% render 'icon-accordion', 
-                  icon: block.settings.icon,
-                  fill: block.settings.icon_fill
-                %}
-                
+                {% render 'icon-accordion', icon: block.settings.icon, fill: block.settings.icon_fill %}
               </div>
               <div class="feature-card--content">
                 {%- if block.settings.title != blank -%}
@@ -185,7 +182,7 @@
       <div class="feature--image{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy' }}
       </div>
-      {%- endif -%}
+    {%- endif -%}
   </div>
 </div>
 
@@ -195,10 +192,7 @@
   "class": "section",
   "tag": "section",
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer"
-    ]
+    "groups": ["header", "footer"]
   },
   "settings": [
     {
@@ -344,50 +338,48 @@
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__1.label"
             },
             {
-              "value": "alert",
-              "label": "Alert"
+              "value": "apple",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__2.label"
             },
             {
               "value": "banana",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__3.label"
             },
             {
-              "value": "bluetooth",
-              "label": "Bluetooth"
+              "value": "bottle",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__4.label"
             },
-           
             {
               "value": "box",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__5.label"
             },
-            
+            {
+              "value": "carrot",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__6.label"
+            },
             {
               "value": "chat_bubble",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__7.label"
             },
             {
-              "value": "check",
-              "label": "Check - Circle"
-            },
-            {
               "value": "check_mark",
-              "label": "Check - Square"
-            },
-            {
-              "value": "circle_square",
-              "label": "Circle in square"
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__8.label"
             },
             {
               "value": "clipboard",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__9.label"
             },
             {
-              "value": "control",
-              "label": "Control"
+              "value": "dairy",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__10.label"
             },
             {
-              "value": "document",
-              "label": "Document"
+              "value": "dairy_free",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__11.label"
+            },
+            {
+              "value": "dryer",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__12.label"
             },
             {
               "value": "eye",
@@ -398,20 +390,16 @@
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__14.label"
             },
             {
-              "value": "flag",
-              "label": "Flag"
+              "value": "gluten_free",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__15.label"
             },
             {
               "value": "heart",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__16.label"
             },
             {
-              "value": "heart_full",
-              "label": "Heart - full"
-            },
-            {
-              "value": "idea",
-              "label": "Idea"
+              "value": "iron",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__17.label"
             },
             {
               "value": "leaf",
@@ -423,11 +411,11 @@
             },
             {
               "value": "lightning_bolt",
-              "label": "Lightning"
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__20.label"
             },
             {
-              "value": "lightning",
-              "label": "Lightning - full"
+              "value": "lipstick",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__21.label"
             },
             {
               "value": "lock",
@@ -438,29 +426,24 @@
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__23.label"
             },
             {
-              "value": "mobile",
-              "label": "Mobile phone"
+              "value": "nut_free",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__24.label"
             },
             {
-              "value": "modular",
-              "label": "Modular"
+              "value": "pants",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__25.label"
             },
-            {
-              "value": "mortarboard",
-              "label": "Mortarboard"
-            },
-            
             {
               "value": "paw_print",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__26.label"
             },
             {
-              "value": "paw",
-              "label": "Paw - full"
-            },
-            {
               "value": "pepper",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__27.label"
+            },
+            {
+              "value": "perfume",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__28.label"
             },
             {
               "value": "plane",
@@ -468,7 +451,7 @@
             },
             {
               "value": "plant",
-              "label": "Plant"
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__30.label"
             },
             {
               "value": "price_tag",
@@ -491,13 +474,6 @@
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__35.label"
             },
             {
-              "value": "search",
-              "label": "Search"
-            },
-            {
-              "value": "sensor_pot",
-              "label": "Sensor & Pot"
-            },{
               "value": "serving_dish",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__36.label"
             },
@@ -518,16 +494,8 @@
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__40.label"
             },
             {
-              "value": "sprout",
-              "label": "Sprout"
-            },
-            {
               "value": "star",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__41.label"
-            },
-            {
-              "value": "stars",
-              "label": "Stars"
             },
             {
               "value": "stopwatch",
@@ -538,11 +506,11 @@
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__43.label"
             },
             {
-              "value": "wifi",
-              "label": "Wi-Fi"
+              "value": "washing",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__44.label"
             }
           ],
-          "default": "none",
+          "default": "check_mark",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.label"
         },
         {

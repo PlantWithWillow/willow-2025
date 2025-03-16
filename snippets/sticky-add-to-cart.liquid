@@ -1,44 +1,46 @@
 {%- style -%}
-div#sticky-add-to-cart {
-  width: 100%;
-  position: fixed;
-  top: auto;
-  bottom: 0;
-  z-index: 5;
-  padding: 1rem;
-  text-align: right;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  display: flex;
-  /* justify-content: flex-end; */
-}
-div#sticky-add-to-cart.active {
-  opacity: 1;
-  pointer-events: all;
-  bottom: 20px;
-}
-div#sticky-add-to-cart .icon-caret {
-  transform: rotate(180deg);
-  width: 20px;
-}
-#sticky-add-to-cart-button {
-  padding: 0 1rem;
-  font-size: 1.3rem;
-  min-height: 40px;
-  display: flex;
-  gap: 6px;
-  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
-  border-radius: var(--buttons-radius-outset);
-}
-@media screen and (min-width: 750px) {
+  div#sticky-add-to-cart {
+    width: 100%;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    z-index: 5;
+    padding: 1rem;
+    text-align: right;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    display: flex;
+    background: transparent;
+    padding-top: 0;
+    /* justify-content: flex-end; */
+  }
   div#sticky-add-to-cart.active {
+    opacity: 1;
+    pointer-events: all;
     bottom: 20px;
   }
-}
+  div#sticky-add-to-cart .icon-caret {
+    transform: rotate(180deg);
+    width: 20px;
+  }
+  #sticky-add-to-cart-button {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    min-height: 40px;
+    display: flex;
+    gap: 6px;
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: var(--buttons-radius-outset);
+  }
+  @media screen and (min-width: 750px) {
+    div#sticky-add-to-cart.active {
+      bottom: 20px;
+    }
+  }
 {%- endstyle -%}
 
-<div id="sticky-add-to-cart">
+<div id="sticky-add-to-cart" class="color-scheme-1">
   <button id="sticky-add-to-cart-button" onclick="scrollToAdd()" class="button button--primary">
     {% comment %} {%- render 'icon-caret' -%} {% endcomment %}
     {{ 'products.product.add_to_cart' | t }}
@@ -47,16 +49,16 @@ div#sticky-add-to-cart .icon-caret {
 
 <script>
   window.addEventListener('scroll', () => {
-    const accordion = document.querySelector(".collapsible-content:first-of-type");
-    const stickyButton = document.getElementById("sticky-add-to-cart");
-    if(window.innerWidth < 750) {
-      if(window.scrollY > (window.innerHeight * 1.25)) {
+    const accordion = document.querySelector('.collapsible-content:first-of-type');
+    const stickyButton = document.getElementById('sticky-add-to-cart');
+    if (window.innerWidth < 750) {
+      if (window.scrollY > window.innerHeight * 1.25) {
         stickyButton.classList.add('active');
       } else {
         stickyButton.classList.remove('active');
       }
     } else {
-      if(window.scrollY > (window.innerHeight * 0.8)) {
+      if (window.scrollY > window.innerHeight * 0.8) {
         stickyButton.classList.add('active');
       } else {
         stickyButton.classList.remove('active');
@@ -64,18 +66,18 @@ div#sticky-add-to-cart .icon-caret {
     }
   });
   const scrollToAdd = () => {
-    if(window.innerWidth < 750) {
+    if (window.innerWidth < 750) {
       const swiper = document.querySelector('.grid__item.product__media-wrapper .swiper-main');
       window.scrollTo({
         top: swiper.offsetHeight + 100,
-        behavior: "smooth"
+        behavior: 'smooth',
       });
     } else {
       const variantSelector = document.querySelector('#MainContent variant-radios:first-of-type');
       window.scrollTo({
         top: variantSelector.offsetTop,
-        behavior: "smooth"
+        behavior: 'smooth',
       });
     }
-  }
+  };
 </script>
