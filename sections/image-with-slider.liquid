@@ -16,6 +16,7 @@
   @media screen and (min-width: 990px) {
     .image-with-slideshow {
       display: flex;
+      align-items: center;
     }
 
     .image-with-slideshow > * {
@@ -29,11 +30,13 @@
   }
 
   .image-with-slideshow slider-component img {
-    max-width: 100%;
-  }
-  .image-with-slideshow .image-wrapper {
     border-radius: var(--border-radius);
     overflow: hidden;
+    max-height: 60vh;
+    width: auto;
+  }
+  .image-with-slideshow .image-wrapper {
+    text-align: center;
   }
   .image-with-slideshow .slider--desktop .slider__slide:first-child {
     margin-left: 0;
@@ -87,6 +90,7 @@
             {% for block in section.blocks %}
               {% case block.type %}
                 {% when 'slide' %}
+                  {% assign slides = slides | plus: 1 %}
                   <li
                     id="Slide-{{ section.id }}-{{ forloop.index }}"
                     class="grid__item slider__slide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -96,27 +100,20 @@
                     {% endif %}
                   >
                     <div class="image-wrapper content-container">
-                      <div
-                        class="media media--{{ section.settings.height }}"
-                        {% if section.settings.height == 'adapt' %}
-                          style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                        {% endif %}
-                      >
-                        {% capture sizes %}
+                      {% capture sizes %}
                           (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
                           (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
                           (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
                           calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
                         {% endcapture %}
-                        {{
-                          block.settings.image
-                          | image_url: width: 3200
-                          | image_tag:
-                            widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                            sizes: sizes,
-                            class: 'multicolumn-card__image'
-                        }}
-                      </div>
+                      {{
+                        block.settings.image
+                        | image_url: width: 3200
+                        | image_tag:
+                          widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+                          sizes: sizes,
+                          class: 'multicolumn-card__image'
+                      }}
                     </div>
                     <h3 class="image-caption center h3">{{ block.settings.caption }}</h3>
                   </li>
@@ -138,16 +135,28 @@
             </button>
 
             <div class="slider-counter slider-counter--dots">
+              {% assign slide_count = 0 %}
+              {%- for block in section.blocks -%}
+                {% case block.type %}
+                  {% when 'slide' %}
+                    {% assign slide_count = slide_count | plus 1 %}
+                {%- endcase -%}
+              {%- endfor -%}
               <div class="slideshow__control-wrapper">
+                {% assign index = 1 %}
                 {%- for block in section.blocks -%}
-                  <button
-                    class="slider-counter__link slider-counter__link--dots link"
-                    aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-                    aria-controls="Slider-{{ section.id }}"
-                    data-target="{{ forloop.index }}"
-                  >
-                    <span class="dot"></span>
-                  </button>
+                  {% case block.type %}
+                    {% when 'slide' %}
+                      <button
+                        class="slider-counter__link slider-counter__link--dots link"
+                        aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ index }} {{ 'general.slider.of' | t }} {{ slide_count }}"
+                        aria-controls="Slider-{{ section.id }}"
+                        data-target="{{ index }}"
+                      >
+                        <span class="dot"></span>
+                      </button>
+                      {% assign index = index | plus: 1 %}
+                  {%- endcase -%}
                 {%- endfor -%}
               </div>
             </div>
@@ -168,19 +177,22 @@
       <div class="image-with-slideshow__text-item">
         <div
           id="ImageWithText--{{ section.id }}"
-          class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
+          class="image-with-slideshow__content"
         >
           {%- for block in section.blocks -%}
             {% case block.type %}
               {%- when 'heading' -%}
                 <h2
-                  class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
+                  class="image-with-slideshow__heading inline-richtext {{ block.settings.heading_size }}"
                   {{ block.shopify_attributes }}
                 >
                   {{ block.settings.heading }}
                 </h2>
               {%- when 'text' -%}
-                <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                <div
+                  class="image-with-slideshow__text rte {{ block.settings.text_style }}"
+                  {{ block.shopify_attributes }}
+                >
                   {{ block.settings.text }}
                 </div>
               {%- when 'button' -%}
@@ -213,30 +225,6 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
-      "type": "select",
-      "id": "height",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.image-with-text.settings.height.options__1.label"
-        },
-        {
-          "value": "small",
-          "label": "t:sections.image-with-text.settings.height.options__2.label"
-        },
-        {
-          "value": "medium",
-          "label": "t:sections.image-with-text.settings.height.options__3.label"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.image-with-text.settings.height.options__4.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.image-with-text.settings.height.label"
-    },
     {
       "type": "select",
       "id": "desktop_image_width",

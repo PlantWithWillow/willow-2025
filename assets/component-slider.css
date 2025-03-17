@@ -283,6 +283,13 @@ slider-component.slider-component-full-width {
   background-color: rgb(var(--color-ficus-green));
 }
 
+.color-scheme-3 .slider-counter__link--dots:not(.slider-counter__link--active) .dot {
+  background-color: rgb(var(--color-moss-green));
+}
+.color-scheme-3 .slider-counter__link--active.slider-counter__link--dots .dot {
+  background-color: rgb(var(--color-lily-white));
+}
+
 @media screen and (forced-colors: active) {
   .slider-counter__link--active.slider-counter__link--dots .dot {
     background-color: CanvasText;
