@@ -160,7 +160,7 @@
         "card_color_scheme": "",
         "background_style": "none",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -328,19 +328,20 @@
           }
         },
         "image_6Bqhqx": {
-          "type": "image",
+          "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/willow-learn-more-app.jpg"
+            "image": "shopify://shop_images/willow-learn-more-app.jpg",
+            "caption": "Know what you grow with plant id"
           }
         },
         "image_3c9ar8": {
-          "type": "image",
+          "type": "slide",
           "settings": {
             "image": "shopify://shop_images/willow-learn-more-app-alert.jpg"
           }
         },
         "image_U9qT6g": {
-          "type": "image",
+          "type": "slide",
           "settings": {
             "image": "shopify://shop_images/How_It_Works_-_1.jpg"
           }
@@ -358,6 +359,7 @@
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
