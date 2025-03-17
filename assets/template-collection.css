@@ -61,6 +61,24 @@
   .collection .slider--tablet.product-grid {
     scroll-padding-left: 1.5rem;
   }
+  .collection .collection__title {
+    text-align: center;
+  }
+}
+.collection .collection__title {
+  position: relative;
+}
+.collection .collection__title .collection__view-all {
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+}
+.collection .collection__title .collection__view-all a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(var(--color-text));
+  display: flex;
+  gap: 0.5rem;
 }
 
 .collection__description > * {
@@ -94,6 +112,6 @@
   }
 }
 
-.collection__view-all a:not(.link) {
-  margin-top: 1rem;
+.collection > .collection__view-all a:not(.link) {
+  margin-top: 3rem;
 }

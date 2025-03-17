@@ -135,13 +135,6 @@
             </button>
 
             <div class="slider-counter slider-counter--dots">
-              {% assign slide_count = 0 %}
-              {%- for block in section.blocks -%}
-                {% case block.type %}
-                  {% when 'slide' %}
-                    {% assign slide_count = slide_count | plus 1 %}
-                {%- endcase -%}
-              {%- endfor -%}
               <div class="slideshow__control-wrapper">
                 {% assign index = 1 %}
                 {%- for block in section.blocks -%}
@@ -149,7 +142,7 @@
                     {% when 'slide' %}
                       <button
                         class="slider-counter__link slider-counter__link--dots link"
-                        aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ index }} {{ 'general.slider.of' | t }} {{ slide_count }}"
+                        aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ index }} {{ 'general.slider.of' | t }} {{ slides }}"
                         aria-controls="Slider-{{ section.id }}"
                         data-target="{{ index }}"
                       >

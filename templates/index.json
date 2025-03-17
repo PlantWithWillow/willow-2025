@@ -227,6 +227,9 @@
           }
         }
       },
+      "custom_css": [
+        ".multicolumn-card__info { text-align: center; }"
+      ],
       "block_order": [
         "column_VMM3pe",
         "column_kyMM6r",
@@ -530,6 +533,7 @@
         "post_limit": 3,
         "heading": "Your #1 resource for your plant care",
         "heading_size": "h1",
+        "description": "<p>lorem</p>",
         "columns_desktop": 3,
         "show_view_all": true,
         "show_image": true,
