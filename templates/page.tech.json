@@ -1,0 +1,393 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "4491b8be-6251-4c1a-8c00-6f4abf6e534f": {
+      "type": "image-banner",
+      "blocks": {
+        "25b14d10-b416-4082-816e-e7492630a15a": {
+          "type": "text",
+          "settings": {
+            "text": "Meet Willow",
+            "text_style": "uppercase"
+          }
+        },
+        "3fdc8a74-7836-4b59-ad64-4481335a729c": {
+          "type": "heading",
+          "settings": {
+            "heading": "The ultimate plant care companion",
+            "heading_size": "h1"
+          }
+        },
+        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-1": {
+          "type": "text",
+          "settings": {
+            "text": "Plants can be fickle. Get it wrong, and they join the hundreds of millions of houseplants killed each year. Don’t fret, we got you!",
+            "text_style": "body"
+          }
+        },
+        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://pages/shop",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "25b14d10-b416-4082-816e-e7492630a15a",
+        "3fdc8a74-7836-4b59-ad64-4481335a729c",
+        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-1",
+        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/0W8A5172.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "sensor-features": {
+      "type": "features",
+      "blocks": {
+        "sensor-bluetooth": {
+          "type": "column",
+          "settings": {
+            "icon": "bluetooth",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Bluetooth",
+            "text": "<p>Connect up to 40 Sensors to your Hub!</p>"
+          }
+        },
+        "sensor-battery": {
+          "type": "column",
+          "settings": {
+            "icon": "lightning",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Long Lasting Battery",
+            "text": "<p>Sensor's easily replaceable coin cell battery can last up to 12 months</p>"
+          }
+        },
+        "sensor-modular": {
+          "type": "column",
+          "settings": {
+            "icon": "modular",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Modular",
+            "text": "<p>Interchangeable probe lengths for larger pots in your home</p>"
+          }
+        },
+        "sensor-resistant": {
+          "type": "column",
+          "settings": {
+            "icon": "water",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Water Resistant",
+            "text": "<p>Dust, dirt and splash resistant</p>"
+          }
+        }
+      },
+      "block_order": [
+        "sensor-bluetooth",
+        "sensor-battery",
+        "sensor-modular",
+        "sensor-resistant"
+      ],
+      "settings": {
+        "title": "Sensor Features",
+        "heading_size": "h1",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "background-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 60,
+        "image": "shopify://shop_images/sensors.png"
+      }
+    },
+    "hub-features": {
+      "type": "features",
+      "blocks": {
+        "hub-control": {
+          "type": "column",
+          "settings": {
+            "icon": "control",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Control",
+            "text": "<p>Manage multiple Sensors all at once</p>"
+          }
+        },
+        "hub-safeguard": {
+          "type": "column",
+          "settings": {
+            "icon": "paw",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Safeguard",
+            "text": "<p>Your data is uploaded securely to the cloud</p>"
+          }
+        },
+        "hub-access": {
+          "type": "column",
+          "settings": {
+            "icon": "flag",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Access",
+            "text": "<p>Stay connected whenever, wherever via your WIFI</p>"
+          }
+        }
+      },
+      "block_order": [
+        "hub-control",
+        "hub-safeguard",
+        "hub-access"
+      ],
+      "settings": {
+        "title": "Hub Features",
+        "heading_size": "h1",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "background-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 60,
+        "image": "shopify://shop_images/urban-jungle.png"
+      }
+    },
+    "app-features": {
+      "type": "features",
+      "blocks": {
+        "app-search": {
+          "type": "column",
+          "settings": {
+            "icon": "search",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Identification",
+            "text": "<p>Identify your plants with a snap!</p>"
+          }
+        },
+        "app-tracking": {
+          "type": "column",
+          "settings": {
+            "icon": "document",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Tracking",
+            "text": "<p>Know how your plant is feeling, with our plant score system</p>"
+          }
+        },
+        "app-discover": {
+          "type": "column",
+          "settings": {
+            "icon": "stars",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Discover",
+            "text": "<p>Find new plants from a growing database</p>"
+          }
+        },
+        "app-check": {
+          "type": "column",
+          "settings": {
+            "icon": "check",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Check",
+            "text": "<p>Check in on your plant score to truly know how your plant is feeling</p>"
+          }
+        },
+        "app-care": {
+          "type": "column",
+          "settings": {
+            "icon": "plant",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Easy Care",
+            "text": "<p>Care for your plants with easy to digest guides</p>"
+          }
+        },
+        "app-grow": {
+          "type": "column",
+          "settings": {
+            "icon": "mortarboard",
+            "icon_fill": "#121212",
+            "icon_background": "#eddb93",
+            "title": "Grow",
+            "text": "<p>Grow your knowledge with blogs, tips, & tutorials</p>"
+          }
+        }
+      },
+      "block_order": [
+        "app-search",
+        "app-tracking",
+        "app-discover",
+        "app-check",
+        "app-care",
+        "app-grow"
+      ],
+      "settings": {
+        "title": "App Features",
+        "heading_size": "h1",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "background-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 60,
+        "image": "shopify://shop_images/app-floating.png"
+      }
+    },
+    "8974223d-7525-40ad-b4ed-0bbe02b27388": {
+      "type": "tabbed-content-tech",
+      "blocks": {
+        "9b5b626b-c7ac-4f93-b992-0c5d862686d9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Sensor",
+            "icon": "sensor",
+            "row_content": "",
+            "page": "tab-sensor"
+          }
+        },
+        "b35c4ad3-5ce1-4662-a538-9ddacb83b920": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hub",
+            "icon": "hub",
+            "row_content": "",
+            "page": "tab-hub"
+          }
+        },
+        "84216b5c-02b8-4246-bce3-0e2581a1bada": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "App",
+            "icon": "mobile",
+            "row_content": "",
+            "page": "tab-mobile",
+            "image": "shopify://shop_images/app-mobile.png"
+          }
+        }
+      },
+      "block_order": [
+        "9b5b626b-c7ac-4f93-b992-0c5d862686d9",
+        "b35c4ad3-5ce1-4662-a538-9ddacb83b920",
+        "84216b5c-02b8-4246-bce3-0e2581a1bada"
+      ],
+      "custom_css": [
+        ".tabs-content {max-width: 200rem;}"
+      ],
+      "settings": {
+        "heading": "Technical Specs",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_TrWGxA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TBa7qi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Got all your questions answered?",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TBa7qi"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_qfJMjM": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4491b8be-6251-4c1a-8c00-6f4abf6e534f",
+    "wave-1",
+    "sensor-features",
+    "hub-features",
+    "app-features",
+    "wave-2",
+    "8974223d-7525-40ad-b4ed-0bbe02b27388",
+    "rich_text_TrWGxA",
+    "featured_collection_qfJMjM"
+  ]
+}
