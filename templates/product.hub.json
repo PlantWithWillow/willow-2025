@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "main-product-custom",
@@ -29,7 +29,7 @@
         "text_8pYz3H": {
           "type": "text",
           "settings": {
-            "text": "Includes 5 smart plant Sensors for 3 plants and a Wi-Fi enabled Hub.",
+            "text": "Add to your existing Willow system with an extra Hub. Perfect for plants with Sensors out of range or split-level homes.",
             "text_style": "body"
           }
         },
@@ -60,7 +60,7 @@
           "settings": {
             "heading": "What's included",
             "icon": "leaf",
-            "content": "<ul><li>5 Sensors</li><li>1 Hub</li><li>USB cable</li><li>Coin cell battery in Sensor</li></ul>",
+            "content": "<ul><li>1 Hub</li><li>USB cable</li></ul>",
             "page": ""
           }
         },
@@ -78,7 +78,7 @@
           "settings": {
             "heading": "Product details",
             "icon": "box",
-            "content": "<p>Packaging – 164mm x 197mm x 40mm<br/>Sensor – 172mm length x 32mm diameter<br/>Hub – 74mm x 26mm<br/>Weight – 130g<br/><br/>Moisture probes are 124mm in length and suitable for pots up to 20cm (8”) in depth. For deeper pots, add the <a href=\"/products/large-pot-extension\" title=\"Large Pot Extension\"><span style=\"text-decoration:underline\">Large Pot Extension</span></a>. </p>",
+            "content": "<p>Packaging – 96mm x 96mm x 40mm<br/>Hub – 74mm length x 26mm diameter<br/>Weight – 75g</p>",
             "page": ""
           }
         },
@@ -90,6 +90,11 @@
             "content": "<p>You’ve got questions? We’ve got plantswers. Browse our most frequently asked questions <a href=\"/pages/faq\" title=\"FAQ\"><span style=\"text-decoration:underline\">here</span></a>. </p>",
             "page": ""
           }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
         }
       },
       "block_order": [

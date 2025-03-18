@@ -29,7 +29,7 @@
         "text_8pYz3H": {
           "type": "text",
           "settings": {
-            "text": "Includes 3 smart plant Sensors for 3 plants and a Wi-Fi enabled Hub.",
+            "text": "Includes 1 smart plant Sensors for 1 plants and a Wi-Fi enabled Hub.",
             "text_style": "body"
           }
         },
@@ -60,7 +60,7 @@
           "settings": {
             "heading": "What's included",
             "icon": "leaf",
-            "content": "<ul><li>3 Sensors</li><li>1 Hub</li><li>USB cable</li><li>Coin cell battery in Sensor</li></ul>",
+            "content": "<ul><li>1 Sensor</li><li>1 Hub</li><li>USB cable</li><li>Coin cell battery in Sensor</li></ul>",
             "page": ""
           }
         },
@@ -78,7 +78,7 @@
           "settings": {
             "heading": "Product details",
             "icon": "box",
-            "content": "<p>Packaging – 260mm x 197mm x 40mm<br/>Sensor – 172mm length x 32mm diameter<br/>Hub – 74mm x 26mmWeight – 450g<br/><br/>Moisture probes are 124mm in length and suitable for pots up to 20cm (8”) in depth. For deeper pots, add the <a href=\"/products/large-pot-extension\" title=\"Large Pot Extension\"><span style=\"text-decoration:underline\">Large Pot Extension</span></a>. </p>",
+            "content": "<p>Packaging – 164mm x 197mm x 40mm<br/>Sensor – 172mm length x 32mm diameter<br/>Hub – 74mm x 26mm<br/>Weight – 130g<br/><br/>Moisture probes are 124mm in length and suitable for pots up to 20cm (8”) in depth. For deeper pots, add the <a href=\"/products/large-pot-extension\" title=\"Large Pot Extension\"><span style=\"text-decoration:underline\">Large Pot Extension</span></a>. </p>",
             "page": ""
           }
         },
@@ -95,53 +95,6 @@
           "type": "description",
           "disabled": true,
           "settings": {}
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -157,12 +110,7 @@
         "collapsible_tab_fXzz9V",
         "collapsible_tab_4LbVRp",
         "collapsible_tab_Fyr7Ua",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
