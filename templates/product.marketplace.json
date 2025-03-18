@@ -10,7 +10,7 @@
  {
   "sections": {
     "main": {
-      "type": "main-product-marketplace",
+      "type": "main-product-custom",
       "blocks": {
         "title": {
           "type": "title",
