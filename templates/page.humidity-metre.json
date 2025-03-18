@@ -17,37 +17,27 @@
         "padding_bottom": 28
       }
     },
-    "image_banner": {
-      "type": "image-banner",
+    "rich_text_FCmThq": {
+      "type": "rich-text",
       "blocks": {
-        "heading": {
+        "heading_cHH4bn": {
           "type": "heading",
           "settings": {
             "heading": "Willow's humidity meter",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         }
       },
       "block_order": [
-        "heading"
-      ],
-      "custom_css": [
-        "@media screen and (min-width: 750px) {.banner--small:not(.banner--adapt) {min-height: 22rem; } .banner__content {padding: 4rem; }}",
-        "@media screen and (max-width: 749px) {.banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {min-height: 18rem; }}"
+        "heading_cHH4bn"
       ],
       "settings": {
-        "image": "shopify://shop_images/588_Willow_plant_with_willow_2023_Valentine_girardot_Perth_commercial_photographer_future_proof_agency.jpg",
-        "image_overlay_opacity": 60,
-        "image_height": "small",
-        "image_behavior": "none",
-        "split": false,
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-1",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text_FYVi87": {
@@ -175,7 +165,7 @@
   },
   "order": [
     "main",
-    "image_banner",
+    "rich_text_FCmThq",
     "rich_text_FYVi87",
     "image_with_text_4khYin",
     "image_with_text_4hnPay",

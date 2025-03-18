@@ -9,42 +9,17 @@
  */
 {
   "sections": {
-    "image-banner": {
-      "type": "image-banner",
-      "blocks": {
-        "c0e9b2b8-b567-45bd-b888-54e642c96140": {
-          "type": "heading",
-          "settings": {
-            "heading": "Come say hello",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "c0e9b2b8-b567-45bd-b888-54e642c96140"
-      ],
-      "custom_css": [
-        ".banner {padding-top: 0 !important}",
-        ".banner h2 {text-align: center}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/0W8A3740.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "small",
-        "image_behavior": "none",
-        "split": false,
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-1",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
-    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
+        "caption_H4zk9Y": {
+          "type": "caption",
+          "settings": {
+            "caption": "Come say hello",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
         "7081efd8-0237-4a88-9aa6-f5c5f0c62af5": {
           "type": "heading",
           "settings": {
@@ -60,13 +35,14 @@
         }
       },
       "block_order": [
+        "caption_H4zk9Y",
         "7081efd8-0237-4a88-9aa6-f5c5f0c62af5",
         "1356fb18-cd1b-480e-851a-0b29b14b3452"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-3",
         "full_width": true,
         "padding_top": 48,
         "padding_bottom": 48
@@ -78,10 +54,10 @@
         ".contact__button {text-align: right;}"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Contact Willow",
         "heading_size": "h1",
         "color_scheme": "background-2",
-        "padding_top": 20,
+        "padding_top": 60,
         "padding_bottom": 60
       }
     },
@@ -141,7 +117,7 @@
         ".multicolumn-card a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin-top: 0; text-indent: -240%; overflow: hidden; background: none;}",
         ".multicolumn-card a:after {display: none;}",
         "h3 {font-size: 2.2rem;}",
-        "@media screen and (max-width: 767px) {h3 {font-size: 1.2rem} .multicolumn-card__info {padding: 1rem 0 0} .rte p {font-size: 0.75rem}}"
+        "@media screen and (max-width: 767px) {h3 {font-size: 1.2rem; } .multicolumn-card__info {padding: 1rem 0 0; } .rte p {font-size: 0.75rem; }}"
       ],
       "settings": {
         "title": "Come follow along, wherever you are",
@@ -164,7 +140,6 @@
     }
   },
   "order": [
-    "image-banner",
     "rich-text",
     "form",
     "main",

@@ -17,42 +17,27 @@
         "padding_bottom": 28
       }
     },
-    "f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15": {
-      "type": "image-banner",
+    "rich_text_HqcqrU": {
+      "type": "rich-text",
       "blocks": {
-        "0372f30f-4191-47be-bf25-4102367a438e": {
-          "type": "text",
-          "settings": {
-            "text": "FAQ",
-            "text_style": "body"
-          }
-        },
-        "template--16214407708803__f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15-16680638777c4ec292-0": {
+        "heading_prjzLA": {
           "type": "heading",
           "settings": {
             "heading": "You're not alone – others had the same thing on their mind",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         }
       },
       "block_order": [
-        "0372f30f-4191-47be-bf25-4102367a438e",
-        "template--16214407708803__f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15-16680638777c4ec292-0"
+        "heading_prjzLA"
       ],
-      "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/faq.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "split": false,
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "793888aa-8810-453b-8d5a-0f2cb62ae1e5": {
@@ -703,7 +688,7 @@
   },
   "order": [
     "main",
-    "f6b2e6f1-0694-4ec4-ac5f-2f2f86e79a15",
+    "rich_text_HqcqrU",
     "793888aa-8810-453b-8d5a-0f2cb62ae1e5",
     "11ce2962-c873-4891-804c-ef90888e46c7",
     "e7e1dbb9-c172-4f76-97a6-a9e116fa05c1",

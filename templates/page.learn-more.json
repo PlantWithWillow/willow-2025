@@ -17,45 +17,34 @@
         "padding_bottom": 28
       }
     },
-    "image_banner_NBkQkG": {
-      "type": "image-banner",
+    "rich_text_Uf76mA": {
+      "type": "rich-text",
       "blocks": {
-        "heading_WzYyer": {
+        "heading_xJt44f": {
           "type": "heading",
           "settings": {
             "heading": "Take the guesswork out of plant care",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
-        "text_b3aQBt": {
+        "text_TQ7QfN": {
           "type": "text",
           "settings": {
-            "text": "Willow watches your plant and alerts you when it needs action",
-            "text_style": "body"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "heading_WzYyer",
-        "text_b3aQBt"
-      ],
-      "custom_css": [
-        ".banner__box {padding-right: 3rem;}",
-        ".banner:after {background: linear-gradient(to right, #fff, #fff0 85%) !important;}",
-        "@media screen and (max-width: 749px) {.banner__box {padding-right: 4rem; }}"
+        "heading_xJt44f",
+        "text_TQ7QfN"
       ],
       "settings": {
-        "image": "shopify://shop_images/willow-learn-more-banner-bubble.jpg",
-        "image_overlay_opacity": 100,
-        "image_height": "small",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text_L7Ad6V": {
@@ -104,16 +93,15 @@
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "medium",
-        "heading_type": "h3",
+        "image_layout": "alternate-left",
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "",
         "row_color_scheme": "",
-        "mobile_content_alignment": "center",
         "padding_top": 80,
         "padding_bottom": 52
       }
@@ -124,7 +112,6 @@
         "row_MyC96i": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/willow-learn-more-app-alert2_1.jpg",
             "caption": "",
             "heading": "Get timely alerts when your plant needs care",
             "text": "<p>Give your plants a voice! When your plant needs water or a change of conditions, you'll be notified via your phone.</p>",
@@ -142,16 +129,15 @@
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "medium",
-        "heading_type": "h3",
+        "image_layout": "alternate-right",
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-right",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "",
         "row_color_scheme": "",
-        "mobile_content_alignment": "center",
         "padding_top": 32,
         "padding_bottom": 80
       }
@@ -180,16 +166,15 @@
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "medium",
-        "heading_type": "h2",
+        "image_layout": "alternate-left",
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "accent-1",
         "row_color_scheme": "accent-1",
-        "mobile_content_alignment": "center",
         "padding_top": 80,
         "padding_bottom": 4
       }
@@ -380,16 +365,15 @@
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "medium",
-        "heading_type": "h3",
+        "image_layout": "alternate-left",
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "primary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "accent-2",
         "row_color_scheme": "accent-2",
-        "mobile_content_alignment": "center",
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -415,10 +399,12 @@
           "settings": {
             "button_label": "Browse our FAQ",
             "button_link": "shopify://pages/faq",
-            "button_style_secondary": false,
+            "button_style_cta": false,
+            "button_outline": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_cta_2": false,
+            "button_outline_2": false
           }
         }
       },
@@ -439,7 +425,7 @@
   },
   "order": [
     "main",
-    "image_banner_NBkQkG",
+    "rich_text_Uf76mA",
     "rich_text_L7Ad6V",
     "multirow_tHEznz",
     "multirow_tHEznz2",

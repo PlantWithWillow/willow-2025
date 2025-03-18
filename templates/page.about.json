@@ -17,49 +17,43 @@
         "padding_bottom": 28
       }
     },
-    "banner": {
-      "type": "image-banner",
+    "rich_text_GQCGN6": {
+      "type": "rich-text",
       "blocks": {
-        "2132cef7-7736-4642-9af0-fe063498c781": {
-          "type": "text",
+        "caption_pd7mkA": {
+          "type": "caption",
           "settings": {
-            "text": "About Willow",
-            "text_style": "uppercase"
+            "caption": "About Willow",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
           }
         },
-        "c2a59aec-ca09-4f36-9daa-a13bf37133e2": {
+        "heading_YT6HNK": {
           "type": "heading",
           "settings": {
             "heading": "Wow, do we love a houseplant!",
-            "heading_size": "h1"
+            "heading_size": "hxl"
           }
         },
-        "3797fc54-7f66-4437-8e04-07644a007217": {
+        "text_b47wJF": {
           "type": "text",
           "settings": {
-            "text": "Houseplants look great, boost mood and productivity, and reduce stress.  But ... they can be hard to care for.",
-            "text_style": "body"
+            "text": "<p>Houseplants look great, boost mood and productivity, and reduce stress.  But ... they can be hard to care for.</p>"
           }
         }
       },
       "block_order": [
-        "2132cef7-7736-4642-9af0-fe063498c781",
-        "c2a59aec-ca09-4f36-9daa-a13bf37133e2",
-        "3797fc54-7f66-4437-8e04-07644a007217"
+        "caption_pd7mkA",
+        "heading_YT6HNK",
+        "text_b47wJF"
       ],
       "settings": {
-        "image": "shopify://shop_images/about-willow.jpg",
-        "image_overlay_opacity": 20,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "split": false,
-        "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "left",
-        "show_text_below": false
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "timeline": {
@@ -361,7 +355,7 @@
   },
   "order": [
     "main",
-    "banner",
+    "rich_text_GQCGN6",
     "timeline",
     "team"
   ]

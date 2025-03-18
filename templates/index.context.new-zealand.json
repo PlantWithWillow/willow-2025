@@ -12,5 +12,13 @@
   "context": {
     "market": "new-zealand"
   },
-  "sections": {}
+  "sections": {
+    "multicolumn": {
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {}
+    }
+  }
 }
