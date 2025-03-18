@@ -439,63 +439,70 @@
     "logos": {
       "type": "logos",
       "blocks": {
-        "4af7a0f8-a55a-49be-928b-797877c5dcd9": {
+        "column_EtApjK": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/urban-list-1.png",
-            "link": ""
-          }
-        },
-        "858eb4da-8dff-4832-933c-3ab32a337d3a": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/perth-is-ok.png",
-            "link": "https://perthisok.com/lifestyle/perth-local-gift-guide/"
-          }
-        },
-        "column_Vy3cXK": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/9News_white.png",
             "link": ""
           }
         },
         "03c9fe47-e07e-4f7b-bdec-09fa334faacc": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/7news-white.png",
+            "image": "shopify://shop_images/7news-logo-white.svg",
             "link": "https://7news.com.au/best-picks/best-device-for-indoor-plants-the-super-simple-trick-to-transform-the-health-of-your-indoor-plants-c-13556213"
           }
         },
-        "column_3FFjNf": {
+        "column_Vy3cXK": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/enhanced-brand-logo-banner.png",
-            "link": "https://www.bhg.com.au/boxing-day-sales"
+            "image": "shopify://shop_images/9news-logo-white.svg",
+            "link": ""
           }
         },
         "87e286bd-5b9b-4ee7-abab-5569b8883d0b": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/thewest-white.png",
+            "image": "shopify://shop_images/thewestaustralian-logo-white.svg",
             "link": "https://thewest.com.au/business/startup/the-top-wa-startups-to-watch-in-2022-c-4941214"
+          }
+        },
+        "4af7a0f8-a55a-49be-928b-797877c5dcd9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/urbanlist-logo-white.svg",
+            "link": ""
+          }
+        },
+        "858eb4da-8dff-4832-933c-3ab32a337d3a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/perthisok-logo-white.svg",
+            "link": "https://perthisok.com/lifestyle/perth-local-gift-guide/"
+          }
+        },
+        "column_3FFjNf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/betterhomes-logo-white.svg",
+            "link": "https://www.bhg.com.au/boxing-day-sales"
           }
         },
         "column_XdHWAe": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/business-news.svg",
+            "image": "shopify://shop_images/businessnews-logo-white.svg",
             "link": "https://www.businessnews.com.au/article/Plant-health-a-sensor-experience"
           }
         }
       },
       "block_order": [
+        "column_EtApjK",
+        "03c9fe47-e07e-4f7b-bdec-09fa334faacc",
+        "column_Vy3cXK",
+        "87e286bd-5b9b-4ee7-abab-5569b8883d0b",
         "4af7a0f8-a55a-49be-928b-797877c5dcd9",
         "858eb4da-8dff-4832-933c-3ab32a337d3a",
-        "column_Vy3cXK",
-        "03c9fe47-e07e-4f7b-bdec-09fa334faacc",
         "column_3FFjNf",
-        "87e286bd-5b9b-4ee7-abab-5569b8883d0b",
         "column_XdHWAe"
       ],
       "settings": {
