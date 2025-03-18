@@ -2448,7 +2448,8 @@ input[type='checkbox'] {
   box-shadow: 0 8px 34px 0px rgba(46, 44, 42, 0.2)
 }
 
-#MainContent > section:first-child > div {
+#MainContent > section:first-child > div,
+#MainContent > .shopify-policy__container {
   padding-top: var(--body-padding-desktop);
 }
 /* fix for rich text as first section */
