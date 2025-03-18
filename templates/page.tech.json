@@ -18,12 +18,12 @@
       }
     },
     "4491b8be-6251-4c1a-8c00-6f4abf6e534f": {
-      "type": "image-banner",
+      "type": "rich-text",
       "blocks": {
         "25b14d10-b416-4082-816e-e7492630a15a": {
-          "type": "text",
+          "type": "caption",
           "settings": {
-            "text": "Meet Willow",
+            "text": "<p>Meet Willow</p>",
             "text_style": "uppercase"
           }
         },
@@ -31,32 +31,20 @@
           "type": "heading",
           "settings": {
             "heading": "The ultimate plant care companion",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-1": {
           "type": "text",
           "settings": {
-            "text": "Plants can be fickle. Get it wrong, and they join the hundreds of millions of houseplants killed each year. Don’t fret, we got you!",
-            "text_style": "body"
-          }
-        },
-        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify://pages/shop",
-            "button_label_2": "",
-            "button_link_2": ""
+            "text": "<p>Plants can be fickle. Get it wrong, and they join the hundreds of millions of houseplants killed each year. Don’t fret, we got you!</p>",
           }
         }
       },
       "block_order": [
         "25b14d10-b416-4082-816e-e7492630a15a",
         "3fdc8a74-7836-4b59-ad64-4481335a729c",
-        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-1",
-        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-2"
-      ],
+        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-1",      ],
       "settings": {
         "image": "shopify://shop_images/0W8A5172.jpg",
         "image_overlay_opacity": 10,
