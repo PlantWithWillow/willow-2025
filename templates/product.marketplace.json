@@ -20,21 +20,24 @@
           "type": "price",
           "settings": {}
         },
-        "rating": {
-          "type": "rating",
-          "settings": {}
+        "klaviyo_stars": {
+          "type": "klaviyo-stars",
+          "settings": {
+            "product": "{{ product }}"
+          }
         },
-        "subheading": {
+        "text_8pYz3H": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.custom.subtitle.value }}",
-            "text_style": ""
+            "text_style": "body"
           }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
@@ -45,128 +48,91 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
-            "show_current_viewers": false,
             "show_gift_card_recipient": true
           }
         },
         "product_shipping": {
-          "type": "accordion",
+          "type": "collapsible_tab",
           "settings": {
-            "question": "Shipping",
-            "answer": "<p><strong>Ships separately</strong></p>",
+            "heading": "Shipping",
+            "content": "<p><strong>Ships separately</strong></p>",
             "icon": "truck"
           }
         },
-        "details": {
-          "type": "accordion",
+        "collapsible_tab_4LbVRp": {
+          "type": "collapsible_tab",
           "settings": {
-            "question": "Product Details",
-            "answer": "<p>{{ product.metafields.custom.extra_details | metafield_tag }}</p>",
-            "icon": "box"
+            "heading": "Product details",
+            "icon": "box",
+            "content": "<p>{{ product.metafields.custom.extra_details | metafield_tag }}</p>",            "page": ""
           }
-        },
-        "faq": {
-          "type": "accordion",
-          "settings": {
-            "question": "FAQ",
-            "answer": "<p>{{ product.metafields.custom.faq | metafield_tag }}</p>",
-            "icon": "leaf"
-          }
-        }
+        }        
       },
       "block_order": [
         "title",
         "price",
-        "rating",
-        "subheading",
+        "klaviyo_stars",
+        "text_8pYz3H",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "product_shipping",
-        "details",
-        "faq"
+        "collapsible_tab_4LbVRp",
       ],
       "settings": {
         "enable_sticky_info": true,
-        "media_size": "medium",
+        "color_scheme": "scheme-4",
         "constrain_to_viewport": true,
         "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
-        "media_position": "left",
-        "image_zoom": "none",
         "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "hover",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 0,
-        "padding_bottom": 12
-      }
-    },
-    "rich_text_a4fcVQ": {
-      "type": "rich-text",
-      "custom_css": [
-        ".rich-text__blocks {max-width: var(--page-width)}",
-        "@media screen and (max-width: 749px) {.rich-text__wrapper {padding: 0}}"
-      ],
-      "blocks": {
-        "heading_cHDwnk": {
-          "type": "heading",
-          "settings": {
-            "heading": "Product description",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "heading_cHDwnk",
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 80,
-        "padding_bottom": 20
+        "padding_top": 40,
+        "padding_bottom": 100
       }
     },
     "description": {
       "type": "product-description",
+      "disabled": true,
       "custom_css": [
-        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: var(--page-width)}}"
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: var(--page-width); padding: 0 1.5rem; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-1",
         "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 80
+        "padding_top": 80,
+        "padding_bottom": 24
       }
     },
-    "packs_collection": {
+    "addon_collection": {
       "type": "featured-collection",
       "custom_css": [
         ".title {text-align: center;}"
       ],
       "settings": {
+        "collection": "add-ons",
+        "products_to_show": 3,
         "title": "You'll grow great with these",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "packs",
-        "products_to_show": 3,
         "columns_desktop": 3,
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-2",
         "image_ratio": "adapt",
-        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "quick_add": "standard",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -176,8 +142,7 @@
   },
   "order": [
     "main",
-    "rich_text_a4fcVQ",
-    "description",
-    "packs_collection"
+    "description",    
+    "addon_collection"
   ]
 }
