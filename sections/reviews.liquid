@@ -1,6 +1,7 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'section-reviews.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -47,11 +48,13 @@
       >
         {% for review in shop.metaobjects.review.values limit: 4 %}
           {%- liquid
-            assign rating = review.rating.value
+            assign rating = 4.5
             assign id = review.system.handle
             assign image = review.image.value
             assign ratio = 1.2
           -%}
+          {{ review.rating.rating }}
+          {{ review.rating.scale_max }}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -88,16 +91,45 @@
                 <div class="card__content">
                   <div class="card__information">
                     <div class="review-rating">
-                      {% assign star_array = '1,2,3,4,5' | split: ',' %}
-                      {% for star in star_array limit: rating %}
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
-                          <path width="20" height="20" fill="#d6bd52" d="M11.1488 2.23197C10.7159 1.22183 9.28382 1.22183 8.85091 2.23197L6.95034 6.66662H2.67243C1.5588 6.66662 1.00109 8.01305 1.78854 8.8005L4.91029 11.9222L3.59487 17.1839C3.32787 18.2519 4.47191 19.1186 5.42772 18.5724L9.99984 15.9597L14.572 18.5724C15.5278 19.1186 16.6718 18.2519 16.4048 17.1839L15.0894 11.9222L18.2111 8.8005C18.9986 8.01304 18.4409 6.66662 17.3272 6.66662H13.0493L11.1488 2.23197Z"></path>
-                        </svg>
-                      {% endfor %}
-                      {% for star in star_array offset: rating %}
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
-                          <path width="20" height="20" fill="#f9efc5" d="M11.1488 2.23197C10.7159 1.22183 9.28382 1.22183 8.85091 2.23197L6.95034 6.66662H2.67243C1.5588 6.66662 1.00109 8.01305 1.78854 8.8005L4.91029 11.9222L3.59487 17.1839C3.32787 18.2519 4.47191 19.1186 5.42772 18.5724L9.99984 15.9597L14.572 18.5724C15.5278 19.1186 16.6718 18.2519 16.4048 17.1839L15.0894 11.9222L18.2111 8.8005C18.9986 8.01304 18.4409 6.66662 17.3272 6.66662H13.0493L11.1488 2.23197Z"></path>
-                        </svg>
+                      {% assign rating = review.stars.value %}
+                      {% for i in (1..5) %}
+                        {% assign this = i | plus: 0.0 %}
+                        {% assign prev = this | minus: 1.0 %}
+                        {% if rating >= this %}
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                            <path width="20" height="20" fill="#d6bd52" d="M11.1488 2.23197C10.7159 1.22183 9.28382 1.22183 8.85091 2.23197L6.95034 6.66662H2.67243C1.5588 6.66662 1.00109 8.01305 1.78854 8.8005L4.91029 11.9222L3.59487 17.1839C3.32787 18.2519 4.47191 19.1186 5.42772 18.5724L9.99984 15.9597L14.572 18.5724C15.5278 19.1186 16.6718 18.2519 16.4048 17.1839L15.0894 11.9222L18.2111 8.8005C18.9986 8.01304 18.4409 6.66662 17.3272 6.66662H13.0493L11.1488 2.23197Z"></path>
+                          </svg>
+                        {% elsif rating > prev %}
+                          {% liquid
+                            assign rating_percent = 0
+                            assign decimal = rating | modulo: 1
+                            if decimal < 0.3
+                              assign rating_percent = 25
+                            elsif decimal >= 0.3 and decimal <= 0.7
+                              assign rating_percent = 50
+                            elsif decimal > 0.7
+                              assign rating_percent = 75
+                            endif
+                          %}
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                            <style type="text/css">
+                              .gadient-star{fill:url(#RatingGradient)}
+                            </style>
+                            <defs>
+                              <linearGradient id="RatingGradient">
+                                <stop offset="0%" stop-color="#d6bd52" style="stop-opacity:1"/>
+                                <stop offset="{{ rating_percent }}%" stop-color="#d6bd52" style="stop-opacity:1"/>
+                                <stop offset="{{ rating_percent }}%" stop-color="#aaa" style="stop-opacity:1" />
+                                <stop offset="100%" stop-color="#aaa" style="stop-opacity:1" />
+                              </linearGradient>
+                            </defs>
+                            <path class="gadient-star" width="20" height="20" d="M11.1488 2.23197C10.7159 1.22183 9.28382 1.22183 8.85091 2.23197L6.95034 6.66662H2.67243C1.5588 6.66662 1.00109 8.01305 1.78854 8.8005L4.91029 11.9222L3.59487 17.1839C3.32787 18.2519 4.47191 19.1186 5.42772 18.5724L9.99984 15.9597L14.572 18.5724C15.5278 19.1186 16.6718 18.2519 16.4048 17.1839L15.0894 11.9222L18.2111 8.8005C18.9986 8.01304 18.4409 6.66662 17.3272 6.66662H13.0493L11.1488 2.23197Z"></path>
+                          </svg>
+                        {% else %}
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                            <path width="20" height="20" fill="#aaa" d="M11.1488 2.23197C10.7159 1.22183 9.28382 1.22183 8.85091 2.23197L6.95034 6.66662H2.67243C1.5588 6.66662 1.00109 8.01305 1.78854 8.8005L4.91029 11.9222L3.59487 17.1839C3.32787 18.2519 4.47191 19.1186 5.42772 18.5724L9.99984 15.9597L14.572 18.5724C15.5278 19.1186 16.6718 18.2519 16.4048 17.1839L15.0894 11.9222L18.2111 8.8005C18.9986 8.01304 18.4409 6.66662 17.3272 6.66662H13.0493L11.1488 2.23197Z"></path>
+                          </svg>
+                        {% endif %}
                       {% endfor %}
                     </div>
                     <div class="review-content">
