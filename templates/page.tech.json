@@ -140,7 +140,7 @@
         "hub-control": {
           "type": "column",
           "settings": {
-            "icon": "control",
+            "icon": "bluetooth",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Control",
@@ -150,7 +150,7 @@
         "hub-safeguard": {
           "type": "column",
           "settings": {
-            "icon": "paw",
+            "icon": "lock",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Safeguard",
@@ -160,7 +160,7 @@
         "hub-access": {
           "type": "column",
           "settings": {
-            "icon": "flag",
+            "icon": "wifi",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Access",
@@ -203,7 +203,7 @@
         "app-tracking": {
           "type": "column",
           "settings": {
-            "icon": "document",
+            "icon": "alert",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Tracking",
@@ -213,7 +213,7 @@
         "app-discover": {
           "type": "column",
           "settings": {
-            "icon": "stars",
+            "icon": "leaf",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Discover",
@@ -223,7 +223,7 @@
         "app-check": {
           "type": "column",
           "settings": {
-            "icon": "check",
+            "icon": "eye",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Check",
@@ -243,7 +243,7 @@
         "app-grow": {
           "type": "column",
           "settings": {
-            "icon": "mortarboard",
+            "icon": "heart",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Grow",
