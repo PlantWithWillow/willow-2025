@@ -2451,6 +2451,13 @@ input[type='checkbox'] {
 #MainContent > section:first-child > div {
   padding-top: var(--body-padding-desktop);
 }
+/* fix for rich text as first section */
+#MainContent > section:first-child > div.isolate {
+  padding-top: 0;
+}
+#MainContent > section:first-child > div.isolate > div {
+  padding-top: var(--body-padding-desktop);
+}
 
 @media screen and (max-width: 749px) {
   .header--has-app {

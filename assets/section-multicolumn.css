@@ -147,7 +147,7 @@
 
 .background-none .multicolumn-card-spacing {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .multicolumn-card__info {
