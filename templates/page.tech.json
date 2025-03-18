@@ -278,6 +278,7 @@
     },
     "8974223d-7525-40ad-b4ed-0bbe02b27388": {
       "type": "tabbed-content-tech",
+      "disabled": true,
       "blocks": {
         "9b5b626b-c7ac-4f93-b992-0c5d862686d9": {
           "type": "collapsible_row",
