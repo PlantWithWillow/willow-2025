@@ -104,13 +104,11 @@
         "collapsible_tab_djbkEd",
         "collapsible_tab_fXzz9V",
         "collapsible_tab_4LbVRp",
-        "collapsible_tab_Fyr7Ua",
-        "description"
+        "collapsible_tab_Fyr7Ua"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-4",
-        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",

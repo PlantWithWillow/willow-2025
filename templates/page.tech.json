@@ -46,10 +46,8 @@
           "settings": {
             "button_label_1": "SHOP NOW",
             "button_link_1": "shopify://pages/shop",
-            "button_style_secondary_1": false,
             "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_link_2": ""
           }
         }
       },
@@ -63,13 +61,13 @@
         "image": "shopify://shop_images/0W8A5172.jpg",
         "image_overlay_opacity": 10,
         "image_height": "medium",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-2",
         "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "background-2",
         "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
         "show_text_below": false
       }
     },
@@ -278,7 +276,6 @@
     },
     "8974223d-7525-40ad-b4ed-0bbe02b27388": {
       "type": "tabbed-content-tech",
-      "disabled": true,
       "blocks": {
         "9b5b626b-c7ac-4f93-b992-0c5d862686d9": {
           "type": "collapsible_row",
@@ -314,6 +311,7 @@
         "b35c4ad3-5ce1-4662-a538-9ddacb83b920",
         "84216b5c-02b8-4246-bce3-0e2581a1bada"
       ],
+      "disabled": true,
       "custom_css": [
         ".tabs-content {max-width: 200rem;}"
       ],
@@ -353,25 +351,23 @@
     "featured_collection_qfJMjM": {
       "type": "featured-collection",
       "settings": {
+        "collection": "frontpage",
+        "products_to_show": 3,
         "title": "",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "frontpage",
-        "products_to_show": 3,
         "columns_desktop": 3,
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "",
         "image_ratio": "adapt",
-        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
