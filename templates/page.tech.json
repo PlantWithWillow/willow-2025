@@ -324,35 +324,12 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_TrWGxA": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_TBa7qi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Got all your questions answered?",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_TBa7qi"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection_qfJMjM": {
       "type": "featured-collection",
       "settings": {
         "collection": "frontpage",
         "products_to_show": 3,
-        "title": "",
+        "title": "Got all your questions answered?",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -370,7 +347,7 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
+        "padding_top": 80,
         "padding_bottom": 36
       }
     }
@@ -382,7 +359,6 @@
     "hub-features",
     "app-features",
     "8974223d-7525-40ad-b4ed-0bbe02b27388",
-    "rich_text_TrWGxA",
     "featured_collection_qfJMjM"
   ]
 }
