@@ -60,64 +60,6 @@
         "show_text_below": false
       }
     },
-    "rich_text_PknBtq": {
-      "type": "rich-text",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "image_with_text_r8etPn": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_kbq8k7": {
-          "type": "heading",
-          "settings": {
-            "heading": "I’m Willow, your plant’s next best friend.",
-            "heading_size": "h1"
-          }
-        },
-        "text_aQJQCV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>I’ll help take your plant from barely surviving to thriving.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_cqV6zt": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn more",
-            "button_link": "shopify://pages/tech",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_kbq8k7",
-        "text_aQJQCV",
-        "button_cqV6zt"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/willow-product-gif_25e89288-c586-4525-a8c1-8da0d4b13d3a.gif",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-3",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -554,8 +496,6 @@
   },
   "order": [
     "image_banner",
-    "rich_text_PknBtq",
-    "image_with_text_r8etPn",
     "multicolumn",
     "multicolumn_AYpFY7",
     "rich_text_M9pWft",
