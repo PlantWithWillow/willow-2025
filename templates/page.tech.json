@@ -23,8 +23,9 @@
         "25b14d10-b416-4082-816e-e7492630a15a": {
           "type": "caption",
           "settings": {
-            "text": "<p>Meet Willow</p>",
-            "text_style": "uppercase"
+            "caption": "Meet Willow",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
           }
         },
         "3fdc8a74-7836-4b59-ad64-4481335a729c": {
@@ -37,26 +38,36 @@
         "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Plants can be fickle. Get it wrong, and they join the hundreds of millions of houseplants killed each year. Don’t fret, we got you!</p>",
+            "text": "<p>Plants can be fickle. Get it wrong, and they join the hundreds of millions of houseplants killed each year. Don’t fret, we got you!</p>"
+          }
+        },
+        "button_3fJhrg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "shopify://pages/shop",
+            "button_style_cta": false,
+            "button_outline": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_cta_2": false,
+            "button_outline_2": false
           }
         }
       },
       "block_order": [
         "25b14d10-b416-4082-816e-e7492630a15a",
         "3fdc8a74-7836-4b59-ad64-4481335a729c",
-        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-1",      ],
+        "template--16214355017859__4491b8be-6251-4c1a-8c00-6f4abf6e534f-16683857751c4084a0-1",
+        "button_3fJhrg"
+      ],
       "settings": {
-        "image": "shopify://shop_images/0W8A5172.jpg",
-        "image_overlay_opacity": 10,
-        "image_height": "medium",
-        "image_behavior": "none",
         "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "color_scheme": "background-2",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "left",
-        "show_text_below": false
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "sensor-features": {
@@ -75,7 +86,7 @@
         "sensor-battery": {
           "type": "column",
           "settings": {
-            "icon": "lightning",
+            "icon": "lightning_bolt",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Long Lasting Battery",
@@ -85,7 +96,7 @@
         "sensor-modular": {
           "type": "column",
           "settings": {
-            "icon": "modular",
+            "icon": "sensor-pot",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Modular",
@@ -95,7 +106,7 @@
         "sensor-resistant": {
           "type": "column",
           "settings": {
-            "icon": "water",
+            "icon": "washing",
             "icon_fill": "#121212",
             "icon_background": "#eddb93",
             "title": "Water Resistant",
@@ -356,6 +367,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
