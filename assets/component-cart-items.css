@@ -186,7 +186,6 @@ cart-remove-button .icon-remove {
 .cart-item__error-text {
   font-size: 1.3rem;
   line-height: 1.4;
-  letter-spacing: 0.04rem;
   order: 1;
 }
 

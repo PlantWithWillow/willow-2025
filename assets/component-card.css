@@ -335,7 +335,6 @@
   background: rgb(var(--color-sage-green));
   padding: 4px 10px;
   margin-top: 7px !important;
-  letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 1300px), screen and (min-width: 390px) and (max-width: 988px) {
@@ -525,10 +524,6 @@
 
 .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
   margin-top: 0.7rem;
-}
-
-.card-information .caption {
-  letter-spacing: 0.07rem;
 }
 
 .card-article-info {

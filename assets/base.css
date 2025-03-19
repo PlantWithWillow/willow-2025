@@ -428,7 +428,6 @@ blockquote {
 
 .caption {
   font-size: 1rem;
-  letter-spacing: 0.07rem;
   line-height: calc(1 + 0.7 / var(--font-body-scale));
 }
 
@@ -463,7 +462,6 @@ blockquote {
 .select__select {
   font-size: 1.3rem;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
-  letter-spacing: 0.04rem;
 }
 
 .color-foreground {
@@ -567,7 +565,6 @@ h6:empty {
   display: inline-flex;
   font-size: 1.4rem;
   font-weight: 600;
-  letter-spacing: 0.1rem;
   text-decoration: none;
   margin-bottom: 4.5rem;
   white-space: nowrap;
@@ -926,12 +923,10 @@ summary::-webkit-details-marker {
 
 .subtitle--small {
   font-size: 1.4rem;
-  letter-spacing: 0.1rem;
 }
 
 .subtitle--medium {
   font-size: 1.6rem;
-  letter-spacing: 0.08rem;
 }
 
 /* component-grid */
@@ -1377,15 +1372,6 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
-/* .button,
-.button-label,
-.shopify-challenge__button,
-.customer button {
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: calc(1 + 0.2 / var(--font-body-scale));
-} */
-
 .button--small {
   padding: 1.2rem 2.6rem;
 }
@@ -1806,7 +1792,6 @@ details[open] > .share-button__fallback {
   position: absolute;
   transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
   color: rgba(var(--color-foreground), 0.75);
-  letter-spacing: 0.1rem;
   line-height: 1.5;
 }
 
@@ -1819,7 +1804,6 @@ details[open] > .share-button__fallback {
   font-size: 1rem;
   top: calc(var(--inputs-border-width) + 0.5rem);
   left: calc(var(--inputs-border-width) + 2rem);
-  letter-spacing: 0.04rem;
 }
 
 .field__input:focus,
@@ -2328,7 +2312,6 @@ input[type='checkbox'] {
   text-align: center;
   padding: 1rem 0;
   margin: 0;
-  letter-spacing: 0.1rem;
   min-height: 3.8rem;
 }
 
@@ -2949,7 +2932,6 @@ details-disclosure > details {
   border-radius: var(--badge-corner-radius);
   display: inline-block;
   font-size: 1.2rem;
-  letter-spacing: 0.1rem;
   line-height: 1;
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
