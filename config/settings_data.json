@@ -17,8 +17,8 @@
     "body_scale": 130,
     "page_width": 1100,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 40,
-    "spacing_grid_vertical": 40,
+    "spacing_grid_horizontal": 26, /* 2rem = 26px */
+    "spacing_grid_vertical": 26,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 50,

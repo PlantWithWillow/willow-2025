@@ -1145,9 +1145,9 @@ summary::-webkit-details-marker {
     width: calc(50% - var(--grid-desktop-horizontal-spacing) - 3rem);
   }
 
-  .slider--tablet.grid--peek .grid__item:first-of-type {
+  /* .slider--tablet.grid--peek .grid__item:first-of-type {
     margin-left: 1.5rem;
-  }
+  } */
 
   .grid--2-col-tablet-down .grid__item {
     width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);

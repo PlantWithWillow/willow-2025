@@ -1,0 +1,400 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  .hello-wrap .content-container {
+    position: relative;
+    padding: 4rem 2rem 0;
+  }
+  .hello-icon {
+    position: absolute;
+    top: -16px;
+    left: calc(50% - 54px);
+  }
+  @media screen and (min-width: 750px) {
+    .hello-wrap .content-container {
+      padding: 4rem 4rem 0;
+    }
+  }
+  .hello__buttons {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+  }
+{%- endstyle -%}
+
+<div class="isolate">
+  <div class="hello-wrap section-{{ section.id }}-padding{% unless section.settings.full_width %} page-width{% endunless %}{% if section.settings.full_width %} color-{{ section.settings.color_scheme }}{% endif %}">
+    <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %}">
+      {% unless section.settings.full_width %}
+        <div class="hello-icon">
+          <svg width="106" height="51" viewBox="0 0 106 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="106" height="40" rx="20" fill="#D1FEA4"/>
+            <path d="M19.1356 28.12C18.4796 28.12 17.9756 27.936 17.6236 27.568C17.2716 27.184 17.0956 26.624 17.0956 25.888V14.584C17.0956 13.848 17.2636 13.296 17.5996 12.928C17.9516 12.544 18.4636 12.352 19.1356 12.352H19.8316C21.2396 12.352 21.9436 13.096 21.9436 14.584V18.184H26.8396V14.584C26.8396 13.096 27.5116 12.352 28.8556 12.352H29.5756C30.2636 12.352 30.7836 12.544 31.1356 12.928C31.5036 13.296 31.6876 13.848 31.6876 14.584V25.888C31.6876 26.624 31.5036 27.184 31.1356 27.568C30.7836 27.936 30.2636 28.12 29.5756 28.12H28.8556C28.1996 28.12 27.6956 27.936 27.3436 27.568C27.0076 27.184 26.8396 26.624 26.8396 25.888V22.216H21.9436V25.888C21.9436 26.624 21.7596 27.184 21.3916 27.568C21.0396 27.936 20.5196 28.12 19.8316 28.12H19.1356ZM36.3254 28C35.5254 28 34.9094 27.776 34.4774 27.328C34.0614 26.88 33.8534 26.224 33.8534 25.36V15.16C33.8534 14.28 34.0614 13.616 34.4774 13.168C34.9094 12.704 35.5254 12.472 36.3254 12.472H44.5334C45.2854 12.472 45.8374 12.624 46.1894 12.928C46.5574 13.232 46.7414 13.704 46.7414 14.344V14.464C46.7414 15.12 46.5654 15.592 46.2134 15.88C45.8614 16.168 45.3014 16.312 44.5334 16.312H38.6774V18.352H42.5654C43.3494 18.352 43.9174 18.488 44.2694 18.76C44.6214 19.016 44.7974 19.44 44.7974 20.032V20.104C44.7974 20.744 44.6214 21.208 44.2694 21.496C43.9174 21.768 43.3494 21.904 42.5654 21.904H38.6774V24.208H44.6294C45.4134 24.208 45.9814 24.344 46.3334 24.616C46.6854 24.872 46.8614 25.312 46.8614 25.936V26.056C46.8614 26.712 46.6774 27.2 46.3094 27.52C45.9574 27.84 45.3974 28 44.6294 28H36.3254ZM50.927 28C50.127 28 49.511 27.776 49.079 27.328C48.663 26.88 48.455 26.224 48.455 25.36V14.584C48.455 13.096 49.135 12.352 50.495 12.352H51.167C52.575 12.352 53.279 13.096 53.279 14.584V23.8H57.935C59.423 23.8 60.167 24.472 60.167 25.816V25.888C60.167 27.296 59.423 28 57.935 28H50.927ZM64.0286 28C63.2286 28 62.6126 27.776 62.1806 27.328C61.7646 26.88 61.5566 26.224 61.5566 25.36V14.584C61.5566 13.096 62.2366 12.352 63.5966 12.352H64.2686C65.6766 12.352 66.3806 13.096 66.3806 14.584V23.8H71.0366C72.5246 23.8 73.2686 24.472 73.2686 25.816V25.888C73.2686 27.296 72.5246 28 71.0366 28H64.0286ZM81.1903 28.336C79.6223 28.336 78.2143 27.992 76.9663 27.304C75.7343 26.616 74.7663 25.656 74.0623 24.424C73.3743 23.192 73.0303 21.8 73.0303 20.248C73.0303 18.696 73.3823 17.304 74.0863 16.072C74.7903 14.84 75.7583 13.88 76.9903 13.192C78.2383 12.488 79.6383 12.136 81.1903 12.136C82.7583 12.136 84.1583 12.48 85.3903 13.168C86.6383 13.856 87.6063 14.816 88.2943 16.048C88.9983 17.28 89.3503 18.672 89.3503 20.224C89.3503 21.792 88.9983 23.192 88.2943 24.424C87.6063 25.656 86.6383 26.616 85.3903 27.304C84.1583 27.992 82.7583 28.336 81.1903 28.336ZM81.1903 24.04C82.2303 24.04 83.0543 23.696 83.6623 23.008C84.2863 22.32 84.5983 21.4 84.5983 20.248C84.5983 19.08 84.2863 18.144 83.6623 17.44C83.0383 16.736 82.2143 16.384 81.1903 16.384C80.1503 16.384 79.3183 16.728 78.6943 17.416C78.0863 18.104 77.7823 19.04 77.7823 20.224C77.7823 21.376 78.0943 22.304 78.7183 23.008C79.3423 23.696 80.1663 24.04 81.1903 24.04Z" fill="#03594D"/>
+            <path d="M16 38.4999C16 37.3953 16.8954 36.4999 18 36.4999H29.7105C31.5531 36.4999 32.4154 38.7804 31.0337 39.9996L26.5 43.9999L19.2584 49.8621C17.9508 50.9207 16 49.99 16 48.3076V38.4999Z" fill="#D1FEA4"/>
+          </svg>
+        </div>
+      {% endunless %}
+
+      <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+        <div class="rich-text__blocks {{ section.settings.content_alignment }}">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'heading' -%}
+                <h2
+                  class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {{ block.shopify_attributes }}
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}
+                >
+                  {{ block.settings.heading }}
+                </h2>
+            {%- endcase -%}
+          {%- endfor -%}
+          {%- if section.settings.image != blank -%}
+            <div class="hello__image center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+              {%- assign widths = '165, 360, 535, 750, 1070' -%}
+              {%- capture sizes -%}
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                  (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                {%- endcapture -%}
+              {{
+                section.settings.image
+                | image_url: width: 1070
+                | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+              }}
+            </div>
+          {%- endif -%}
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'button' -%}
+                <div
+                  class="hello__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {{ block.shopify_attributes }}
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}
+                >
+                  {%- if block.settings.button_label != blank -%}
+                    <a
+                      {% if block.settings.button_link == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link }}"
+                      {% endif %}
+                      class="button{% if block.settings.button_style_cta %} button--cta{% else %} button--primary{% endif %}{% if block.settings.button_outline %} button--outline{% endif %}"
+                    >
+                      {{- block.settings.button_label | escape -}}
+                    </a>
+                  {%- endif -%}
+                  {%- if block.settings.button_label_2 != blank -%}
+                    <a
+                      {% if block.settings.button_link_2 == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link_2 }}"
+                      {% endif %}
+                      class="button{% if block.settings.button_style_cta_2 %} button--cta{% else %} button--primary{% endif %}{% if block.settings.button_outline_2 %} button--outline{% endif %}"
+                    >
+                      {{- block.settings.button_label_2 | escape -}}
+                    </a>
+                  {%- endif -%}
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.rich-text.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.rich-text.settings.desktop_content_position.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.rich-text.settings.desktop_content_position.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.rich-text.settings.desktop_content_position.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.rich-text.settings.desktop_content_position.label"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.rich-text.settings.content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.rich-text.settings.content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.rich-text.settings.content_alignment.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.rich-text.settings.content_alignment.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.rich-text.blocks.heading.name",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "t:sections.rich-text.blocks.heading.settings.heading.default",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+            },
+            {
+              "value": "hxxl",
+              "label": "t:sections.all.heading_size.options__5.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
+    {
+      "type": "caption",
+      "name": "t:sections.rich-text.blocks.caption.name",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "t:sections.rich-text.blocks.caption.settings.text.default",
+          "label": "t:sections.rich-text.blocks.caption.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "subtitle",
+              "label": "t:sections.rich-text.blocks.caption.settings.text_style.options__1.label"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "t:sections.rich-text.blocks.caption.settings.text_style.options__2.label"
+            }
+          ],
+          "default": "caption-with-letter-spacing",
+          "label": "t:sections.rich-text.blocks.caption.settings.text_style.label"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__3.label"
+            }
+          ],
+          "default": "medium",
+          "label": "t:sections.rich-text.blocks.caption.settings.caption_size.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.rich-text.blocks.text.name",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "t:sections.rich-text.blocks.text.settings.text.default",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.rich-text.blocks.buttons.name",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "header",
+          "content": "t:sections.rich-text.blocks.buttons.settings.header_button1.content"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "t:sections.rich-text.blocks.buttons.settings.button_label_1.default",
+          "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_cta",
+          "default": false,
+          "label": "CTA style"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_outline",
+          "default": false,
+          "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_1.label"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.rich-text.blocks.buttons.settings.header_button2.content"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "label": "t:sections.rich-text.blocks.buttons.settings.button_label_2.label",
+          "info": "t:sections.rich-text.blocks.buttons.settings.button_label_2.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "t:sections.rich-text.blocks.buttons.settings.button_link_2.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_cta_2",
+          "default": false,
+          "label": "CTA style"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_outline_2",
+          "default": false,
+          "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.rich-text.presets.name",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

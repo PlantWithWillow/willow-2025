@@ -7,9 +7,7 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.reviews-wrapper .grid {
-  gap: 2rem;
-}
+
 .reviews-wrapper .review-card.card--card {
   --border-radius: 3rem;
   color: rgb(var(--color-charcoal-black))

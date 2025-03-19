@@ -60,6 +60,51 @@
         "show_text_below": false
       }
     },
+    "hello": {
+      "type": "hello",
+      "blocks": {
+        "heading_YT8HNK": {
+          "type": "heading",
+          "settings": {
+            "heading": "I’m Willow, your plant’s next best friend. I’ll help take your plant from barely surviving to thriving.",
+            "heading_size": "h1"
+          }
+        },
+        "text_b52wJF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Houseplants look great, boost mood and productivity, and reduce stress.  But ... they can be hard to care for.</p>"
+          }
+        },
+        "button_XYFJeR": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_cta": false,
+            "button_outline": false,
+            "button_label_2": "Learn more",
+            "button_link_2": "shopify://pages/tech",
+            "button_style_cta_2": false,
+            "button_outline_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YT8HNK",
+        "text_b52wJF",
+        "button_XYFJeR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/willow-learn-more-video-thumbnail2.jpg",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -496,6 +541,7 @@
   },
   "order": [
     "image_banner",
+    "hello",
     "multicolumn",
     "multicolumn_AYpFY7",
     "rich_text_M9pWft",
