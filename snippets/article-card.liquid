@@ -77,7 +77,7 @@
           <div class="card__information">
             <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
               <a href="{{ article.url }}" class="full-unstyled-link">
-                {{ article.title | truncate: 50 | escape }}
+                {{ article.title | truncate: 46 | escape }}
               </a>
             </h3>
             <div class="article-card__info caption-with-letter-spacing h5">
@@ -92,9 +92,9 @@
               {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                 <p class="article-card__excerpt rte-width">
                   {%- if article.excerpt.size > 0 -%}
-                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                    {{ article.excerpt | strip_html | truncatewords: 24 }}
                   {%- else -%}
-                    {{ article.content | strip_html | truncatewords: 30 }}
+                    {{ article.content | strip_html | truncatewords: 24 }}
                   {%- endif -%}
                 </p>
               {%- endif -%}
@@ -116,36 +116,41 @@
         <div class="card__information">
           <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
             <a href="{{ article.url }}" class="full-unstyled-link">
-              {{ article.title | truncate: 50 | escape }}
+              {{ article.title | truncate: 46 | escape }}
             </a>
           </h3>
           <div class="article-card__info caption-with-letter-spacing h5">
-            <div class="tags">
-              {% for tag in article.tags %}
-                <span class="pill tag--pill {{ tag }}">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {%- if show_date -%}
-              <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
-            {%- if show_author -%}
-              <span>{{ article.author }}</span>
+            {%- if article.metafields.custom.author != blank -%}
+              {%- if show_date -%}
+                <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+              {%- endif -%}
+              {%- if show_author -%}
+                <span>{{ article.metafields.custom.author.value }}</span>
+              {%- endif -%}
+            {%- else %}
+              {%- if show_date -%}
+                <span>{{ article.published_at | time_tag: format: 'date' }}</span>
+              {%- endif -%}
             {%- endif -%}
           </div>
           {%- if show_excerpt -%}
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
               <p class="article-card__excerpt rte-width">
                 {%- if article.excerpt.size > 0 -%}
-                  {{ article.excerpt | strip_html | truncatewords: 30 }}
+                  {{ article.excerpt | strip_html | truncatewords: 24 }}
                 {%- else -%}
-                  {{ article.content | strip_html | truncatewords: 30 }}
+                  {{ article.content | strip_html | truncatewords: 24 }}
                 {%- endif -%}
               </p>
             {%- endif -%}
             <div class="article-card__footer">
+              {% render 'article-tags' | article: article %}
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                 <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
               {%- endif -%}
+              <div class="arrow">
+                {{- 'icon-arrow.svg' | inline_asset_content -}}
+              </div>
             </div>
           {%- endif -%}
         </div>

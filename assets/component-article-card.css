@@ -54,6 +54,7 @@
 .blog__posts .article-card .card__information {
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 5rem;
 }
 
 .article-card__info {
@@ -63,6 +64,13 @@
 .article-card__footer {
   letter-spacing: 0.1rem;
   font-size: 1.4rem;
+  position: absolute;
+  bottom: 2.4rem;
+  left: 3rem;
+  right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .article-card__footer:not(:last-child) {
@@ -80,6 +88,24 @@
 
 .article-card__link:not(:only-child) {
   margin-right: 3rem;
+}
+
+.article-card .arrow {
+  background: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+.article-card .arrow .icon-arrow {
+  transform: scale(1.2);
+  transition: transform var(--duration-long) ease;
+}
+
+.article-card:hover .arrow .icon-arrow,
+.article-card:focus-within .arrow .icon-arrow {
+  transform: scale(1.4)
 }
 
 @media screen and (min-width: 990px) {
@@ -139,26 +165,4 @@
       margin-bottom: 7rem;
     }
   }
-}
-
-
-.article-card .tag--pill {
-  display: inline-block;
-  background: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
-  padding: 0.4rem 1rem;
-  border-radius: var(--border-radius);
-  font-weight: 500;
-}
-.article-card .tag--pill.Plant.Care {
-  background: rgb(var(--color-pothos-green));
-  color: rgb(var(--color-charcoal-black));
-}
-.article-card .tag--pill.Soil {
-  background: rgb(var(--color-orange));
-  color: rgb(var(--color-charcoal-block));
-}
-.article-card .tag--pill.Support {
-  background: rgb(var(--color-lavender));
-  color: rgb(var(--color-charcoal-block));
 }

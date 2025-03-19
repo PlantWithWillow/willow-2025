@@ -1,0 +1,42 @@
+{% comment %}
+  Renders a tag pills for a given blog post
+
+  Accepts:
+  - article: {Object} Article object
+
+  Usage:
+  {% render 'pill' article: article %}
+{% endcomment %}
+
+{% style %}
+  .tag--pill {
+    display: inline-block;
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    padding: 0.4rem 1rem;
+    border-radius: 40rem;
+    font-weight: 500;
+  }
+  .tag--pill.Plant.Care {
+    background: rgb(var(--color-pothos-green));
+    color: rgb(var(--color-charcoal-black));
+  }
+  .tag--pill.Soil {
+    background: rgb(var(--color-orange));
+    color: rgb(var(--color-charcoal-block));
+  }
+  .tag--pill.Support {
+    background: rgb(var(--color-lavender));
+    color: rgb(var(--color-charcoal-block));
+  }
+  .tag--pill.Willow.App {
+    background: rgb(var(--color-pink));
+    color: rgb(var(--color-charcoal-block));
+  }
+{% endstyle %}
+
+<div class="tags">
+  {% for tag in article.tags %}
+    <span class="pill tag--pill {{ tag }}">{{ tag }}</span>
+  {% endfor %}
+</div>

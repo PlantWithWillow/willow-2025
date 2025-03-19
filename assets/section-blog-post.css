@@ -9,7 +9,7 @@
 }
 
 .article-template__hero-container {
-  max-width: 130rem;
+  /* max-width: 130rem; */
   margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@
   }
 
   .article-template__hero-medium {
-    height: 44rem;
+    height: 34rem;
   }
 
   .article-template__hero-large {
@@ -45,7 +45,7 @@
   }
 
   .article-template__hero-medium {
-    height: 55rem;
+    height: 45rem;
   }
 
   .article-template__hero-large {
