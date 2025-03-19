@@ -9,6 +9,29 @@
  */
 {
   "sections": {
+    "rich_text_DMEVVA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kyqFjE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Blog",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kyqFjE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -23,6 +46,7 @@
     }
   },
   "order": [
+    "rich_text_DMEVVA",
     "main"
   ]
 }
