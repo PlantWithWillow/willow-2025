@@ -71,6 +71,7 @@
 .multicolumn:not(.background-none) .multicolumn-card {
   background: rgb(var(--color-background));
   height: 100%;
+  width: 100%;
 }
 
 .multicolumn.background-primary .multicolumn-card {
@@ -118,8 +119,8 @@
   }
 
   .multicolumn-list:not(.slider) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -232,3 +233,9 @@
   }
 }
 
+@media screen and (min-width: 990px) and (max-width: 1280px) {
+  .grid--4-col-desktop .grid__item {
+      width: calc(50% - var(--grid-desktop-horizontal-spacing)* 3 / 4);
+      max-width: calc(50% - var(--grid-desktop-horizontal-spacing)* 3 / 4);
+  }
+}

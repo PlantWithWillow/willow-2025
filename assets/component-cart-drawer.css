@@ -18,7 +18,7 @@
 
 .drawer__inner {
   height: 100%;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   border-right: 0;
   overflow: hidden;
   display: flex;
@@ -30,7 +30,7 @@
 
 .drawer__inner-empty {
   height: 100%;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
