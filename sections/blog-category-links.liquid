@@ -1,0 +1,107 @@
+{% style %}
+  .blog-categories {
+    margin: 6rem auto;
+  }
+
+  .blog-categories ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .blog-categories__item {
+    color: rgb(var(--color-foreground));
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.4rem;
+    height: 4rem;
+    padding: 1rem 1.4rem 1rem 1rem;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .blog-categories__item > * {
+    position: relative;
+  }
+
+  .blog-categories__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4rem;
+    overflow: hidden;
+    background: rgba(var(--color-sage-green));
+    width: 4rem;
+    transition: ease var(--duration-default);
+    z-index: 0;
+  }
+  .blog-categories__item:hover:before,
+  .blog-categories__item.active:before {
+    width: 100%;
+  }
+
+  .blog-categories__item svg {
+    height: 2rem;
+    width: 2rem;
+    fill: rgb(var(--color-foreground));
+  }
+{% endstyle %}
+
+{% if request.path contains 'tagged' %}
+  {% assign selected_tag = request.path | replace: '/blogs/news/tagged/', '' %}
+{% else %}
+  {% assign selected_tag = '' %}
+{% endif %}
+
+<div class="blog-categories color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <ul class="list-unstyled grid">
+      <li>
+        <a
+          href="{{ blog.url }}"
+          class="blog-categories__item{% if selected_tag == blank %} active{% endif %}"
+          data-category="all"
+        >
+          {{- 'icon-leaf.svg' | inline_asset_content -}}
+          <span>All</span>
+        </a>
+      </li>
+      {% for tag in blog.all_tags %}
+        <li>
+          {% assign tag_esc = tag | handleize %}
+          <a
+            href="{{ blog.url }}/tagged/{{ tag_esc }}"
+            class="blog-categories__item{% if selected_tag == tag_esc %} active{% endif %}"
+            data-category="{{ tag_esc }}"
+          >
+            {{- 'icon-leaf.svg' | inline_asset_content -}}
+            <span>{{ tag }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog Category Links",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "accent-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Category Links"
+    }
+  ]
+}
+{% endschema %}

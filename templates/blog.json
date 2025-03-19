@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "rich_text": {
+    "rich_text_DMEVVA": {
       "type": "rich-text",
       "blocks": {
-        "heading": {
+        "heading_kyqFjE": {
           "type": "heading",
           "settings": {
             "heading": "Blog",
@@ -21,7 +21,7 @@
         }
       },
       "block_order": [
-        "heading"
+        "heading_kyqFjE"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -35,7 +35,7 @@
     "links": {
       "type": "blog-category-links",
       "settings": {
-        "color_scheme": "background-1"
+        "color_scheme": "scheme-1"
       }
     },
     "main": {
@@ -52,7 +52,7 @@
     }
   },
   "order": [
-    "rich_text",
+    "rich_text_DMEVVA",
     "links",
     "main"
   ]
