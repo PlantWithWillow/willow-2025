@@ -9,6 +9,35 @@
  */
 {
   "sections": {
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Blog",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "links": {
+      "type": "blog-category-links",
+      "settings": {
+        "color_scheme": "background-1"
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -23,6 +52,8 @@
     }
   },
   "order": [
+    "rich_text",
+    "links",
     "main"
   ]
 }
