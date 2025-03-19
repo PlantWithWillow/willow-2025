@@ -26,6 +26,24 @@
       padding: 4rem 4rem 0;
     }
   }
+  .hello-wrap .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
+    width: 100%;
+  }
+  .hello-wrap .rich-text__heading {
+    text-transform: unset;
+  }
+  .hello__image {
+    overflow: hidden;
+  }
+  .hello__image img {
+    display: block;
+  }
+  @media screen and (max-width: 749px) {
+    .hello__image img {
+      max-height: 40vh;
+      width: auto;
+    }
+  }
   .hello__buttons {
     position: absolute;
     bottom: 2rem;
@@ -65,17 +83,19 @@
             {%- endcase -%}
           {%- endfor -%}
           {%- if section.settings.image != blank -%}
-            <div class="hello__image center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-              {%- assign widths = '165, 360, 535, 750, 1070' -%}
-              {%- capture sizes -%}
-                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-                  (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+            <div class="hello__image center">
+              <div class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                {%- assign widths = '80, 165' -%}
+                {%- capture sizes -%}
+                  (min-width: {{ settings.page_width }}px) 165,
+                  (min-width: 750px) 80
                 {%- endcapture -%}
-              {{
-                section.settings.image
-                | image_url: width: 1070
-                | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-              }}
+                {{
+                  section.settings.image
+                  | image_url: width: 165
+                  | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                }}
+              </div>
             </div>
           {%- endif -%}
           {%- for block in section.blocks -%}
