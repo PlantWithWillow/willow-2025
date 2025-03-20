@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product-custom",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "klaviyo_reviews_average_rating_jrYwad": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "klaviyo_stars_D8ABkb": {
+          "type": "klaviyo-stars",
+          "settings": {
+            "product": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "included": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What's included",
+            "icon": "leaf",
+            "content": "<ul><li>3 Sensors</li><li>1 Hub</li><li>USB cable</li><li>Coin cell battery in Sensor</li></ul>",
+            "page": ""
+          }
+        },
+        "faq": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "FAQ",
+            "icon": "leaf",
+            "content": "<p><strong>What is the expiry date?</strong><br>Gift cards expire 12 months from the date of purchase. Need more time? Send us a request and we’ll do our best to extend it. <br><br><strong>How are digital gift cards delivered?</strong><br>Gift cards are delivered by email to you, the purchaser. You can choose to forward the email containing the gift card to the recipient or ask us to send it directly to them on your behalf. <br><br><strong>How do I redeem a digital gift card?</strong><br>The email delivering the gift card contains a unique code and instructions on how to redeem at checkout. <br><br></p>",
+            "page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_current_viewers": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "klaviyo_reviews_average_rating_jrYwad",
+        "klaviyo_stars_D8ABkb",
+        "variant_picker",
+        "quantity_selector",
+        "included",
+        "faq",
+        "buy_buttons"
+      ],
+      "custom_css": [
+        ".icon-checkmark {display: none;}",
+        ".recipient-checkbox{justify-content: center}",
+        ".recipient-form>input[type=checkbox]:checked+label rect {fill:#03594D}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "description": {
+      "type": "product-description",
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: var(--page-width); padding: 0 1.5rem; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 24
+      }
+    },
+    "packs_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".title {text-align: center;}"
+      ],
+      "settings": {
+        "title": "You'll grow great with these",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "packs",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+  },
+  "order": [
+    "main",
+    "description",
+    "packs_collection"
+  ]
+}
