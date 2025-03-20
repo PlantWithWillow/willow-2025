@@ -20,19 +20,6 @@
           "type": "price",
           "settings": {}
         },
-        "klaviyo_reviews_average_rating_jrYwad": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "disabled": true,
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
-        "klaviyo_stars_D8ABkb": {
-          "type": "klaviyo-stars",
-          "settings": {
-            "product": ""
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -48,7 +35,7 @@
           "settings": {
             "heading": "What's included",
             "icon": "leaf",
-            "content": "<ul><li>3 Sensors</li><li>1 Hub</li><li>USB cable</li><li>Coin cell battery in Sensor</li></ul>",
+            "content": "<p>Digital gift card delivered to your email of choice.</p>",
             "page": ""
           }
         },
@@ -56,7 +43,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "FAQ",
-            "icon": "leaf",
+            "icon": "chat_bubble",
             "content": "<p><strong>What is the expiry date?</strong><br>Gift cards expire 12 months from the date of purchase. Need more time? Send us a request and we’ll do our best to extend it. <br><br><strong>How are digital gift cards delivered?</strong><br>Gift cards are delivered by email to you, the purchaser. You can choose to forward the email containing the gift card to the recipient or ask us to send it directly to them on your behalf. <br><br><strong>How do I redeem a digital gift card?</strong><br>The email delivering the gift card contains a unique code and instructions on how to redeem at checkout. <br><br></p>",
             "page": ""
           }
@@ -73,8 +60,6 @@
       "block_order": [
         "title",
         "price",
-        "klaviyo_reviews_average_rating_jrYwad",
-        "klaviyo_stars_D8ABkb",
         "variant_picker",
         "quantity_selector",
         "included",
@@ -109,10 +94,280 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 80,
         "padding_bottom": 24
+      }
+    },
+    "rich_text_YNRWq7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Q4FJdH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Happier, healthier houseplants.  Zero guesswork.",
+            "heading_size": "h1"
+          }
+        },
+        "text_6yijEr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your serial plant killing streak is over with Willow! Our Sensor monitors your plant 24/7 and notifies you on your phone when your plant needs care. No more guesswork and Google searches for the right solution to your plant’s problems – Willow will tell you what to do and when.</p><p>The Plant Parent pack is great for the experienced houseplant lover who needs an extra set of eyes (or 3!) on their plants. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q4FJdH",
+        "text_6yijEr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 52
+      }
+    },
+    "video_97gnMh": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/GVK0E1nCpLY",
+        "cover_image": "shopify://shop_images/willow-learn-more-video-thumbnail2.jpg",
+        "description": "How Willow Works",
+        "full_width": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_iXbw7W": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_EGn9eW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/watering-can.svg",
+            "pretitle": "",
+            "title": "No more over or under watering (the #1 plant killer!)",
+            "text": "<p>Timely alerts and post-pour feedback from your plant to water perfectly</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_K3gciQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/plant-window.svg",
+            "pretitle": "",
+            "title": "Find the right conditions for thriving",
+            "text": "<p>Willow tracks your plant's light exposure, temperature and humidity and helps you get the right mix for a happy plant</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_EGn9eW",
+        "column_K3gciQ"
+      ],
+      "custom_css": [
+        ".multicolumn-list {justify-content: center;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "color_scheme": "scheme-1",
+        "card_color_scheme": "",
+        "background_style": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_a4fcVQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cHDwnk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Plant care in your back pocket",
+            "heading_size": "h1"
+          }
+        },
+        "text_aBFYtD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Stacked with features, the Plant with Willow app is your one-stop shop for houseplant care.  Connect your Sensor and Hub to the app, plant your Sensor in, and kick back while your plants do the talking -- right to your mobile.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cHDwnk",
+        "text_aBFYtD"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_XaGDgw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nLyMCq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CIRCLE.png",
+            "pretitle": "",
+            "title": "Real time updates",
+            "text": "<p>Check on your plant’s happiness score throughout the day and how it’s doing for light, water, temperature and humidity</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_R9hriK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CIRCLE_1.png",
+            "pretitle": "",
+            "title": "Have your plant ID’d",
+            "text": "<p>Not sure what plant you’ve got? No problem. Use our Plant ID feature to scan and correctly identify your plant in one click</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ydTRyL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CIRCLE_2.png",
+            "pretitle": "",
+            "title": "Accurate advice",
+            "text": "<p>Follow the personalised care guides developed by our expert team in our plant library, featuring over 600 plant species!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nLyMCq",
+        "column_R9hriK",
+        "column_ydTRyL"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info h3 {color: var(--color-foreground);}",
+        ".multicolumn-list__item {max-width: 66%;}",
+        "@media screen and (max-width: 989px) {.multicolumn-card__image-wrapper {width: auto; } .multicolumn-card__image-wrapper .media {padding-bottom: 50vh !important; } .multicolumn-card__image-wrapper + .multicolumn-card__info {padding-right: 1.5rem; } .multicolumn-list {line-height: 1.4 !important; } .slider-buttons {display: none; }}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "color_scheme": "scheme-2",
+        "card_color_scheme": "scheme-2",
+        "background_style": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "features_8cnGxr": {
+      "type": "features",
+      "blocks": {
+        "column_k7zniV": {
+          "type": "column",
+          "settings": {
+            "icon": "mobile",
+            "icon_fill": "",
+            "icon_background": "#f7f6f1",
+            "title": "Download",
+            "text": "<p>Install the Plant with Willow app on your iOS or Android device</p>"
+          }
+        },
+        "column_eA8ibC": {
+          "type": "column",
+          "settings": {
+            "icon": "wifi",
+            "icon_fill": "",
+            "icon_background": "#f7f6f1",
+            "title": "Setup",
+            "text": "<p>Easily connect your Hub to your home Wi-Fi and your Sensor to the app.  Once connected, your Sensor communicates with the Hub via Bluetooth</p>"
+          }
+        },
+        "column_YQGhMk": {
+          "type": "column",
+          "settings": {
+            "icon": "bluetooth",
+            "icon_fill": "",
+            "icon_background": "#f7f6f1",
+            "title": "Pair",
+            "text": "<p>Choose the plant type your Sensor will be paired up with. The Sensor will monitor your plant based on its species-specific preferences</p>"
+          }
+        },
+        "column_U3mjk3": {
+          "type": "column",
+          "settings": {
+            "icon": "sensor_pot",
+            "icon_fill": "",
+            "icon_background": "#f7f6f1",
+            "title": "Plant",
+            "text": "<p>Plant your Sensor into your plant's soil, angling the light pipe towards the source of light</p>"
+          }
+        },
+        "column_y4kV7r": {
+          "type": "column",
+          "settings": {
+            "icon": "alert",
+            "icon_fill": "",
+            "icon_background": "#f7f6f1",
+            "title": "Grow",
+            "text": "<p>Get alerts when your plant needs action and watch it grow happier and healthier by the day!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_k7zniV",
+        "column_eA8ibC",
+        "column_YQGhMk",
+        "column_U3mjk3",
+        "column_y4kV7r"
+      ],
+      "custom_css": [
+        ".features-title {text-align: center;}"
+      ],
+      "settings": {
+        "title": "Get growing with willow",
+        "heading_size": "h1",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 60
       }
     },
     "packs_collection": {
@@ -133,7 +388,7 @@
         "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -150,6 +405,12 @@
   "order": [
     "main",
     "description",
+    "rich_text_YNRWq7",
+    "video_97gnMh",
+    "multicolumn_iXbw7W",
+    "rich_text_a4fcVQ",
+    "multicolumn_XaGDgw",
+    "features_8cnGxr",
     "packs_collection"
   ]
 }
