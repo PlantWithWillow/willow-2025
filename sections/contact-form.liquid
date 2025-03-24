@@ -147,10 +147,10 @@
   if (hour >= 17) evening = true;
   if (day > 5 || (day == 5 && hour >= 17)) weekend = true;
 
-  let message = "Thanks for contacting us. We'll get back to you as soon as possible.";
+  let message = "Hey, thanks for your message! We'll get back to you as soon as possible.";
   if (morning || evening || weekend)
     message =
-      'Thanks for contacting us. Our email support hours are Mon - Fri 9am - 5pm Australian Western Standard Time (AWST)';
+      'Hey, thanks for your message! Our email support hours are Mon - Fri 9am - 5pm Australian Western Standard Time (AWST)';
 
   setTimeout(function () {
     console.log(message);
